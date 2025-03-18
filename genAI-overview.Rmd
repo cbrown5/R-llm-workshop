@@ -1,0 +1,195 @@
+---
+title: "gen AI an overview for applications in ecology and environmental sciences"
+author: "A/Prof CJ Brown"
+output: 
+  ioslides_presentation:
+    widescreen: true
+    smaller: false
+    transition: "faster"
+    incremental: false
+---
+
+
+## genAI what is it? 
+
+- Artificial intelligence that can generate new content, such as text, images, or code.
+- We'll focus on Large Language Models 
+- They now excel at generating code
+- They can also interpret images, use your web browser, run and debug code
+- Predicted to be fully capable software developers in the next 1-3 years
+
+## How LLMs work
+
+- Complex neural network with multiple different types of layers
+- Trained on a large corpus of text data
+- Can generate new content by predicting the next token (effectively word)
+
+## How LLMs turn words into numbers
+
+Vector embedding concept 
+
+```{r echo = FALSE}
+library(ggplot2)
+library(plotly)
+
+# Define the vectors
+vectors <- data.frame(
+  word = c("man", "woman", "king", "queen"),
+  x = c(1, 1, 2, 2),
+  y = c(1, 2, 1, 2),
+  z = c(1, 1, 2, 2)
+)
+
+# Create a 3D plot
+p <- plot_ly(vectors, x = ~x, y = ~y, z = ~z, type = 'scatter3d', mode = 'markers+text', text = ~word, textposition = 'top center') %>%
+  layout(scene = list(
+    xaxis = list(title = 'X'),
+    yaxis = list(title = 'Y'),
+    zaxis = list(title = 'Z')
+  ))
+
+p
+```
+
+## LLMs do text completion
+
+- If you start writing text the LLM literally predicts the next token. 
+- It can roll on from there
+- Conversation based LLMs are specifically tuned to respond to queries
+- Effectively, they are completing the prompt by predicting the answer. 
+
+## LLMs jargon
+
+**Token** a part of a word that is the unit of prediction. 
+e.g. GPT3.0 had ~50,000 tokens
+
+**Prompt** a piece of text that is used to generate content from an LLM.
+
+**Prompt engineering** the process of designing and refining prompts to get the desired output from an LLM.
+
+**Context window** the number of tokens that the LLM uses to predict the next token. The LLM's 'memory' size. 
+
+## What types of tasks can LLMs currently do? 
+
+- Answer questions
+- Generate text
+- Generate code
+- Edit code
+- Debug code
+- Interpret images
+- Use your web browser
+- Use tools 
+
+## LLM abilities examples 
+
+CB to show a code example
+Cline web browser example
+Cline image interpretation example - images/pca_site_id_scatter.png
+
+
+## Terms
+
+genAI: Generative AI
+LLM: Large Language Model, which is a type of genAI that is trained on a large corpus of text data to generate new content.
+Agent: A software program that acts on behalf of a user or another program.
+API: Application Programming Interface, which is a set of rules and protocols that allows different software applications to communicate with each other.
+IDE: Integrated Development Environment, which is a software application that provides comprehensive facilities to computer programmers for software development. 
+IDE examples: Rstudio, Visual Studio code
+CLI: Command Line Interface, which is a text-based interface used to interact with a computer program.
+MCP: Model context protocol, which is a set of rules that lets an agent use an API
+Provider: AI providers like Anthropic, OpenAI, and others that provide access to AI models through APIs.
+Git: A version control system that allows multiple developers to collaborate on a project.
+Github: A web-based platform that hosts Git repositories and provides collaboration tools for developers.
+Prompt: A piece of text that is used to generate content from an LLM.
+Prompt engineering: The process of designing and refining prompts to get the desired output from an LLM.
+RAG: Retrieval-Augmented Generation, which is a technique that combines information retrieval with generative AI to improve the quality of generated content.
+
+## LLMs key concepts
+
+API
+system message
+user message
+assistant message
+
+## Vectorizing words and concepts 
+
+
+
+## Using LLMs approaches
+
+3.5 ways to get more out of your LLM
+
+- Prompting better* 
+- MCP (protocol for prompting and tool use)* 
+- RAG (retrieval augmented generation)
+- Finetuning 
+
+
+## Approaches
+
+Copilot, chatGPT web interfaces: 
+Pro: easy to use, no coding required, often free (or institutional subscription)
+Con: no control of system message, limited customization, cut and pasting required
+
+Github copilot in Rstudio
+Pro: easy to use, use the IDE your probably already know, auto-complete code, ask for help, can choose from different LLMs and providers
+Con: no control of system message, limited customization, slow to keep up with new genAI features, monthly subscription fee
+
+Github copilot in Visual Studio code
+Pro: easy to use, autocomplete code, code editing, discussion, code indexing, constantly updated with new features, can choose from different LLMs and providers, generally better than same API in Rstudio
+Con: no control of system message, limited customization, monthly subscription fee
+
+Cline: 
+Pro: Computer use, image reading capability, fully automated workflow (writes code then tests it), choice of provider (can even switch half way), can customize system message, excels at programming. 
+Cons: API costs can rack up, can't fully customize the system which includes a lot of stuff that is useless for an R programmer
+
+Windsurf and Cursor
+Pro: like Cline but fixed fee per 500 prompts. So can be cheaper
+Cons: Can't fully customize the system message
+
+DIY API calls
+Pro: You control everything
+Cons: You have to do a lot of work to set it up. Doesnt' have level of software development of Cline etc...
+
+## examples
+
+screen shot of copilot
+
+screen shot of copilit in Rstudio
+
+screen shot of copilot in Visual Studio code
+
+screen shot of Cline
+
+screen shot of cline doing computer use 
+
+## Michael share restoration example 
+
+
+
+## MCP, how it doesn't work
+
+```{r, out.width = "60%", echo=FALSE}
+knitr::include_graphics("https://ellmer.tidyverse.org/articles/tool-calling-wrong.svg")
+```
+From posit
+
+## MCP, how it does work
+
+```{r, out.width = "60%", echo=FALSE}
+knitr::include_graphics("https://ellmer.tidyverse.org/articles/tool-calling-right.svg")
+```
+From posit
+
+## Packages we'll use
+
+ellmer
+usethis
+shinychat
+API key for Anthropic
+
+## Prompt ideas
+
+The fabric software is a software for prompt templates. It is open source, so you can 
+get [inspired with prompts from their repo](https://github.com/danielmiessler/fabric/tree/main/patterns).
+
