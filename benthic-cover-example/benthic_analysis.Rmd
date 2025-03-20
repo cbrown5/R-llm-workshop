@@ -1,0 +1,220 @@
+---
+title: "Benthic Cover Analysis with Multidimensional Scaling (MDS)"
+author: "Data Analyst"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.width = 10, fig.height = 6)
+```
+
+## Introduction
+
+This analysis examines benthic cover survey data to visualize patterns in ecological communities across different sites. We use Multidimensional Scaling (MDS) to reduce the dimensionality of the data and reveal underlying patterns in site dispersion.
+
+## Loading Required Packages
+
+```{r load-packages}
+library(tidyverse)  # For data manipulation
+library(vegan)      # For ecological analysis including MDS
+library(ggplot2)    # For visualization
+```
+
+## Step 1: Import and Clean Benthic Cover Survey Data
+
+```{r import-data}
+# Data URL from GitHub
+data_url <- "https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/BenthicCoverSurveys.csv"
+
+# Import data
+benthic_data <- read_csv(data_url)
+
+# Examine the data structure
+glimpse(benthic_data)
+```
+
+### Data Summary
+
+```{r data-summary}
+summary(benthic_data)
+```
+
+### Check for Missing Values
+
+```{r check-missing}
+colSums(is.na(benthic_data))
+```
+
+### Clean Data
+
+```{r clean-data}
+benthic_data_clean <- benthic_data %>%
+  # Convert site and trans to factors
+  mutate(site = as.factor(site),
+         trans = as.factor(trans),
+         code = as.factor(code))
+
+# Display the first few rows of the cleaned data
+head(benthic_data_clean)
+```
+
+## Step 2: Calculate Dissimilarity Matrices
+
+We need to reshape the data to a wide format where rows are sites/transects, columns are benthic cover codes, and values are cover percentages.
+
+```{r reshape-data}
+# Create a unique identifier for each site-transect combination
+benthic_wide <- benthic_data_clean %>%
+  mutate(site_trans = paste(site, trans, sep="_")) %>%
+  select(site_trans, code, cover) %>%
+  pivot_wider(names_from = code, values_from = cover, values_fill = 0)
+
+# Extract site information for later use
+site_info <- benthic_data_clean %>%
+  mutate(site_trans = paste(site, trans, sep="_")) %>%
+  select(site_trans, site, trans) %>%
+  distinct()
+
+# Display the first few rows of the wide format data
+head(benthic_wide[, 1:6])  # Showing only first 5 columns for brevity
+```
+
+### Calculate Bray-Curtis Dissimilarity
+
+```{r bray-curtis}
+# Extract the community data matrix (just the cover values)
+community_matrix <- benthic_wide %>%
+  select(-site_trans) %>%
+  as.matrix()
+
+# Calculate Bray-Curtis dissimilarity matrix
+bray_dist <- vegdist(community_matrix, method = "bray")
+
+# Display a snippet of the dissimilarity matrix
+as.matrix(bray_dist)[1:5, 1:5]
+```
+
+## Step 3: Perform MDS Analysis
+
+We'll use Non-metric Multidimensional Scaling (NMDS) to visualize the dissimilarity between sites.
+
+```{r nmds-analysis}
+# Non-metric Multidimensional Scaling (NMDS)
+set.seed(123)  # For reproducibility
+nmds_result <- metaMDS(community_matrix, distance = "bray", k = 2, trymax = 100)
+
+# Print NMDS results
+nmds_result
+```
+
+## Step 4: Visualize Site Dispersion in Ordination Space
+
+```{r nmds-visualization}
+# Extract NMDS coordinates for sites
+nmds_coords <- as.data.frame(scores(nmds_result, "sites"))
+# Add site_trans column to match with site_info
+nmds_coords$site_trans <- rownames(nmds_coords)
+
+# Merge with site information
+nmds_plot_data <- nmds_coords %>%
+  left_join(site_info, by = "site_trans")
+
+# Create MDS plot
+mds_plot <- ggplot(nmds_plot_data, aes(x = NMDS1, y = NMDS2, color = site)) +
+  geom_point(size = 3, alpha = 0.8) +
+  stat_ellipse(aes(group = site), type = "t", linetype = 2) +
+  theme_minimal() +
+  labs(title = "NMDS Ordination of Benthic Cover Data",
+       subtitle = paste("Stress =", round(nmds_result$stress, 3)),
+       x = "NMDS1", y = "NMDS2") +
+  theme(legend.title = element_blank())
+
+# Display the plot
+mds_plot
+```
+
+## Step 5: Assess the Stress Value
+
+The stress value indicates how well the MDS ordination represents the original dissimilarities.
+
+```{r stress-assessment}
+cat("Stress value:", nmds_result$stress, "\n")
+cat("Interpretation of stress value:\n")
+cat("< 0.05: Excellent representation\n")
+cat("< 0.1: Good representation\n")
+cat("< 0.2: Potentially useful representation\n")
+cat("> 0.2: Poor representation, may be misleading\n")
+cat("> 0.3: Very poor, random placement\n")
+```
+
+## Step 6: Explore Factors Driving the Ordination
+
+Since we don't have explicit environmental data, we'll examine which benthic cover types are driving the ordination.
+
+```{r envfit}
+# Fit benthic cover types to the ordination
+benthic_fit <- envfit(nmds_result, community_matrix, perm = 999)
+benthic_fit
+```
+
+### Visualize Significant Vectors
+
+```{r vector-plot}
+# Create a plot with the fitted vectors
+vec_coords <- as.data.frame(scores(benthic_fit, "vectors")) * 0.9
+vec_coords$code <- rownames(vec_coords)
+
+# Filter for significant vectors (p < 0.05)
+sig_vec <- vec_coords[benthic_fit$vectors$pvals < 0.05, ]
+
+# Add vectors to the plot if there are significant ones
+if(nrow(sig_vec) > 0) {
+  mds_plot_with_vectors <- mds_plot +
+    geom_segment(data = sig_vec, 
+                aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
+                arrow = arrow(length = unit(0.2, "cm")), color = "darkgrey") +
+    geom_text(data = sig_vec, 
+              aes(x = NMDS1, y = NMDS2, label = code),
+              size = 3, hjust = -0.2, color = "black")  # Fixed color to black instead of using site
+  
+  mds_plot_with_vectors
+}
+```
+
+## Additional Analysis: Species Richness by Site
+
+```{r species-richness}
+# Calculate and visualize species richness by site
+species_richness <- benthic_data_clean %>%
+  group_by(site) %>%
+  summarize(richness = n_distinct(code))
+
+richness_plot <- ggplot(species_richness, aes(x = site, y = richness)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  theme_minimal() +
+  labs(title = "Species Richness by Site",
+       x = "Site", y = "Number of Benthic Cover Types")
+
+richness_plot
+```
+
+## Summary Statistics
+
+```{r summary-stats}
+cat("Total number of sites:", length(unique(benthic_data_clean$site)), "\n")
+cat("Total number of transects:", length(unique(benthic_data_clean$site_trans)), "\n")
+cat("Total number of benthic cover types:", length(unique(benthic_data_clean$code)), "\n")
+cat("NMDS stress value:", round(nmds_result$stress, 3), "\n")
+```
+
+## Conclusion
+
+This analysis has used Multidimensional Scaling to visualize patterns in benthic cover across different sites. The NMDS ordination provides a visual representation of the similarities and differences between sites based on their benthic community composition. The stress value indicates how well the 2D representation captures the multidimensional relationships in the data.
+
+The analysis has identified which benthic cover types are most strongly associated with the observed patterns, and has also examined species richness across sites. These results can help in understanding the ecological structure of the benthic communities and potentially identifying environmental factors that may be driving these patterns.

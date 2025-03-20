@@ -1,0 +1,48 @@
+---
+title: "El paquete ellmer: un cambio revolucionario para científicos y usuarios de R"
+author: "A/Prof CJ Brown"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+## ¿Por qué ellmer es revolucionario para los científicos?
+
+En este tutorial veremos cómo podemos acceder a agentes LLM a través de llamadas API. Utilizaremos esta habilidad para crear datos estructurados a partir de documentos.
+
+Usaremos el paquete R [`ellmer`](https://ellmer.tidyverse.org/index.html) (lanzado el 25 de febrero de 2025).
+
+Hay algunas opciones de paquetes [(antes también estaba usando `tidychatmodels`)](https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html).
+
+`ellmer` es revolucionario para científicos que usan R: Admite el uso de herramientas y tiene funciones para datos estructurados.
+
+Antes de `ellmer`, tenías que conocer otros lenguajes y estructuras de datos, como JSON. Ellmer hace que muchos usos potentes de LLM ahora sean fácilmente accesibles para usuarios de R.
+
+El uso de herramientas significa que el LLM puede ejecutar comandos en tu computadora para recuperar información. ¿Sabes cómo los LLM pueden equivocarse en matemáticas simples como 2+2 o la fecha actual? Pues bien, con una herramienta, el LLM sabría usar R para calcularlo y devolver la respuesta correcta. Las herramientas también pueden conectarse a API web, lo que significa que también pueden usarse para recuperar información o bases de datos de la web.
+
+Las funciones que te ayudan a crear datos estructurados a partir de texto también son importantes.
+
+Por ejemplo, al combinar el uso de herramientas con la extracción de datos estructurados, `ellmer` podría utilizarse para sintetizar literatura para una revisión cuantitativa. Cubriremos eso aquí.
+
+Otra aplicación sería interpretar los metadatos de una base de datos en línea, descargar los datos, escribir y ejecutar el análisis y luego redactar los hallazgos.
+
+Debido a que estás ejecutando el LLM desde R, puedes procesar por lotes las solicitudes, como pedirle que resuma varios documentos.
+
+Estos son algunos usos obvios. Estoy seguro de que pronto la gente encontrará muchos más.
+
+Veamos cómo usar ellmer para extraer datos estructurados de estudios revisados por pares.
+
+### Configurar la autorización
+
+Primero, necesitas obtener una clave API del proveedor. Inicia sesión en el sitio web del proveedor y sigue las instrucciones.
+
+Luego, debes agregar la clave a tu archivo `.Renviron`:
+
+`usethis::edit_r_environ()`
+
+Luego escribe tu clave así:
+
+`ANTHROPIC_API_KEY="xxxxxx"`
+
+Después, reinicia R. `ellmer` encontrará automáticamente tu clave siempre que uses los nombres de variables de entorno recomendados. Consulta `?ellmer::chat_claude` (o `chat_xxx` donde xxx es el proveedor que estés utilizando).
