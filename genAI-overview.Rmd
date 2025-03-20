@@ -48,36 +48,6 @@ Institute for Marine and Antarctic Studies, University of Tasmania
 - Trained on a large corpus of text data
 - Can generate new content by predicting the next token (effectively word)
 
-## How LLMs turn words into numbers
-
-Vector embedding concept 
-Man - Woman = King - Queen 
-
-Queen = King - (Man - Woman)
-
-```{r echo = FALSE, warning=FALSE, message=FALSE}
-library(ggplot2)
-library(plotly)
-
-# Define the vectors
-vectors <- data.frame(
-  word = c("man", "woman", "king", "queen"),
-  x = c(1, 1, 2, 2),
-  y = c(1, 2, 1, 2),
-  z = c(1, 1, 2, 2)
-)
-
-# Create a 3D plot
-p <- plot_ly(vectors, x = ~x, y = ~y, z = ~z, type = 'scatter3d', mode = 'markers+text', text = ~word, textposition = 'top center') %>%
-  layout(scene = list(
-    xaxis = list(title = 'X'),
-    yaxis = list(title = 'Y'),
-    zaxis = list(title = 'Z')
-  ))
-
-p
-```
-
 ## LLMs do text completion
 
 - If you start writing text the LLM literally predicts the next token. 
@@ -118,7 +88,7 @@ Cline image interpretation example - images/pca_site_id_scatter.png
 
 ## Michael share restoration example 
 
-![](images/sievers-study.png)
+...
 
 ## LLM tool use
 
@@ -135,7 +105,7 @@ Examples:
 ## LLM software options 
 | Software Option                  | Pros                                                                                                                                                                                                 | Cons                                                                                                      |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Copilot, chatGPT web interfaces  | <small>easy to use, no coding required, often free (or uni subscription)</small>                                                                                                          | <small>no control of system message, limited customization, cut and pasting required</small>              |
+| Copilot, chatGPT web interfaces  | <small>easy to use, no coding required, often free (or uni subscription)</small>                                                                                                          | <small>Limited control of system message (on some versions), limited customization, cut and pasting required</small>              |
 | Github copilot in Rstudio        | <small>easy to use, use the IDE you probably already know, auto-complete code, ask for help, can choose from different LLMs and providers</small>                                                   | <small>no control of system message, limited customization, slow to keep up with new genAI features, monthly subscription fee*</small> |
 | Github copilot in VS code | <small>easy to use, autocomplete code, code editing, discussion, code indexing, constantly updated with new features, can choose from different LLMs and providers, generally better than same API in Rstudio</small> | <small>no control of system message, limited customization, monthly subscription fee</small>              |
 | Cline                            | <small>Computer use, image reading capability, fully automated workflow (writes code then tests it), choice of provider (can even switch halfway), can customize system message, excels at programming.</small> | <small>API costs can rack up, can't fully customize the system which includes a lot of stuff that is useless for an R programmer</small> |
@@ -266,19 +236,24 @@ Made an R function
 Made a tool
 
 ```
-  mytool <- tool(
-      get_sst,
-      "Gets SST data from the IMOS BlueLink database",
-      data_path = type_string(
-        "Path to a csv dataframe that has columns datetime, X, Y",
-        required = TRUE
-      ),
-      depth = type_number(
-        "The depth to extract the SST data from",
-        required = TRUE
-      )
-    )
-
+#' Extracts SST data from the IMOS BlueLink database
+#'
+#' @param data_path A path to a csv dataframe
+#' @param depth The depth to extract the SST data from
+#' @return The current time in the given time zone.
+get_sst <- function(data_path, depth) {
+  dat <- read.csv(data_path)
+  datout <- extractBlue(df = dat,
+                X = "X", 
+                Y = "Y", 
+                datetime = "datetime", 
+                env_var = "BRAN_temp",
+                extract_depth = depth,
+                verbose = FALSE,
+                full_timeperiod = FALSE)
+  write.csv(datout, "temp_data.csv", row.names = FALSE)
+  return("File written to sst_data.csv")
+}
 ```
 
 ## My MCP example 3
@@ -308,6 +283,10 @@ Discussion...
 - New costs to absorb for research budgets
 
 ## On to the tutorial
+
+[Tute here](https://www.seascapemodels.org/rstats/2025/03/15/LMs-in-R-with-ellmer.html)
+
+[Also see the tool use tute](https://www.seascapemodels.org/rstats/2025/03/17/LLMs-in-R-tool-use.html)
 
 You'll need:
 
