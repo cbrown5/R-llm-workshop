@@ -75,3 +75,25 @@ Variables
 - flow: Factor indicating if tidal flow was "Strong" or "Mild" at the site
 - mindist: Distance to the nearest logging operation (m)
 
+## Examples
+
+### Example: ggplot of Points Using ColorBrewer2
+
+Below is an example of how to create a scatter plot using `ggplot2` with a ColorBrewer2 palette for coloring points by a categorical variable.
+
+```r
+# Load required libraries
+library(ggplot2)
+
+# Create the plot
+ggplot(data, aes(x = MDS1, y = MDS2, color = site)) +
+    geom_point(size = 3) +
+    scale_color_brewer(palette = "Set1") +
+    theme_minimal() +
+    labs(
+        title = "MDS Plot of Benthic Cover Composition",
+        x = "Axis 1",
+        y = "Axis 2",
+        color = "Site"
+    )
+```

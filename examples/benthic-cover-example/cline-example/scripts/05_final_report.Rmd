@@ -1,0 +1,199 @@
+---
+title: "Benthic Cover Analysis with Multidimensional Scaling (MDS)"
+author: "Ecological Analysis Team"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+    highlight: tango
+    fig_caption: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      fig.width = 10, fig.height = 7)
+library(tidyverse)
+library(vegan)
+library(knitr)
+library(kableExtra)
+```
+
+## Introduction
+
+This report presents an analysis of benthic cover surveys to visualize patterns in ecological communities across different sites. Multidimensional Scaling (MDS) was used to reduce the dimensionality of the data and reveal underlying patterns in site dispersion. We were particularly interested in how community structure relates to distance to logging operations, with the hypothesis that sedimentation caused by logging has an impact on coral cover.
+
+### Aims
+
+1. Visualize patterns in benthic cover composition across sites
+2. Identify potential groupings of sites based on benthic cover composition
+3. Relate ecological communities to logging
+
+## Methodology
+
+### Data Collection
+
+The data was collected with the point intersect transect method. Divers swam along transects, with several transects per site. Along each transect, they dropped points and recorded the type of benthic organism (in categories) on that point. Percentage cover for one organism type was calculated as the number of points with that organism divided by the total number of points on that transect. Transects were averaged to give a single value for each site.
+
+### Data Analysis
+
+The analysis followed these steps:
+
+1. Data import and wrangling
+2. Calculation of dissimilarity matrices (Euclidean and Bray-Curtis)
+3. Multidimensional Scaling (MDS) analysis
+4. Cluster analysis to identify site groupings
+5. Correlation analysis between benthic cover and distance to logging
+6. Environmental vector fitting to the MDS ordination
+
+```{r load-data, echo=FALSE}
+# Load the processed datasets
+site_data_combined <- read_csv("../data/site_data_combined.csv")
+mds_data <- read_csv("../data/mds_coordinates.csv")
+correlations <- read_csv("../data/logging_correlations.csv")
+cluster_logging <- read_csv("../data/cluster_logging_summary.csv")
+
+# Extract benthic cover data (exclude site and covariates)
+benthic_columns <- site_data_combined %>%
+  select(-site, -reeftype, -secchi, -flow, -mindist)
+```
+
+## Results
+
+### Dataset Overview
+
+The analysis included data from `r nrow(site_data_combined)` sites, with `r ncol(benthic_columns)` benthic categories recorded. The sites represented different reef types and had varying distances to logging operations.
+
+```{r dataset-summary, echo=FALSE}
+# Summary of site covariates
+site_summary <- site_data_combined %>%
+  select(site, reeftype, secchi, flow, mindist) %>%
+  group_by(reeftype, flow) %>%
+  summarize(
+    n_sites = n(),
+    mean_secchi = mean(secchi, na.rm = TRUE),
+    mean_dist_logging = mean(mindist, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+kable(site_summary, 
+      col.names = c("Reef Type", "Flow", "Number of Sites", 
+                    "Mean Secchi Depth (m)", "Mean Distance to Logging (m)"),
+      caption = "Summary of site characteristics by reef type and flow") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+### MDS Analysis
+
+Multidimensional Scaling (MDS) was performed using Bray-Curtis dissimilarity, which is appropriate for ecological community data. The MDS plot below shows the dispersion of sites in ordination space, colored by reef type.
+
+```{r mds-plot, echo=FALSE, fig.cap="MDS plot of benthic cover composition colored by reef type"}
+# Load the MDS plot from the saved image
+knitr::include_graphics("../output/figures/mds_plot_reeftype.png")
+```
+
+The stress value of the MDS ordination was `r round(mds_data$stress[1], 3)`, which indicates a `r if(mds_data$stress[1] < 0.05) {"excellent"} else if(mds_data$stress[1] < 0.1) {"good"} else if(mds_data$stress[1] < 0.2) {"fair"} else {"poor"}` representation of the multidimensional data in two dimensions.
+
+### Relationship with Distance to Logging
+
+To explore the relationship between benthic communities and distance to logging, we colored the MDS plot by distance to logging operations.
+
+```{r mds-logging, echo=FALSE, fig.cap="MDS plot of benthic cover composition colored by distance to logging"}
+# Load the MDS plot with logging from the saved image
+knitr::include_graphics("../output/figures/mds_plot_logging.png")
+```
+
+We also fitted environmental vectors to the MDS ordination to visualize the direction and strength of the relationship between environmental variables (distance to logging and Secchi depth) and the benthic community composition.
+
+```{r env-vectors, echo=FALSE, fig.cap="MDS plot with environmental vectors showing the relationship between benthic communities and environmental variables"}
+# Load the MDS plot with environmental vectors from the saved image
+knitr::include_graphics("../output/figures/mds_env_vectors.png")
+```
+
+### Correlation Analysis
+
+We calculated Spearman correlations between each benthic category and distance to logging to identify which benthic organisms were most strongly associated with logging proximity.
+
+```{r correlations, echo=FALSE, fig.cap="Top 10 benthic categories correlated with distance to logging"}
+# Load the correlation plot from the saved image
+knitr::include_graphics("../output/figures/logging_correlations.png")
+```
+
+The top benthic categories showing the strongest correlations with distance to logging were:
+
+```{r top-correlations, echo=FALSE}
+# Display top 5 correlations
+top_5 <- correlations %>%
+  slice_head(n = 5)
+
+kable(top_5 %>% select(benthic_code, correlation),
+      col.names = c("Benthic Category Code", "Spearman Correlation with Distance to Logging"),
+      caption = "Top 5 benthic categories correlated with distance to logging") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+### Cluster Analysis
+
+We performed hierarchical clustering on the Bray-Curtis dissimilarity matrix to identify potential groupings of sites based on their benthic community composition. The optimal number of clusters was determined using silhouette width.
+
+```{r clusters, echo=FALSE, fig.cap="MDS plot with site clusters identified through hierarchical clustering"}
+# Load the cluster plot from the saved image
+knitr::include_graphics("../output/figures/mds_clusters.png")
+```
+
+We then analyzed the relationship between these clusters and distance to logging:
+
+```{r cluster-logging, echo=FALSE, fig.cap="Boxplot showing distance to logging by benthic community cluster"}
+# Load the cluster-logging boxplot from the saved image
+knitr::include_graphics("../output/figures/cluster_logging_boxplot.png")
+```
+
+The summary statistics for each cluster in relation to distance to logging:
+
+```{r cluster-summary, echo=FALSE}
+# Display cluster summary
+kable(cluster_logging,
+      col.names = c("Cluster", "Mean Distance to Logging (m)", 
+                    "SD Distance to Logging (m)", "Number of Sites"),
+      caption = "Summary statistics for distance to logging by cluster") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+## Discussion and Conclusions
+
+### Patterns in Benthic Cover Composition
+
+The MDS analysis revealed distinct patterns in benthic cover composition across the study sites. The sites showed a clear dispersion in ordination space, indicating differences in community structure. The stress value of `r round(mds_data$stress[1], 3)` suggests that the two-dimensional representation is a `r if(mds_data$stress[1] < 0.05) {"excellent"} else if(mds_data$stress[1] < 0.1) {"good"} else if(mds_data$stress[1] < 0.2) {"fair"} else {"poor"}` depiction of the multidimensional relationships in the data.
+
+### Site Groupings
+
+The cluster analysis identified `r nrow(cluster_logging)` distinct groups of sites based on their benthic community composition. These clusters showed different characteristics in terms of their benthic cover and relationship with environmental variables.
+
+### Relationship with Logging
+
+Our analysis revealed several important findings regarding the relationship between benthic communities and distance to logging:
+
+1. There was a clear gradient in the MDS plot related to distance to logging, suggesting that logging proximity is associated with changes in benthic community structure.
+
+2. Several benthic categories showed strong correlations with distance to logging, with both positive and negative relationships observed.
+
+3. The environmental vector fitting confirmed that distance to logging was significantly related to the variation in benthic community composition.
+
+4. The identified clusters showed differences in their mean distance to logging, suggesting that certain community types are more likely to occur at different distances from logging operations.
+
+These findings support our hypothesis that sedimentation caused by logging has an impact on coral reef communities. Sites closer to logging operations showed distinct benthic community compositions compared to those further away, suggesting that logging-related sedimentation may be influencing the ecological structure of these reef systems.
+
+## References
+
+Brown, Hamilton. 2018. Estimating the footprint of pollution on coral reefs with models of species turnover. Conservation Biology. DOI: 10.1111/cobi.13079
+
+## Appendix: R Code
+
+The complete R code used for this analysis is available in the following scripts:
+
+1. `01_import_data.R`: Data import
+2. `02_data_wrangling.R`: Data wrangling and preparation
+3. `03_mds_analysis.R`: MDS analysis and visualization
+4. `04_logging_relationship.R`: Analysis of relationship with logging
+5. `05_final_report.Rmd`: This report

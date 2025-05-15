@@ -30,14 +30,14 @@ Keep your scripts short and modular to facilitate debugging. Don't complete all 
 ## Steps
 As you go tick of the steps below. 
 
-[ ]  Import the datasets
-[ ] Wrangle data to make a combined dataset
-[ ] Calculate dissimilarity matrices based on benthic cover composition. Here we will use Euclidean and Bray-Curtis distances
-[ ] Perform MDS analysis to visualize site dispersion in ordination space
-[ ] Identify ecological patterns and potential groupings of sites
-[ ] Assess the stress value to determine the reliability of the MDS representation
-[ ] Explore how ecological communities relate to distance to logging
-[ ] Write an Rmd report summarizing the findings
+[x]  Import the datasets
+[x] Wrangle data to make a combined dataset
+[x] Calculate dissimilarity matrices based on benthic cover composition. Here we will use Euclidean and Bray-Curtis distances
+[x] Perform MDS analysis to visualize site dispersion in ordination space
+[x] Identify ecological patterns and potential groupings of sites
+[x] Assess the stress value to determine the reliability of the MDS representation
+[x] Explore how ecological communities relate to distance to logging
+[x] Write an Rmd report summarizing the findings
 
 As you go, document the methodology. Be sure to output both figures (as png files) and numbers that can be used in the final report.
 
@@ -75,3 +75,24 @@ Variables
 - flow: Factor indicating if tidal flow was "Strong" or "Mild" at the site
 - mindist: Distance to the nearest logging operation (m)
 
+## Examples
+
+### Example: ggplot of Points Using ColorBrewer2
+
+Below is an example of how to create a scatter plot using `ggplot2` with a ColorBrewer2 palette for coloring points by a categorical variable.
+
+```r
+# Load required libraries
+library(ggplot2)
+
+# Create the plot
+ggplot(data, aes(x = MDS1, y = MDS2, color = site)) +
+    geom_point(size = 3) +
+    scale_color_brewer(palette = "Set1") +
+    theme_minimal() +
+    labs(
+        title = "MDS Plot of Benthic Cover Composition",
+        x = "Axis 1",
+        y = "Axis 2",
+        color = "Site"
+    )

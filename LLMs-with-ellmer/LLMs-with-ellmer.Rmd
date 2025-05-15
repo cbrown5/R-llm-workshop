@@ -89,6 +89,7 @@ live_console(chat)
 live_browser(chat)
 ```
 
+
 Try this but experiment with a new system prompts. Here's an example, try your own. 
 
 ```{r eval=FALSE}
@@ -111,6 +112,22 @@ glm() is the spell to cast in the night,
 With family bound, be it gaussian or more,
 And formula written as y ~ x4.
 ...
+```
+
+### Try another provider
+
+
+Google's models: https://ai.google.dev/gemini-api/docs/pricing#gemini-2.0-flash
+
+```{r eval=FALSE}
+chatG <- chat_gemini(
+  system_prompt = "You are a friendly but terse assistant.",
+  model = "gemini-1.5-flash"
+)
+
+live_browser(chatG)
+
+
 ```
 
 ### Programmatically generate content
@@ -253,6 +270,7 @@ chat <- chat_claude(
       max_tokens = 1000
 )
 ```
+
 
 There's a risk that the LLM will hallucinate data if it can't find an answer. To 
 try to prevent this we can set an option , required = FALSE. Then the LLM should

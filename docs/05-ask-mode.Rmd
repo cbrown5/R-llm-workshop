@@ -1,0 +1,6 @@
+# Copilot: Ask mode
+
+Show how to use this. 
+Chain of thought prompting. 
+Attaching references or code files 
+Attaching data files 
