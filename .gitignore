@@ -23,22 +23,13 @@
 
 # DOCS
 ##########
-*.[hH][tT][mM][lL]
 *.[pP][dD][fF]
 *.[pP][pP][tT][xX]
 *.[dD][oO][cC][xX]
 
-# Pictures
-############# 
-*.[pP][nN][gG]
-*.[jJ][pP][eE][gG]
-*.[tT][iI][fF][fF]
-*.[tT][iI][fF]
-
 # Standard Data files
 ######################
 *.[xX][lL][sS][xX]
-*.[tT][xX][tT]
 
 # Spatial files
 ###############
