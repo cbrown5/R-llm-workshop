@@ -1,18 +1,36 @@
 # Part 1: LLM prompting fundamentals
 
-**Time:** 10-10:30am
-
 *Start of practical material*
 
-We'll cover LLM prompting theory through practical examples. This section will give you a deep understanding of how chatbots work and teach you some advanced prompting skills.
+We'll cover LLM prompting theory through practical examples. This section will give you a deep understanding of how chatbots work and teach you some advanced prompting skills. By understanding these technical foundations, you'll be better equipped to leverage LLMs effectively for your R programming and data analysis tasks, and to troubleshoot when you're not getting the results you expect.
 
 **Software requirements:** VScode with R or Rstudio, ellmer package, API license.
 
-This chapter introduces the fundamental concepts of prompting LLMs effectively:
+## Understanding how LLMs work
 
-- Understanding the basics of how LLMs interpret and respond to prompts
-- Learning to structure prompts for optimal results
-- Practical examples demonstrating effective prompting techniques
-- Hands-on exercises to develop your prompting skills
+TODO: fill out this section with R code and explantion. Use the ellmer package to create a simple chatbot. 
 
-Through these practical examples, you'll gain insight into how LLMs process information and how to craft prompts that yield the most accurate and useful responses for R programming and data analysis tasks.
+Add examples for: 
+
+- how models predict 1 token at a time. Use eample of 'marine ecologists like...'
+- THen allow more tokens but play with different temperatures. 
+
+Need to then come up with a good example to compare a complex vs simple model. 
+
+## DIY stats bot 
+
+Show how we can use the system message to create a chat bot. 
+Show system messages of increasing complexity. Add some arbitrary command in the middle to see if the model can remember it. 
+
+
+## Advanced prompting
+
+The point of this section is to show you how github copilot works. Also ellmer has a tools functionality that you can explore on your own. 
+
+Keep working with our stats bot. Make a tool: Get it to output code that can be parsed (e.g. using markdown). 
+Write an R function that parses and runs the code. 
+
+Compare different models for accuracy at following the instructions. 
+
+Show one shot and few shot examples. 
+

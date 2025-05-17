@@ -1,7 +1,0 @@
-# Ethics and Copyright
-
-Model biases 
-Energy use 
-Copyright
-
-Managing data privacy (get it to write code for analysis but not show it the data, keeping data in a different directory). 

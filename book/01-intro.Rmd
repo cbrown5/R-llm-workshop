@@ -1,3 +1,0 @@
-# Introduction 
-
-We'll go over the content in genAI-overview.md (TODO: add link here later)

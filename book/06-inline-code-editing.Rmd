@@ -2,6 +2,26 @@
 
 This chapter explores techniques for using GitHub Copilot's inline code editing capabilities to enhance your R programming workflow:
 
+## 1. Code completion
+
+This is only option supported in Rstudio (last time I checked). 
+
+Example: 
+
+Show how this works. How to get it moving on when its stuck in a loop. 
+Show how to use comments to get it to work more effectively 
+
+## 2. Inline code generation
+
+cmd/cntrl-i . Show how to use this 
+examples: 
+selecting code to fix 
+selecting code to explain 
+Use of /fix, /document etc... as shortcuts to get it to do things.
+
+Note options for microphone, @ (shortcuts) and model choices
+
+
 ## Understanding inline suggestions
 
 - How Copilot generates inline code suggestions

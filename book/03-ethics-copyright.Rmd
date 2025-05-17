@@ -2,6 +2,10 @@
 
 This chapter addresses important ethical and legal considerations when using LLMs for R programming and data analysis:
 
+
+Managing data privacy (get it to write code for analysis but not show it the data, keeping data in a different directory). 
+
+
 ## Model biases
 
 - Understanding inherent biases in LLMs

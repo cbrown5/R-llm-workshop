@@ -2,6 +2,11 @@
 
 This chapter explores how to effectively use GitHub Copilot's Ask mode to plan and structure your R projects:
 
+Show how to use this. 
+Chain of thought prompting. 
+Attaching references or code files 
+Attaching data files 
+
 ## Introduction to Ask mode
 
 - What is Ask mode and how it differs from inline suggestions

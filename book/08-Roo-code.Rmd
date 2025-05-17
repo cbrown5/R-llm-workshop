@@ -1,6 +1,0 @@
-# Roo code 
-
-Show roo code example. 
-Talk through token usage, system prompt, editing prompts and roles, model choice, context window 
-
-Image tool 

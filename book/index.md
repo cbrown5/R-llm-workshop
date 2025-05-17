@@ -35,76 +35,40 @@ experienced professionals. The workshop is not suitable for those that need an i
 
 I'm an Associate Professor of Fisheries Science at University of Tasmania and an Australian Research Council Future Fellow. I specialise in data analysis and modelling, skills I use to better inform environmental decision makers. R takes me many places and I've worked with marine ecosystems from tuna fisheries to mangrove forests. I'm an experienced teacher of R. I have taught R to 100s people over the years, from the basics to sophisticated modelling and for everyone from undergraduates to my own supervisors.
 
-# Course outline
+## Course outline
 
-### Introduction to LLMs for R 
+**Introduction to LLMs for R** 
 
 9-10am
 In this presentation I'll cover how LLMs work, best practices prompt engineering, software, applications for R users and ethics. 
 
-### Part 1 LLM prompting fundamentals
+**Part 1 LLM fundamentals** 
 
 10-10:30am 
-*Start of practical material*
-We'll cover LLM prompting theory through practical examples. This section will give you a deep understanding of how chatbots work and teach you some advanced prompting skills.
-Software: VScode with R or Rstudio, ellmer package, API license. 
 
-#### Tea break: 10:30-10:45
+**Tea break: 10:30-10:45**
 
-#### Understanding how LLMs work 
+**Continue Part 1 LLM fundamentals** 
 
-10:45-11:30am
-Intro to LLM technology, including token input and output, system and user messages, temperature, model choice and more. We'll make our own specialised stats chatbot with R. 
 
-#### Advanced prompting 
-We'll continue with our chatbot to make it a specialist in statistics. We'll learn some advanced prompting skills like structured data, parsing and tool construction. 
+**Ethics and copyright**
+11:30-12:00 
 
-#### Ethics and copyright
+**Lunch break: 12:00-1:00pm**
 
-Discussion. 
+**Part 2 Github copilot for R**
 
-### Part 2 Github copilot for R
+1:00pm-2:45pm
 
-11:30-12:00pm
-I'll show you how you can most effectively use github copilot to plan, code and write up your data analysis and modelling. 
-Software: VScode with R and github copilot license + extension for copilot. 
+**Tea break 2:45-3:00pm**
 
-#### Best practices project setup
-
-How to be organized to maximise LLM effectiveness. Version control. 
-
-#### Lunch: 12-1pm 
-
-After lunch we'll continue with Github Copilot. 
-
-#### Inline code editing
-
-#### Planning your project with Ask mode
-
-#### Creating your code with Edit mode
-
-#### Automated workflows with Agent mode 
-
-#### Tea break 2:45-3:00pm
-
-### Part 3 Advanced LLM agents
+**Part 3 Advanced LLM agents** 
 
 3:00-3:30pm
-Software: VScode with R, Roo code, API license. 
 
-#### Roo code 
-
-Fully automated workflows. 
-
-#### Cost and security
-
-#### Conclusion
+**Conclusion and discussion of what it means for science**
 
 3:30pm-4:00pm
-
-We'll discuss as a group what LLMs mean for the way we do science, and creating community standards. 
-
-
 
 ## Software you'll need for this workshop
 

@@ -1,0 +1,85 @@
+# Part 3: Advanced LLM agents
+
+**Time:** 3:00-3:30pm
+
+
+
+**Software requirements:** VScode with R, Roo code, API license.
+
+
+
+This chapter introduces advanced LLM agents that go beyond GitHub Copilot's capabilities:
+
+
+## Roo code
+
+Fully automated workflows.
+
+This chapter explores Roo code as a powerful tool for creating fully automated workflows in R:
+
+
+Show roo code example. 
+Talk through token usage, system prompt, editing prompts and roles, model choice, context window 
+
+Image tool 
+
+
+## Introduction to Roo code
+
+- What is Roo code and how it differs from other LLM tools
+- Setting up and configuring Roo code in VSCode
+- Understanding Roo's capabilities and limitations
+- The architecture behind Roo's automation capabilities
+
+## Autonomous R programming with Roo
+
+- How Roo interprets task descriptions and requirements
+- Roo's approach to generating, testing, and refining code
+- Monitoring and interacting with Roo during code generation
+- Evaluating and validating Roo-generated solutions
+
+## Advanced use cases for R
+
+- End-to-end data analysis pipelines
+- Complex statistical modeling and inference
+- Custom visualization development
+- Package development and documentation
+
+## Best practices and workflow integration
+
+- Providing effective task descriptions
+- Balancing autonomy with guidance
+- Incorporating Roo into existing development workflows
+- Version control and collaboration with Roo-generated code
+
+Through practical demonstrations, you'll learn how to leverage Roo code to automate sophisticated R programming tasks, potentially saving hours of development time while maintaining high-quality, reliable code.
+
+## Evolution of LLM agents
+
+- How LLM agents differ from simple code completion tools
+- The spectrum of automation in LLM-assisted programming
+- Understanding agent architectures and capabilities
+- Current state-of-the-art in LLM agents for R programming
+
+## Agent capabilities for R
+
+- Code generation and modification
+- Reasoning about complex statistical problems
+- Autonomous debugging and error correction
+- Documentation and explanation generation
+
+## Integration with R workflows
+
+- Connecting agents to your development environment
+- API-based interactions with LLM agents
+- Batch processing vs. interactive assistance
+- Combining multiple agents for complex tasks
+
+## Practical considerations
+
+- Computational requirements and performance
+- Cost structures and optimization strategies
+- Privacy and security implications
+- Evaluating agent output quality
+
+This chapter provides a foundation for understanding more sophisticated LLM agents, preparing you for the next chapter's focus on Roo code as a specific implementation of advanced agent technology for R programming.
