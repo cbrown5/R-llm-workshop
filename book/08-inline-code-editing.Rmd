@@ -1,0 +1,33 @@
+# Inline code editing
+
+This chapter explores techniques for using GitHub Copilot's inline code editing capabilities to enhance your R programming workflow:
+
+## Understanding inline suggestions
+
+- How Copilot generates inline code suggestions
+- Interpreting and evaluating Copilot's suggestions
+- Accepting, modifying, or rejecting suggestions effectively
+- Keyboard shortcuts and efficiency tips
+
+## Guiding Copilot with comments
+
+- Writing effective comments to steer Copilot's suggestions
+- Using natural language to describe your coding intentions
+- Documenting complex statistical procedures for better suggestions
+- Balancing detail and brevity in comments
+
+## Common patterns for R programming
+
+- Data manipulation with tidyverse
+- Statistical modeling and analysis
+- Data visualization with ggplot2
+- Working with specialized R packages
+
+## Troubleshooting and refinement
+
+- Strategies when Copilot provides incorrect or suboptimal suggestions
+- Iterative refinement of code with Copilot's assistance
+- Handling R-specific syntax and idioms
+- Adapting to Copilot's learning curve
+
+Through practical examples and hands-on exercises, you'll learn to seamlessly integrate Copilot's inline suggestions into your R coding process, significantly accelerating your development while maintaining code quality.

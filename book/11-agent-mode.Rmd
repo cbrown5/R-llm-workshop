@@ -1,0 +1,33 @@
+# Automated workflows with Agent mode
+
+This chapter explores how to use GitHub Copilot's Agent mode to create automated workflows for R programming and data analysis:
+
+## Introduction to Agent mode
+
+- What is Agent mode and how it differs from other Copilot features
+- Accessing and using Agent mode in VSCode
+- Understanding the capabilities and limitations of Agent mode
+- When to use Agent mode in your R workflow
+
+## Creating automated workflows
+
+- Defining tasks for Agent mode to accomplish
+- Breaking down complex analyses into manageable steps
+- Setting up appropriate contexts and environments
+- Monitoring and guiding Agent mode's progress
+
+## Common R workflow applications
+
+- Data cleaning and preprocessing
+- Exploratory data analysis
+- Statistical modeling and hypothesis testing
+- Report generation and visualization
+
+## Troubleshooting and optimization
+
+- Handling errors and unexpected results
+- Providing additional context when needed
+- Refining workflow definitions for better results
+- Balancing automation with human oversight
+
+Through practical demonstrations, you'll learn how to leverage Agent mode to automate repetitive or complex R programming tasks, allowing you to focus on higher-level analysis and interpretation while maintaining control over the quality and correctness of your code.

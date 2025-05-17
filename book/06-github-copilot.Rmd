@@ -1,0 +1,22 @@
+# Part 2: Github copilot for R
+
+**Time:** 11:30-12:00pm
+
+I'll show you how you can most effectively use github copilot to plan, code and write up your data analysis and modelling.
+
+**Software requirements:** VScode with R and github copilot license + extension for copilot.
+
+This chapter introduces GitHub Copilot as a powerful tool for R programmers:
+
+- Overview of GitHub Copilot and how it differs from other LLM tools
+- Setting up and configuring Copilot for optimal R programming assistance
+- Understanding Copilot's strengths and limitations for data analysis tasks
+- Strategies for effectively collaborating with Copilot on R projects
+
+We'll explore how Copilot can accelerate your R development process by:
+- Suggesting code completions based on context
+- Generating entire functions and code blocks
+- Helping with documentation and commenting
+- Assisting with debugging and error resolution
+
+Through practical demonstrations, you'll learn how to leverage Copilot's capabilities while maintaining control over your code's quality and correctness, particularly for statistical analysis and data science applications.

@@ -1,0 +1,15 @@
+# Introduction to LLMs for R
+
+**Time:** 9-10am
+
+In this presentation I'll cover how LLMs work, best practices prompt engineering, software, applications for R users and ethics.
+
+This chapter provides an overview of:
+
+- How Large Language Models (LLMs) function and their capabilities
+- Best practices for prompt engineering when working with R
+- Software options available for R users to interact with LLMs
+- Practical applications of LLMs for R programming and data analysis
+- Ethical considerations when using LLMs for scientific work
+
+We'll explore how LLMs can enhance your R workflow, from code generation to data analysis assistance, while maintaining scientific rigor and reproducibility.

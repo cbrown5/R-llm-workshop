@@ -1,0 +1,33 @@
+# Planning your project with Ask mode
+
+This chapter explores how to effectively use GitHub Copilot's Ask mode to plan and structure your R projects:
+
+## Introduction to Ask mode
+
+- What is Ask mode and how it differs from inline suggestions
+- Accessing and using Ask mode in VSCode
+- Understanding the capabilities and limitations of Ask mode
+- When to use Ask mode vs. other Copilot features
+
+## Project planning with Ask mode
+
+- Breaking down complex data analysis tasks
+- Creating project roadmaps and development plans
+- Identifying necessary packages and dependencies
+- Structuring your analysis workflow
+
+## Asking effective questions
+
+- Formulating clear and specific questions
+- Providing sufficient context for accurate responses
+- Iterative questioning strategies
+- Domain-specific questions for statistical analysis
+
+## Implementing Ask mode suggestions
+
+- Translating high-level advice into concrete code
+- Evaluating and adapting suggested approaches
+- Combining Ask mode with inline coding
+- Documentation based on Ask mode explanations
+
+Through practical examples, you'll learn how to leverage Ask mode as a planning and problem-solving tool that can help you approach complex R programming tasks with greater clarity and structure.

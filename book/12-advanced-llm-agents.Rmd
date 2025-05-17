@@ -1,0 +1,37 @@
+# Part 3: Advanced LLM agents
+
+**Time:** 3:00-3:30pm
+
+**Software requirements:** VScode with R, Roo code, API license.
+
+This chapter introduces advanced LLM agents that go beyond GitHub Copilot's capabilities:
+
+## Evolution of LLM agents
+
+- How LLM agents differ from simple code completion tools
+- The spectrum of automation in LLM-assisted programming
+- Understanding agent architectures and capabilities
+- Current state-of-the-art in LLM agents for R programming
+
+## Agent capabilities for R
+
+- Code generation and modification
+- Reasoning about complex statistical problems
+- Autonomous debugging and error correction
+- Documentation and explanation generation
+
+## Integration with R workflows
+
+- Connecting agents to your development environment
+- API-based interactions with LLM agents
+- Batch processing vs. interactive assistance
+- Combining multiple agents for complex tasks
+
+## Practical considerations
+
+- Computational requirements and performance
+- Cost structures and optimization strategies
+- Privacy and security implications
+- Evaluating agent output quality
+
+This chapter provides a foundation for understanding more sophisticated LLM agents, preparing you for the next chapter's focus on Roo code as a specific implementation of advanced agent technology for R programming.

@@ -1,6 +1,0 @@
-# Copilot: Edit mode
-
-### Code
-
-### Writing md documents 
-

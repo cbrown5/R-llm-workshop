@@ -1,0 +1,33 @@
+# Creating your code with Edit mode
+
+This chapter explores how to leverage GitHub Copilot's Edit mode to efficiently create and modify R code:
+
+## Understanding Edit mode
+
+- What is Edit mode and how it differs from other Copilot features
+- Accessing and using Edit mode in VSCode
+- Edit mode's capabilities for code generation and transformation
+- When to use Edit mode in your R workflow
+
+## Code generation strategies
+
+- Creating functions and code blocks from natural language descriptions
+- Generating data manipulation pipelines
+- Building statistical models and analysis scripts
+- Creating data visualization code
+
+## Code transformation techniques
+
+- Refactoring existing R code for better performance or readability
+- Converting between base R and tidyverse approaches
+- Translating code between different statistical frameworks
+- Adapting code examples to your specific needs
+
+## Quality control and refinement
+
+- Evaluating and testing generated code
+- Iterative improvement through Edit mode
+- Handling edge cases and error conditions
+- Ensuring code readability and maintainability
+
+Through hands-on examples, you'll learn to use Edit mode as a powerful tool for both creating new R code and transforming existing code, significantly accelerating your development process while maintaining high-quality, reliable code.

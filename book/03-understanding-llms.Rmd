@@ -1,0 +1,17 @@
+# Understanding how LLMs work
+
+**Time:** 10:45-11:30am
+
+Intro to LLM technology, including token input and output, system and user messages, temperature, model choice and more. We'll make our own specialised stats chatbot with R.
+
+This chapter explores the technical aspects of LLMs:
+
+- Token-based processing: how LLMs interpret and generate text
+- The role of system messages vs. user messages in controlling LLM behavior
+- Temperature and other parameters that affect output variability
+- Differences between various LLM models and how to choose the right one
+- Hands-on exercise: Creating a specialized statistics chatbot using R
+
+By understanding these technical foundations, you'll be better equipped to leverage LLMs effectively for your R programming and data analysis tasks, and to troubleshoot when you're not getting the results you expect.
+
+We'll use the ellmer package to interact with LLMs directly from R, allowing us to create a customized statistics assistant that can help with data analysis tasks.

@@ -1,0 +1,18 @@
+# Part 1: LLM prompting fundamentals
+
+**Time:** 10-10:30am
+
+*Start of practical material*
+
+We'll cover LLM prompting theory through practical examples. This section will give you a deep understanding of how chatbots work and teach you some advanced prompting skills.
+
+**Software requirements:** VScode with R or Rstudio, ellmer package, API license.
+
+This chapter introduces the fundamental concepts of prompting LLMs effectively:
+
+- Understanding the basics of how LLMs interpret and respond to prompts
+- Learning to structure prompts for optimal results
+- Practical examples demonstrating effective prompting techniques
+- Hands-on exercises to develop your prompting skills
+
+Through these practical examples, you'll gain insight into how LLMs process information and how to craft prompts that yield the most accurate and useful responses for R programming and data analysis tasks.
