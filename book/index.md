@@ -12,7 +12,9 @@ link-citations: yes
 github-repo: cbrown5/R-llm-workshop
 ---
 
-# Summary
+# Quality R analysis with large language models
+
+## Summary
 
 If you are using R you are probably using language models (e.g. ChatGPT) to help you write code, but are you using them in the most effective way? Language models have different biases to humans and so make different types of errors. This 1-day workshop will cover how to use language models to learn R and conduct reliable environmental analyses. We will cover:  
 

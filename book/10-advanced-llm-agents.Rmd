@@ -1,4 +1,4 @@
-# Part 3: Advanced LLM agents
+# Advanced LLM agents
 
 **Time:** 3:00-3:30pm
 

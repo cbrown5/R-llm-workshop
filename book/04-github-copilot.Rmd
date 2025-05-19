@@ -1,4 +1,4 @@
-# Part 2: Github copilot for R
+# Github copilot for R
 
 **Time:** 11:30-12:00pm
 

@@ -1,4 +1,4 @@
-# Part 1: LLM prompting fundamentals
+# LLM prompting fundamentals
 
 *Start of practical material*
 
@@ -28,7 +28,11 @@ Large Language Models (LLMs) operate by predicting the next token in a sequence,
 
 First, let's set up our environment and create a connection to an LLM. 
 
-```{r setup-ellmer, eval=FALSE}
+```{r eval=TRUE, echo=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+```{r eval=FALSE}
 library(ellmer)
 
 # Initialize a chat with Claude
