@@ -4,24 +4,136 @@
 
 We'll cover LLM prompting theory through practical examples. This section will give you a deep understanding of how chatbots work and teach you some advanced prompting skills. By understanding these technical foundations, you'll be better equipped to leverage LLMs effectively for your R programming and data analysis tasks, and to troubleshoot when you're not getting the results you expect.
 
-**Software requirements:** VScode with R or Rstudio, ellmer package, API license.
+**Software requirements:** VScode with R or Rstudio, [ellmer package](https://ellmer.tidyverse.org/), API license.
+
+## Setup authorisation
+
+First, you need to get an API key from the provider. Login to the provider's website and
+follow the instructions. 
+
+Then, you need to add the key to your `.Renviron` file: 
+
+`usethis::edit_r_environ()`
+
+Then type in  your key like this:
+
+`OPENROUTER_API_KEY="xxxxxx"`
+
+Then restart R. `ellmer` will automatically find your key so long as you use the recommended envirment variable names. 
+See `?ellmer::chat_openrouter` (or `chat_xxx` where xxx is whatever provider you are using). 
 
 ## Understanding how LLMs work
 
-TODO: fill out this section with R code and explantion. Use the ellmer package to create a simple chatbot. 
+Large Language Models (LLMs) operate by predicting the next token in a sequence, one token at a time. To understand how this works in practice, we'll use the `ellmer` package to demonstrate some fundamental concepts.
 
-Add examples for: 
+First, let's set up our environment and create a connection to an LLM. 
 
-- how models predict 1 token at a time. Use eample of 'marine ecologists like...'
-- THen allow more tokens but play with different temperatures. 
+```{r setup-ellmer, eval=FALSE}
+library(ellmer)
 
-Need to then come up with a good example to compare a complex vs simple model. 
+# Initialize a chat with Claude
+chat <- chat_openrouter(
+  system_prompt = "",
+  model = "anthropic/claude-3.5-haiku",
+  api_args = list(max_tokens = 50)
+)
+chat$chat("Ecologists like to eat ")
+
+```
+
+Notice that the model doesn't do what we intend, which is complete the sentence. LLMs have a built in Let's use the 'system prompt' to provide it with strong directions. 
+
+::: {.tip}
+**Tip:** The system prompt sets the overall context for a chat. It is meant to be a stronger directive than the user prompt. In most chat interfaces (e.g. copilot) you are interacting with the user prompt. The provider has provided the system prompt, [here's the system prompt for the chat interface version of anthropic (Claude)](https://www.reddit.com/r/ClaudeAI/comments/1ixapi4/here_is_claude_sonnet_37_full_system_prompt/)
+:::
+
+```{r setup-ellmer, eval=FALSE}
+chat <- chat_openrouter(
+  system_prompt = "Complete the sentences the user providers you. Continue from where the user left off. Provide one answer only. Don't provide any explanation, don't reiterate the text the user provides",
+  model = "anthropic/claude-3.5-haiku",
+#   model = "anthropic/claude-3.7-sonnet",
+  api_args = list(max_tokens = 50)
+)
+chat$chat("Ecologists like to eat ")
+
+```
+
+::: {.tip}
+**Tip:** It is generally more effective to tell the LLM **what to do** rather than **what not to do** (just like people!). 
+:::
+
+### Token-by-token prediction
+
+LLMs don't understand text as complete sentences or concepts; they predict one token at a time based on the patterns they've learned during training. A token is roughly equivalent to a word part, a word, or a common phrase.
+
+Let's see this in action by generating text token by token with a very limited number of tokens:
+
+```{r token-prediction, eval=FALSE}
+
+ prompt <- "Ecologists like to eat"
+
+for(i in 1:5) {
+        single_token_chat <- chat_openrouter(
+          system_prompt = "Complete the sentences the user providers you. Continue from where the user left off. Provide one answer only. Don't provide any explanation, don't reiterate the text the user provides",
+        model = "anthropic/claude-3.5-haiku",
+        api_args = list(max_tokens = 1)
+    )
+    response <- single_token_chat$chat(prompt)
+    prompt <- paste(prompt, response, sep = "")
+    cat("Token", i, ":", response, "\n")
+}
+
+# Display the complete sequence
+cat("Full sequence:", prompt, "\n")
+```
+
+This shows how the model builds its response incrementally (actually its not quite how streams of predictions are implemented, but it gives you the right idea). Each token is predicted based on the probability distribution of possible next tokens given the context.
+
+### Temperature effects
+
+The "temperature" parameter controls the randomness of token predictions. Lower temperatures (closer to 0) make the model more deterministic, while higher temperatures (closer to 2) make it more creative and unpredictable.
+
+Let's compare responses with different temperatures:
+
+```{r temperature-comparison, eval=FALSE}
+# Create chats with different temperature settings
+chat_temp <- chat_openrouter(
+          system_prompt = "Complete the sentences the user providers you. Continue from where the user left off. Provide one answer only. Don't provide any explanation, don't reiterate the text the user provides",
+        model = "anthropic/claude-3.5-haiku",
+        api_args = list(max_tokens = 50, temperature = 0)
+    )
+
+chat_temp$chat("Marine ecologists like to eat ")
+
+chat_temp <- chat_openrouter(
+          system_prompt = "Complete the sentences the user providers you. Continue from where the user left off. Provide one answer only. Don't provide any explanation, don't reiterate the text the user provides",
+        model = "anthropic/claude-3.5-haiku",
+        api_args = list(max_tokens = 50, temperature = 2)
+    )
+
+chat_temp$chat("Marine ecologists like to eat ")
+
+```
+
+At low temperatures, you'll notice the model consistently produces similar "safe" completions that focus on the most probable next tokens. As temperature increases, the responses become more varied and potentially more creative, but possibly less coherent.
+
+### Comparing model complexity
+
+Different models have different capabilities based on their size, training data, and architecture. 
+
+For example `anthropic/claude-3.5-haiku` has many fewer parameters than `anthropic/claude-3.7-sonnet`. This means that the latter model is more complex and can handle more nuanced tasks. However, haiku is significantly cheaper to run. Haiku is 80c per million input tokens vs $3 for Sonnet. Output tokens are $4 vs $15
+
+For the kind of simple tasks we are doing here, both give similar results. We will compare models later in the workshop when we use github copilot. 
+
+### Understanding context windows
+
+LLMs have a limited "context window" - the amount of text they can consider when generating a response. This affects their ability to maintain coherence over long conversations. For most LLMs this is about 100-200K tokens, which includes input and output. However, Google's models have up to 1 million tokens. 
+
+We'll come back to the context window when we explore more advanced tools with longer prompts. These simple prompts don't come close to using up the context window. 
 
 ## DIY stats bot 
 
-Show how we can use the system message to create a chat bot. 
-Show system messages of increasing complexity. Add some arbitrary command in the middle to see if the model can remember it. 
-
+UP TO HERE
 
 ## Advanced prompting
 
@@ -32,5 +144,5 @@ Write an R function that parses and runs the code.
 
 Compare different models for accuracy at following the instructions. 
 
-Show one shot and few shot examples. 
+Show one shot and few shot examples.
 
