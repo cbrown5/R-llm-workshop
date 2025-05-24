@@ -137,28 +137,58 @@ We'll come back to the context window when we explore more advanced tools with l
 
 ## DIY stats bot 
 
-Let's put together what we've learnt so far and built our own chatbot. I've provided you with a detailed system prompt that implements a chat bot that specialises in helping with statistics. First, 
+Let's put together what we've learnt so far and built our own chatbot. I've provided you with a detailed system prompt that implements a chat bot that specialises in helping with statistics. First, we read the bot markdown file from github, then we can use it in our chat session. 
 
 ```{r, eval=FALSE}
 
-stats_bot <- readLines("resources/DIY-stats-bot-system.md")
+stats_bot <- readr::read_file(url("https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/DIY-stats-bot-system.md"))
 
 chat_stats <- chat_openrouter(
           system_prompt = stats_bot,
         model = "anthropic/claude-3.7-sonnet",
         api_args = list(max_tokens = 5000)
     )
-live_browser(chat_stats)
-chat_stats$chat("Who are you?")
-chat_stats$chat("Use stats mode to provide me with some suggestions for how I could make a predictive model of a variable y, where I have a large number of potential explanatory variables. ")
-chat_stats$chat("y is integer count data")
+
 ```
+
+`ellmer` has a few different options for interacting with chat bots. We've seen the 'chat' option. We can also have a `live_console()` or `live_browser()` (requires installing `shinychat`) chat. Let's use one of those options. With `live_browser()` you'll also see the browser automatically formats any markdown in the chat. 
+
+```{r, eval=FALSE}
+live_browser(chat_stats)
+# live_console(chat_stats)
+```
+
+Here are some suggested questions to start, but feel free to try your own. 
+"Who are you?"
+"Use stats mode to provide me with some suggestions for how I could make a predictive model of a variable y, where I have a large number of potential explanatory variables. "
+
+
+::: {.tip}
+**Tip:** How many of you started using my "DIY-stats-bot-system.md" without first reading it? Did you find the easter egg in my prompt? For security you should ALWAYS read prompts before you start running them through LLM chats. We'll see later that LLMs can be given 'tools' which allow them to run code on your computer. Its easy to see how a malicious prompt could mis-use these tools. We'll cover security later. 
+:::
+
+### Improving the stats bot
+
+Make a local copy of the stats bot system prompt and try editing it. Try different commands within it and see how your chat bot responds (you'll have to open a new chat object each time). 
+
+Here's some ideas. 
+
+- Try making a chat bot that is a verhment Bayesian that abhors frequentist statistics.   
+- You could provide it with more mode-specific instructions. For instance, try to get the chatbot to suggest appropriate figures for verifying statistical models. 
+- Try different temperatures. 
+- Add your own easter egg. 
+
+::: {.tip}
+**Tip:** Adjectives, CAPITALS, `*markdown*` formatting can all help create emphasis so that your model more closely follows your commands. I used 'abhors' and 'verhment' above on purpose. 
+:::
 
 ## Advanced prompting
 
-The point of this section is to show you how github copilot works. Also ellmer has a tools functionality that you can explore on your own. 
 
-Keep working with our stats bot. Make a tool: Get it to output code that can be parsed (e.g. using markdown). 
+UP TO HERE, add one shot/ few shot examples
+
+Then make a tool: Get it to output code that can be parsed (e.g. using markdown). 
+
 Write an R function that parses and runs the code. 
 
 Compare different models for accuracy at following the instructions. 
