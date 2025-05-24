@@ -110,7 +110,7 @@ If you are using Rstudio, make sure you get a Github Copilot account and connect
 
 You will need API (application programming interface) access to an LLM to do all the examples in this workshop. This will allow us to interact with LLMs directly via R code. API access is on a pay per token basis. You will need to create an account with one of the below providers and then buy some credits (USD10 should be sufficient). 
 
-Here are some popular choices: 
+Here are some popular choices:
 
 - [OpenRouter](https://openrouter.ai/sign-up) (recommended as gives you flexible access to lots of models)
 - [Anthropic](https://console.anthropic.com/login?returnTo=%2F%3F)

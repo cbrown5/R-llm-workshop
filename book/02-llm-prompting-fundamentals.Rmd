@@ -137,7 +137,22 @@ We'll come back to the context window when we explore more advanced tools with l
 
 ## DIY stats bot 
 
-UP TO HERE
+Let's put together what we've learnt so far and built our own chatbot. I've provided you with a detailed system prompt that implements a chat bot that specialises in helping with statistics. First, 
+
+```{r, eval=FALSE}
+
+stats_bot <- readLines("resources/DIY-stats-bot-system.md")
+
+chat_stats <- chat_openrouter(
+          system_prompt = stats_bot,
+        model = "anthropic/claude-3.7-sonnet",
+        api_args = list(max_tokens = 5000)
+    )
+live_browser(chat_stats)
+chat_stats$chat("Who are you?")
+chat_stats$chat("Use stats mode to provide me with some suggestions for how I could make a predictive model of a variable y, where I have a large number of potential explanatory variables. ")
+chat_stats$chat("y is integer count data")
+```
 
 ## Advanced prompting
 
