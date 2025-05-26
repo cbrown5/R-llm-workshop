@@ -1,0 +1,105 @@
+# Inline code editing
+
+This chapter explores techniques for using GitHub Copilot's inline code editing capabilities to enhance your R programming workflow. 
+
+## 1. Code completion
+
+This is only option supported in Rstudio (last time I checked). 
+
+Assuming you have github copilot set-up you just need to start a new R script (remember to keep it organized and give it a useful name) and start typing. You'll see suggested code completions appear in grey. Hit `tab` to complete them. 
+
+Let's read in the benthic site data and fish counts: 
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readr)
+
+dat <- read_csv(url("https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv"))
+
+head(dat)
+summary(dat)
+```
+
+Now try create a ggplot of `secchi` (a measure of water clarity, higher values mean clearer water) and `pres.topa` (count of topa, the bumphead parrotfish). Start typing `gg` and see what happens. 
+
+You should a recommendation for a ggplot. But it won't know the variable names. 
+
+::: {.tip}
+**Tip:** Sometimes GC gets stuck in a loop and keeps recommending the same line. To break it out of the loop try typing something new.  
+:::
+
+## 2. Using comments 
+
+The code completion is using your script and all open scripts in VScode to predict your next line of code. It won't know the variable names unless you've provided that. One way is to include them in the readme.md file and have that open, another is to use comments in the active script (which tends to work more reliably), e.g.
+
+```
+# Make a point plot of secchi against pres.topa
+gg...
+```
+
+Should get you the write ggplot. Using variable names in your prompts is more precise and will help the LLM guess the right names. 
+
+You could also try putting key variable names in comments at the top of your script. 
+
+Another way to use autocomplete is not to write R at all, just to write comments and fix the R code. Try templating a series of plots like:
+
+```
+# Make a point plot of secchi against pres.topa with a stat_smooth
+
+# Plot logged (two categories) and pres.topa as a boxplot
+
+# Plot CB_cover (branching coral cover) against secchi
+```
+
+Now go back through and click under each line to get the suggestions. 
+
+This strategy is great in data wrangling workflows. As a simple example try make this grouped summary using comments only: 
+
+```{r}
+dat %>%
+    group_by(logged, reeftype) %>%
+    summarize(mean_topa = mean(pres.topa), 
+                mean_CB = mean(CB_cover))
+```
+
+To make this I might write this series of comments: 
+
+```
+    #group dat by logged and reeftype
+    #summarize pres.topa and CB_cover
+```
+
+If the variable names are documented above you can ofter be lazier and less precise with variable names here. 
+
+## 3. Code completion settings
+
+Click the octocat in the bottom right corner of VScode to fine-tune the settings. You can enable/disable code completions (sometimes they are annoying e.g. when writing a workshop!). 
+
+You can also enable 'next edit suggestions'. These are useful if editing an exisiting file. e.g. if you misspelt 'sechi' then updated it in one place, it will suggest updates through the script. Hit tab to move through these. 
+
+The box will also tell you if indexing is available. Indexing allows AI to search your code faster. 
+
+## 4. Inline code generation
+
+In VScode you can also access an inline chat box with cmd/cntrl-i. This chat can chat as well as edit code. 
+
+You can click anywhere and active this. I find it most useful though to select a section of code and then hit cmd/cntrl-i. 
+
+This is most useful to 
+- Add new code
+- Explain code
+- Fix bugs 
+- Add tests 
+
+Try select some of your code (e.g. a ggplot) and ask it to explain what the code does. 
+
+Now try select one of your plots and ask for some style changes (e.g. theme, colours, axes label sizes etc...). 
+
+Now add a bug into one of your plots. See if the inline chatbox can fix the bug. 
+
+### Prompt shortcuts
+
+Use the `/` to bring up a list of prompt shortcuts. The most useful in R are `/explain`, `/fix`, `/tests`. Try select some code then use these to see what happens. 
+
+
+

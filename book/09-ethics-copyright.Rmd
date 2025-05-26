@@ -1,0 +1,51 @@
+# Ethics and copyright
+
+This chapter overviews important ethical and legal considerations when using LLMs for R programming and data analysis. 
+
+## Model biases
+
+- Understanding inherent biases in LLMs
+- Recognizing when biases might affect statistical analysis
+- Techniques for mitigating bias in LLM-generated code and analysis
+
+## Energy use
+
+- Environmental impact of LLM usage
+- Balancing computational efficiency with analytical needs
+- Strategies for reducing the carbon footprint of LLM-powered workflows
+
+## Copyright
+
+- Legal considerations when using LLM-generated code
+- Understanding the licensing implications of LLM outputs
+- Best practices for attribution and documentation
+- In general you own works you create with an LLM. 
+- This also means you have the liability for any works you create (not normally an issue in environmental sciences). 
+- e.g. you couldn't blame the LLM if you had to retract a paper due to incorrect statistics. 
+- You should acknolwedge LLM use in academic publications, and what you used it for. 
+
+## Managing data privacy
+
+Any prompt you send to an LLM provider is going to the server of an AI company (e.g. Google). So its important to be mindful of what information you are including in your prompts. 
+
+The data you send (including text data) will be covered by the privacy policy of the LLM provider. Some services claim to keep your data private (e.g. the Copilot subscription my University has). Public services will tend to retain the right to use any data you enter as prompts. 
+
+This means if you put your best research ideas into chatGPT, its possible that it will repeat them later to another user who asks similar questions. So be mindful of what you are writing. 
+
+Before using an LLM to help with data analysis, be sure you understand the IP and ethical considerations involved with that data. For instnace, if you have human survey data you may not be allowed to send that to a foreign server, or reveal any information to an LLM. 
+
+In that case you have three options. 
+
+#### Option 1: Locally hosted LLM
+
+Use a locally hosted LLM. We won't cover setting these up in this workshop. Locally hosted LLMs run on your computer. They can be suitable for simpler tasks and if you have a reasonably powerful GPU. Downsides are they do not have the performance of the industry leading LLMs and response times can be slower. 
+
+#### Option 2: Keep data seperate from code development. 
+
+Use the LLM to help generate code to analyse the data, but do not give the LLM the data or the results. I would recommend keeping the data in a different directory altogether (ie not your project directory), so that LLM agents don't inadvertently access the raw data. You also want to be sure that the LLM isn't returning results of data analysis to itself (and therefore you reveal private information to the LLM). 
+
+It can be helpful to generate some simulated data to use for code development, so there is no risk of violating privacy. 
+
+#### Option 3: Ignore sensitive folders 
+
+Some LLM 

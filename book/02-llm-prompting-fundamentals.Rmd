@@ -24,7 +24,9 @@ See `?ellmer::chat_openrouter` (or `chat_xxx` where xxx is whatever provider you
 
 ## Understanding how LLMs work
 
-Large Language Models (LLMs) operate by predicting the next token in a sequence, one token at a time. To understand how this works in practice, we'll use the `ellmer` package to demonstrate some fundamental concepts.
+Large Language Models (LLMs) operate by predicting the next token in a sequence, one token at a time. To understand how this works in practice, we'll use the `ellmer` package to demonstrate some fundamental concepts. 
+
+By using `ellmer` to access a LLM through the API we get as close to the raw LLM as we are able. Later on we will use 'coding assistants' (e.g. copilot) which put another layer of software between you and the LLM. 
 
 First, let's set up our environment and create a connection to an LLM. 
 
@@ -164,7 +166,7 @@ Here are some suggested questions to start, but feel free to try your own.
 
 
 ::: {.tip}
-**Tip:** How many of you started using my "DIY-stats-bot-system.md" without first reading it? Did you find the easter egg in my prompt? For security you should ALWAYS read prompts before you start running them through LLM chats. We'll see later that LLMs can be given 'tools' which allow them to run code on your computer. Its easy to see how a malicious prompt could mis-use these tools. We'll cover security later. 
+**Tip:** How many of you started using "DIY-stats-bot-system.md" without first reading it? Did you find the easter egg in my prompt? For security you should ALWAYS read prompts before you start running them through LLM chats. We'll see later that LLMs can be given 'tools' which allow them to run code on your computer. Its easy to see how a malicious prompt could mis-use these tools. We'll cover security later. 
 :::
 
 ### Improving the stats bot
@@ -184,14 +186,182 @@ Here's some ideas.
 
 ## Advanced prompting
 
+LLMs can be given access to tools (github copilot is an example). Tools give the LLMs the ability to use tools to perform tasks on your computer. For example, copilot can edit files. 
 
-UP TO HERE, add one shot/ few shot examples
+The next step beyond tool use is to create agents. Agents write commands then also run those commands and feed the results back to themselves. Agents are therefore autonomous coders.  
 
-Then make a tool: Get it to output code that can be parsed (e.g. using markdown). 
+::: {.tip}
+**Tip:** LLM "Tools" give the LLM assistant the ability to take actions on your computer. There are a huge range of tools out there, including tools that write files, edit files, perform web searchers and download data. "Agents" are LLMs that return the results of tool use back to themselves. Therefore they can code and improve that code without intervention from humans (though intervention is often needed).
+:::
 
-Write an R function that parses and runs the code. 
+We can turn out chatbot into a simple agent. This will help you understand how agents work. What we will do is give a command to format all R code in a specific way. Then we can have an R function that checks every new response for R code, if it detects R code it will write this to a file. 
 
-Compare different models for accuracy at following the instructions. 
+### Zero-shot 
 
-Show one shot and few shot examples.
+First make a new system message as a .md file, e.g. here: "resources/stats-bot-simple.md" in your project directory. 
 
+Add to this message: 
+
+```
+You are an expert in statistial analysis with the R program.  Write your response with R code in <code></code> tags.
+```
+
+(You can also use our chat bot from before, but it might be simpler to make this shorter one)
+
+Now give the system message a test. 
+
+```{r, eval=FALSE}
+
+stats_bot_simple <- readr::read_file("resources/stats-bot-simple.md")
+
+chat_stats <- chat_openrouter(
+          system_prompt = stats_bot,
+        model = "anthropic/claude-3.7-sonnet",
+        api_args = list(max_tokens = 400)
+    )
+
+response <- chat_stats$chat("What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data, code to show how to do the regression and summary plots. ")
+response
+```
+
+If it works the response should look something like this: 
+
+```
+<code>
+dat <- data.frame(temperature = rnorm(100, mean = 20))
+dat$fish_size <- 10 + temperature*2 + rnorm(100)
+model <- lm(fish_size ~ temperature)
+</code>
+```
+
+It didn't work for me when I tried! It kept returning the R code in markdown formatting in inconsistent ways. We want a consistent response so we can parse it easily. 
+
+Anyway, repeat that a few times to see if it consistently formats the code as we requested. You can also try using "anthropic/claude-3.5-haiku" as your model (its cheaper) to see if that is smart enough to consistently format the code. 
+
+::: {.tip}
+**Tip:** What we just tried is called 'zero-shot prompting'. Zero-shot means we didn't give the LLM any examples to follow, we assume it knows what to do. 
+:::
+
+
+### One-shot and multi-shot prompts
+
+Giving an example (one-shot) or multiple examples (multi-shot) can improve the precision of the LLMs responses. Let's update the system prompt to see if we get more reliable answers with some examples:
+
+```
+You are an expert in statistial analysis with the R program.  Write your response with R code in <code></code> tags.
+
+### Examples of formatting R code
+
+Single line example
+
+<code> dat <- read.csv("myfile.csv") </code> 
+
+Multiple line example
+
+<code> 
+dat <- read.csv("myfile.csv") 
+ggplot(dat) + 
+  aes(x = x, y = y) + 
+  geom_point() 
+</code> 
+
+```
+
+I saved this updated system to a file: "resources/stats-bot-simple-multiple-shot.md". Now test it out. 
+
+```{r}
+stats_bot_simple <- readr::read_file("resources/stats-bot-simple-multiple-shot.md")
+
+chat_stats <- chat_openrouter(
+          system_prompt = stats_bot_simple,
+        model = "anthropic/claude-3.7-sonnet",
+        api_args = list(max_tokens = 1000)
+    )
+
+response <- chat_stats$chat("What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data and code to show how to do the regression. ")
+response
+``` 
+
+That worked for me. Hopefully it works for you too? 
+
+Test that to see if it gives more reliable examples. We have to be a bit careful with choosing examples as these are for formatting, not for modelling. For instance, we don't want to inadventantly suggest the LLM always recommend a particular statistical model type.   '
+
+
+### Making a simple tool 
+
+Tools are algorithms your assistant can use to perform tasks on your computer or a server. They are what turns a chatbot that can only respond in text into an Assistant that can write code that takes actions. 
+
+::: {.tip}
+**Tip:** You might also see the term 'MCP' (Model Context Protocol) used in association with LLM assistants. MCP is an interoperable standard for developing tools. This means a tool I write is consistent with other people's tools. This helps developers and LLMs read and interpret tools. It is also important to allow LLM to use multiple tools at the same time. '
+:::
+
+If the request to use <code></code> tags works we can then parse the responses and save them as a file, ready to run. First create an R function that can parse responses and search for <code></code> tags (you can cut and paste my function or try using copilot to make one for you, it's good at this type of tedious task):
+
+```{r, eval=FALSE}
+
+write_response <- function(response, filename = "rscript.R"){
+  # Extract the text between <code> and </code> tags using regex
+  # Using dotall mode (?s) to match across multiple lines
+  code_pattern <- "(?s)<code>(.*?)</code>"
+  code_matches <- regmatches(response, gregexpr(code_pattern, response, perl = TRUE))
+  
+  # Flatten the list and remove the tags
+  if(length(code_matches) > 0 && length(code_matches[[1]]) > 0) {
+    code_texts <- gsub("<code>|</code>", "", code_matches[[1]])
+    
+    # Write all extracted code to the file
+    writeLines(code_texts, filename)
+    cat("Code written to", filename, "\n")
+  } else {
+    warning("No code tags found in the response")
+  }
+}
+
+```
+
+Now we can set-up our R code to write any suggestions to file:
+
+```{r, eval=FALSE}
+
+chat_stats <- chat_openrouter(
+          system_prompt = stats_bot,
+        model = "anthropic/claude-3.7-sonnet",
+        api_args = list(max_tokens = 400)
+    )
+
+response <- chat_stats$chat("What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data and code to show how to do the regression. ")
+write_response(response, filename = "attempt1.R")
+```
+
+Now check the file we just created. If it looks ok then try running it: 
+
+```{r}
+#CHECK THE FILE before running!!!!
+source("attempt1.R")
+```
+
+The `source()` command will attempt to run the R code that was created. If it works you should see some plots pop up. 
+
+### Summary of agents and tools
+
+We've implemented a rudimentary tool and the beginnings of an LLM agent. Going forwards we'll used specialised software for these tasks. You won't need to code them yourself. But coding this examples is helpful to understand the fundamentals of how they work. To recap, the basic workflow an agent follows is: 
+
+1. Set-up a system prompt with detailed instructions for how the LLM should format responses
+2. User asks a question that is sent to the LLM
+3. LLM responds and sends response back to user
+4. Software on user's computer attempts to parse and act on the response according to pre-determined rules
+5. User's computers enacts the commands in the response and provides results to user
+
+Tools like Copilot Agent mode then go a step further and send the results of step 5 back to the LLM, which then interprets the results and the loop continues (sometimes with and sometimes without direct user approval). 
+
+If you want to go further with making your own tools, then I suggest you check out `ellmer` package. It supports tool creation in a structured way. For instance, I made a tool that allows an [LLM to download and save ocean data to your computer](https://ellmer.tidyverse.org/articles/tool-calling.html).  
+
+## Reflection on prompting fundamentals 
+
+The key things I hoped you learnt from this lesson are: 
+
+- Basic LLM jargon, including tokens, temperature, API access and different LLM models. 
+- Some different prompt strategies, including role prompting, emphasis, chain of thought and one-shot. 
+- The fundamentals of tool use and agents. 
+
+Now you understand the basics, let's get into Github Copilot. 

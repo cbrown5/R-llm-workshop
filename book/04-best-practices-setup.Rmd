@@ -1,0 +1,133 @@
+# Best practices project setup
+
+This chapter focuses on establishing a project structure and workflow that can get the most out of your LLM assistants.  
+
+## Project organization
+
+Its helpful to set-up your projects in an organized and modularised way. In my experience most R users write most of their analysis in one long script. Don't do this. It will be hard for 'future you' to navigate. If its hard for a human to navigate, it will also be hard for the assistant. Here's how I set-up my projects. 
+
+### General guidance
+
+- Create a new folder for each new project. 
+- Optional but recommended: Initiliaze a git repo in that folder (I use github desktop). 
+- Set-up folders and files in an organized way
+- Ideally put the data in this folder also. However, large datasets or sensitive data can be kept in other folders. 
+- Keep scripts short and modularized (e.g one for data analysis, one for modelling). 
+
+Once you have your folder you can make it an Rstudio project (if using Rstudio) or just use 'open folder' in vscode. If want to link multiple folders in then use VScode workspaces. 
+
+If you are not using git (version control), then I recommend you learn. LLM code editing tools can cause you to lose older versions. So best to back them up with proper use of git. 
+
+### Project directory structure example 
+
+Here's an example of a project directory structure. You don't have to use this strucutre. the important thing is to be organized. 
+
+```
+my-project/
+├── README.md 
+├── .gitignore
+├── Scripts/ # R code
+│   ├── 01_data-prep.R
+│   ├── 02_data-analysis.R
+│   └── 03_plots.R
+├── Shared/       
+│   ├── Outputs/
+│   │   ├── Figures/
+│   │   ├── data-prep/
+│   │   └── model-objects/
+│   ├── Data/
+│   └── Manuscripts/   
+└── Private/
+```
+
+## The README.md file 
+
+The README.md is the memory for the project. If you use github it will also be the landing page for your repo, which is handy. 
+
+Remember you are writing this for you and the LLMs. So think of it like a prompt. 
+
+Here's an example of some of the information you might want to include in your readme. 
+
+```
+# PROJECT TITLE
+
+## Summary
+
+## Aims
+
+## Data methodology
+
+## Tech context
+- We will use the R program
+- tidyverse packages for data manipulation
+- ggplot2 for data visualization
+
+Keep your scripts short and modular to facilitate debugging. Don't complete all of the steps below in one script. Finish scripts where it makes sense and save intermediate datasets. 
+
+## Steps
+As you go tick of the steps below. 
+
+[ ] Wrangle data
+[ ] Fit regression
+[ ] Plot verification
+[ ] ... 
+
+## Data 
+
+Include meta-data here and file paths. 
+
+## Directory structure 
+
+my-project/
+├── README.md 
+├── .gitignore
+├── Scripts/ # R code
+│   ├── 01_data-prep.R
+│   ├── 02_data-analysis.R
+│   └── 03_plots.R
+├── Shared/       
+│   ├── Outputs/
+│   │   ├── Figures/
+│   │   ├── data-prep/
+│   │   └── model-objects/
+│   ├── Data/
+│   └── Manuscripts/   
+└── Private/
+
+```
+
+## Example data 
+
+For the next few chapters we'll work with some ecological data on benthic marine habitats and fish. 
+
+### Case-study: Bumphead parrotfish, 'Topa' in Solomon Islands
+
+Bumphead parrotfish (*Bolbometopon muricatum*) are an enignmatic tropical fish species. Adults of these species are characterized by a large bump on their forehead that males use to display and fight during breeding. Sex determination for this species is unknown, but it is likely that an individual has the potential to develop into either a male or female at maturity. 
+
+Adults travel in schools and consume algae by biting off chunks of coral and in the process they literally poo out clean sand. Because of their large size, schooling habit and late age at maturity they are susceptible to overfishing, and [many populations are in decline](https://doi.org/10.1007/s00338-019-01801-z). 
+
+Their lifecycle is characterized by migration from lagoonal reef as juveniles (see image below) to reef flat and exposed reef habitats as adults. Early stage juveniles are carnivorous and feed on zooplankton, and then transform into herbivores at a young age. 
+
+![](www.seascapemodels.org/predictive-ecological-models/images/bolbo-lifecycle.png)
+
+Image: Lifecycle of bumphead parrotfish. Image by E. Stump and sourced from [Hamilton et al. 2017](http://dx.doi.org/10.1016/j.biocon.2017.04.024). 
+
+Until the mid 2010s the habitat for settling postlarvae and juveniles was a mystery. However, the pattern of migrating from inshore to offshore over their known lifecycle suggests that the earliest benthic lifestages ('recruits') stages may occur on nearshore reef habitats. 
+
+Nearshore reef habitats are susceptible to degradation from poor water quality, raising concerns that this species may also be in decline because of pollution. But the gap in data from the earliest lifestages hinders further exploration of this issue. 
+
+In this course we'll be analyzing the first survey that revealed the habitat preferences of early juveniles stages of bumphead parrotfish. These data were analyzed by [Hamilton et al. 2017](http://dx.doi.org/10.1016/j.biocon.2017.04.024) and [Brown and Hamilton 2018](http://dx.doi.org/10.1111/cobi.13079). 
+
+In the 2010s Rick Hamilton (The Nature Conservancy) lead a series of surveys in the nearshore reef habitats of Kia province, Solomon Islands. The aim was to look for the recruitment habitat for juvenile bumphead parrotfish. These surveys were motivated by concern from local communities in Kia that topa (the local name for bumpheads) are in decline. 
+
+In the surveys, divers swam standardized transects and searched for juvenile bumphead in nearshore habitats, often along the edge of mangroves. All together they surveyed 49 sites across Kia. 
+
+These surveys were made all the more challenging by the occurrence of crocodiles in mangrove habitat in the region. So these data are incredibly valuable. 
+
+Logging in the Kia region has caused [water quality issues that may impact nearshore coral habitats](http://dx.doi.org/10.1111/cobi.13079). During logging, logs are transported from the land onto barges at 'log ponds'. A log pond is an area of mangroves that is bulldozed to enable transfer of logs to barges. As you can imagine, logponds are very muddy. This damage creates significant sediment runoff which can smother and kill coral habitats. 
+
+Rick and the team surveyed reefs near logponds and in areas that had no logging. They only ever found bumphead recruits hiding in branching coral species. 
+
+In this course we will first ask if the occurrence of bumphead recruits is related to the cover of branching coral species. We will then develop a statistical model to analyse the relationship between pollution from logponds and bumphead recruits, and use this model to predict pollution impacts to bumpheads across the Kia region. 
+
+The data and code for the original analyses are [available at my github site](https://github.com/cbrown5/BenthicLatent). In this course we will use simplified versions of the original data. We're grateful to Rick Hamilton for providing the data for this course. 

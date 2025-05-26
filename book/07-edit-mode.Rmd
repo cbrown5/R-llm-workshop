@@ -1,0 +1,7 @@
+# Creating your code with Edit mode
+
+This chapter explores how to leverage GitHub Copilot's Edit mode to efficiently create and modify R code:
+
+Use this to do the MDS. 
+
+Create some tests as well. 

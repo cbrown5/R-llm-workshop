@@ -1,5 +1,9 @@
 # Automated workflows with Agent mode
 
+
+Use this for time-series analysis 
+
+
 This chapter explores how to use GitHub Copilot's Agent mode to create automated workflows for R programming and data analysis:
 
 ## Introduction to Agent mode

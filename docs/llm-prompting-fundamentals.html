@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-18" />
+<meta name="date" content="2025-05-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="introduction-to-llms-for-r.html"/>
-<link rel="next" href="ethics-and-copyright.html"/>
+<link rel="next" href="github-copilot-for-r.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -151,7 +151,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#software-licenses"><i class="fa fa-check"></i><b>1.5</b> Software licenses</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#r-packages-youll-need-for-this-workshop"><i class="fa fa-check"></i><b>1.6</b> R packages you’ll need for this workshop</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#benthic-cover-surveys-and-fish-habitat"><i class="fa fa-check"></i><b>1.7.1</b> Benthic cover surveys and fish habitat</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#rock-lobster-time-series"><i class="fa fa-check"></i><b>1.7.2</b> Rock lobster time-series</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introduction-to-llms-for-r.html"><a href="introduction-to-llms-for-r.html"><i class="fa fa-check"></i><b>2</b> Introduction to LLMs for R</a></li>
 <li class="chapter" data-level="3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html"><i class="fa fa-check"></i><b>3</b> LLM prompting fundamentals</a>
@@ -164,52 +168,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#comparing-model-complexity"><i class="fa fa-check"></i><b>3.2.3</b> Comparing model complexity</a></li>
 <li class="chapter" data-level="3.2.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#understanding-context-windows"><i class="fa fa-check"></i><b>3.2.4</b> Understanding context windows</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a></li>
-<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>4</b> Ethics and copyright</a>
+<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>4.1</b> Model biases</a></li>
-<li class="chapter" data-level="4.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>4.2</b> Energy use</a></li>
-<li class="chapter" data-level="4.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>4.3</b> Copyright</a></li>
-<li class="chapter" data-level="4.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>4.4</b> Managing data privacy</a></li>
+<li class="chapter" data-level="3.3.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#improving-the-stats-bot"><i class="fa fa-check"></i><b>3.3.1</b> Improving the stats bot</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>5</b> Github copilot for R</a></li>
-<li class="chapter" data-level="6" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>6</b> Best practices project setup</a>
+<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>6.1</b> Project organization</a></li>
-<li class="chapter" data-level="6.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#version-control-with-git"><i class="fa fa-check"></i><b>6.2</b> Version control with Git</a></li>
-<li class="chapter" data-level="6.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#r-project-setup"><i class="fa fa-check"></i><b>6.3</b> R project setup</a></li>
+<li class="chapter" data-level="3.4.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#zero-shot"><i class="fa fa-check"></i><b>3.4.1</b> Zero-shot</a></li>
+<li class="chapter" data-level="3.4.2" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#one-shot-and-multi-shot-prompts"><i class="fa fa-check"></i><b>3.4.2</b> One-shot and multi-shot prompts</a></li>
+<li class="chapter" data-level="3.4.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#making-a-simple-tool"><i class="fa fa-check"></i><b>3.4.3</b> Making a simple tool</a></li>
+<li class="chapter" data-level="3.4.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#summary-of-agents-and-tools"><i class="fa fa-check"></i><b>3.4.4</b> Summary of agents and tools</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>7</b> Inline code editing</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>7.1</b> 1. Code completion</a></li>
-<li class="chapter" data-level="7.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>7.2</b> 2. Inline code generation</a></li>
-<li class="chapter" data-level="7.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#understanding-inline-suggestions"><i class="fa fa-check"></i><b>7.3</b> Understanding inline suggestions</a></li>
-<li class="chapter" data-level="7.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#guiding-copilot-with-comments"><i class="fa fa-check"></i><b>7.4</b> Guiding Copilot with comments</a></li>
-<li class="chapter" data-level="7.5" data-path="inline-code-editing.html"><a href="inline-code-editing.html#common-patterns-for-r-programming"><i class="fa fa-check"></i><b>7.5</b> Common patterns for R programming</a></li>
-<li class="chapter" data-level="7.6" data-path="inline-code-editing.html"><a href="inline-code-editing.html#troubleshooting-and-refinement"><i class="fa fa-check"></i><b>7.6</b> Troubleshooting and refinement</a></li>
+<li class="chapter" data-level="3.5" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#reflection-on-prompting-fundamentals"><i class="fa fa-check"></i><b>3.5</b> Reflection on prompting fundamentals</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html"><i class="fa fa-check"></i><b>8</b> Planning your project with Ask mode</a>
+<li class="chapter" data-level="4" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>4</b> Github copilot for R</a></li>
+<li class="chapter" data-level="5" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>5</b> Best practices project setup</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#introduction-to-ask-mode"><i class="fa fa-check"></i><b>8.1</b> Introduction to Ask mode</a></li>
-<li class="chapter" data-level="8.2" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#project-planning-with-ask-mode"><i class="fa fa-check"></i><b>8.2</b> Project planning with Ask mode</a></li>
-<li class="chapter" data-level="8.3" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#asking-effective-questions"><i class="fa fa-check"></i><b>8.3</b> Asking effective questions</a></li>
-<li class="chapter" data-level="8.4" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#implementing-ask-mode-suggestions"><i class="fa fa-check"></i><b>8.4</b> Implementing Ask mode suggestions</a></li>
+<li class="chapter" data-level="5.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>5.1</b> Project organization</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#general-guidance"><i class="fa fa-check"></i><b>5.1.1</b> General guidance</a></li>
+<li class="chapter" data-level="5.1.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-directory-structure-example"><i class="fa fa-check"></i><b>5.1.2</b> Project directory structure example</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>9</b> Creating your code with Edit mode</a>
+<li class="chapter" data-level="5.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#the-readme.md-file"><i class="fa fa-check"></i><b>5.2</b> The README.md file</a></li>
+<li class="chapter" data-level="5.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#example-data"><i class="fa fa-check"></i><b>5.3</b> Example data</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#understanding-edit-mode"><i class="fa fa-check"></i><b>9.1</b> Understanding Edit mode</a></li>
-<li class="chapter" data-level="9.2" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-generation-strategies"><i class="fa fa-check"></i><b>9.2</b> Code generation strategies</a></li>
-<li class="chapter" data-level="9.3" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-transformation-techniques"><i class="fa fa-check"></i><b>9.3</b> Code transformation techniques</a></li>
-<li class="chapter" data-level="9.4" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#quality-control-and-refinement"><i class="fa fa-check"></i><b>9.4</b> Quality control and refinement</a></li>
+<li class="chapter" data-level="5.3.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#case-study-bumphead-parrotfish-topa-in-solomon-islands"><i class="fa fa-check"></i><b>5.3.1</b> Case-study: Bumphead parrotfish, ‘Topa’ in Solomon Islands</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>10</b> Automated workflows with Agent mode</a>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>6</b> Inline code editing</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>10.1</b> Introduction to Agent mode</a></li>
-<li class="chapter" data-level="10.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>10.2</b> Creating automated workflows</a></li>
-<li class="chapter" data-level="10.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>10.3</b> Common R workflow applications</a></li>
-<li class="chapter" data-level="10.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>10.4</b> Troubleshooting and optimization</a></li>
+<li class="chapter" data-level="6.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>6.1</b> 1. Code completion</a></li>
+<li class="chapter" data-level="6.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#using-comments"><i class="fa fa-check"></i><b>6.2</b> 2. Using comments</a></li>
+<li class="chapter" data-level="6.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion-settings"><i class="fa fa-check"></i><b>6.3</b> 3. Code completion settings</a></li>
+<li class="chapter" data-level="6.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>6.4</b> 4. Inline code generation</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#prompt-shortcuts"><i class="fa fa-check"></i><b>6.4.1</b> Prompt shortcuts</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html"><i class="fa fa-check"></i><b>7</b> Planning your analysis with Ask mode</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.1</b> The jagged frontier of LLM progress</a></li>
+<li class="chapter" data-level="7.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.2</b> How to prompt for better statistical advice</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.2.1</b> Guidelines for prompting for statistical advice</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt"><i class="fa fa-check"></i><b>7.3</b> Improving our initial prompt</a></li>
+<li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.4</b> Planning implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>8</b> Creating your code with Edit mode</a></li>
+<li class="chapter" data-level="9" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>9</b> Automated workflows with Agent mode</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>9.1</b> Introduction to Agent mode</a></li>
+<li class="chapter" data-level="9.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>9.2</b> Creating automated workflows</a></li>
+<li class="chapter" data-level="9.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>9.3</b> Common R workflow applications</a></li>
+<li class="chapter" data-level="9.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>9.4</b> Troubleshooting and optimization</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>10</b> Ethics and copyright</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>10.1</b> Model biases</a></li>
+<li class="chapter" data-level="10.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>10.2</b> Energy use</a></li>
+<li class="chapter" data-level="10.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>10.3</b> Copyright</a></li>
+<li class="chapter" data-level="10.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>10.4</b> Managing data privacy</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="advanced-llm-agents.html"><a href="advanced-llm-agents.html"><i class="fa fa-check"></i><b>11</b> Advanced LLM agents</a>
 <ul>
@@ -276,6 +295,7 @@ See <code>?ellmer::chat_openrouter</code> (or <code>chat_xxx</code> where xxx is
 <div id="understanding-how-llms-work" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Understanding how LLMs work<a href="llm-prompting-fundamentals.html#understanding-how-llms-work" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Large Language Models (LLMs) operate by predicting the next token in a sequence, one token at a time. To understand how this works in practice, we’ll use the <code>ellmer</code> package to demonstrate some fundamental concepts.</p>
+<p>By using <code>ellmer</code> to access a LLM through the API we get as close to the raw LLM as we are able. Later on we will use ‘coding assistants’ (e.g. copilot) which put another layer of software between you and the LLM.</p>
 <p>First, let’s set up our environment and create a connection to an LLM.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="llm-prompting-fundamentals.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(ellmer)</span>
 <span id="cb1-2"><a href="llm-prompting-fundamentals.html#cb1-2" tabindex="-1"></a></span>
@@ -357,15 +377,171 @@ See <code>?ellmer::chat_openrouter</code> (or <code>chat_xxx</code> where xxx is
 </div>
 <div id="diy-stats-bot" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> DIY stats bot<a href="llm-prompting-fundamentals.html#diy-stats-bot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>UP TO HERE</p>
+<p>Let’s put together what we’ve learnt so far and built our own chatbot. I’ve provided you with a detailed system prompt that implements a chat bot that specialises in helping with statistics. First, we read the bot markdown file from github, then we can use it in our chat session.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="llm-prompting-fundamentals.html#cb5-1" tabindex="-1"></a>stats_bot <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_file</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/DIY-stats-bot-system.md&quot;</span>))</span>
+<span id="cb5-2"><a href="llm-prompting-fundamentals.html#cb5-2" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="llm-prompting-fundamentals.html#cb5-3" tabindex="-1"></a>chat_stats <span class="ot">&lt;-</span> <span class="fu">chat_openrouter</span>(</span>
+<span id="cb5-4"><a href="llm-prompting-fundamentals.html#cb5-4" tabindex="-1"></a>          <span class="at">system_prompt =</span> stats_bot,</span>
+<span id="cb5-5"><a href="llm-prompting-fundamentals.html#cb5-5" tabindex="-1"></a>        <span class="at">model =</span> <span class="st">&quot;anthropic/claude-3.7-sonnet&quot;</span>,</span>
+<span id="cb5-6"><a href="llm-prompting-fundamentals.html#cb5-6" tabindex="-1"></a>        <span class="at">api_args =</span> <span class="fu">list</span>(<span class="at">max_tokens =</span> <span class="dv">5000</span>)</span>
+<span id="cb5-7"><a href="llm-prompting-fundamentals.html#cb5-7" tabindex="-1"></a>    )</span></code></pre></div>
+<p><code>ellmer</code> has a few different options for interacting with chat bots. We’ve seen the ‘chat’ option. We can also have a <code>live_console()</code> or <code>live_browser()</code> (requires installing <code>shinychat</code>) chat. Let’s use one of those options. With <code>live_browser()</code> you’ll also see the browser automatically formats any markdown in the chat.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="llm-prompting-fundamentals.html#cb6-1" tabindex="-1"></a><span class="fu">live_browser</span>(chat_stats)</span>
+<span id="cb6-2"><a href="llm-prompting-fundamentals.html#cb6-2" tabindex="-1"></a><span class="co"># live_console(chat_stats)</span></span></code></pre></div>
+<p>Here are some suggested questions to start, but feel free to try your own.
+“Who are you?”
+“Use stats mode to provide me with some suggestions for how I could make a predictive model of a variable y, where I have a large number of potential explanatory variables.”</p>
+<div class="tip">
+<p><strong>Tip:</strong> How many of you started using “DIY-stats-bot-system.md” without first reading it? Did you find the easter egg in my prompt? For security you should ALWAYS read prompts before you start running them through LLM chats. We’ll see later that LLMs can be given ‘tools’ which allow them to run code on your computer. Its easy to see how a malicious prompt could mis-use these tools. We’ll cover security later.</p>
+</div>
+<div id="improving-the-stats-bot" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Improving the stats bot<a href="llm-prompting-fundamentals.html#improving-the-stats-bot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Make a local copy of the stats bot system prompt and try editing it. Try different commands within it and see how your chat bot responds (you’ll have to open a new chat object each time).</p>
+<p>Here’s some ideas.</p>
+<ul>
+<li>Try making a chat bot that is a verhment Bayesian that abhors frequentist statistics.<br />
+</li>
+<li>You could provide it with more mode-specific instructions. For instance, try to get the chatbot to suggest appropriate figures for verifying statistical models.</li>
+<li>Try different temperatures.</li>
+<li>Add your own easter egg.</li>
+</ul>
+<div class="tip">
+<p><strong>Tip:</strong> Adjectives, CAPITALS, <code>*markdown*</code> formatting can all help create emphasis so that your model more closely follows your commands. I used ‘abhors’ and ‘verhment’ above on purpose.</p>
+</div>
+</div>
 </div>
 <div id="advanced-prompting" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Advanced prompting<a href="llm-prompting-fundamentals.html#advanced-prompting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The point of this section is to show you how github copilot works. Also ellmer has a tools functionality that you can explore on your own.</p>
-<p>Keep working with our stats bot. Make a tool: Get it to output code that can be parsed (e.g. using markdown).
-Write an R function that parses and runs the code.</p>
-<p>Compare different models for accuracy at following the instructions.</p>
-<p>Show one shot and few shot examples.</p>
+<p>LLMs can be given access to tools (github copilot is an example). Tools give the LLMs the ability to use tools to perform tasks on your computer. For example, copilot can edit files.</p>
+<p>The next step beyond tool use is to create agents. Agents write commands then also run those commands and feed the results back to themselves. Agents are therefore autonomous coders.</p>
+<div class="tip">
+<p><strong>Tip:</strong> LLM “Tools” give the LLM assistant the ability to take actions on your computer. There are a huge range of tools out there, including tools that write files, edit files, perform web searchers and download data. “Agents” are LLMs that return the results of tool use back to themselves. Therefore they can code and improve that code without intervention from humans (though intervention is often needed).</p>
+</div>
+<p>We can turn out chatbot into a simple agent. This will help you understand how agents work. What we will do is give a command to format all R code in a specific way. Then we can have an R function that checks every new response for R code, if it detects R code it will write this to a file.</p>
+<div id="zero-shot" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Zero-shot<a href="llm-prompting-fundamentals.html#zero-shot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>First make a new system message as a .md file, e.g. here: “resources/stats-bot-simple.md” in your project directory.</p>
+<p>Add to this message:</p>
+<pre><code>You are an expert in statistial analysis with the R program.  Write your response with R code in &lt;code&gt;&lt;/code&gt; tags.</code></pre>
+<p>(You can also use our chat bot from before, but it might be simpler to make this shorter one)</p>
+<p>Now give the system message a test.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="llm-prompting-fundamentals.html#cb8-1" tabindex="-1"></a>stats_bot_simple <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_file</span>(<span class="st">&quot;resources/stats-bot-simple.md&quot;</span>)</span>
+<span id="cb8-2"><a href="llm-prompting-fundamentals.html#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="llm-prompting-fundamentals.html#cb8-3" tabindex="-1"></a>chat_stats <span class="ot">&lt;-</span> <span class="fu">chat_openrouter</span>(</span>
+<span id="cb8-4"><a href="llm-prompting-fundamentals.html#cb8-4" tabindex="-1"></a>          <span class="at">system_prompt =</span> stats_bot,</span>
+<span id="cb8-5"><a href="llm-prompting-fundamentals.html#cb8-5" tabindex="-1"></a>        <span class="at">model =</span> <span class="st">&quot;anthropic/claude-3.7-sonnet&quot;</span>,</span>
+<span id="cb8-6"><a href="llm-prompting-fundamentals.html#cb8-6" tabindex="-1"></a>        <span class="at">api_args =</span> <span class="fu">list</span>(<span class="at">max_tokens =</span> <span class="dv">400</span>)</span>
+<span id="cb8-7"><a href="llm-prompting-fundamentals.html#cb8-7" tabindex="-1"></a>    )</span>
+<span id="cb8-8"><a href="llm-prompting-fundamentals.html#cb8-8" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="llm-prompting-fundamentals.html#cb8-9" tabindex="-1"></a>response <span class="ot">&lt;-</span> chat_stats<span class="sc">$</span><span class="fu">chat</span>(<span class="st">&quot;What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data, code to show how to do the regression and summary plots. &quot;</span>)</span>
+<span id="cb8-10"><a href="llm-prompting-fundamentals.html#cb8-10" tabindex="-1"></a>response</span></code></pre></div>
+<p>If it works the response should look something like this:</p>
+<pre><code>&lt;code&gt;
+dat &lt;- data.frame(temperature = rnorm(100, mean = 20))
+dat$fish_size &lt;- 10 + temperature*2 + rnorm(100)
+model &lt;- lm(fish_size ~ temperature)
+&lt;/code&gt;</code></pre>
+<p>It didn’t work for me when I tried! It kept returning the R code in markdown formatting in inconsistent ways. We want a consistent response so we can parse it easily.</p>
+<p>Anyway, repeat that a few times to see if it consistently formats the code as we requested. You can also try using “anthropic/claude-3.5-haiku” as your model (its cheaper) to see if that is smart enough to consistently format the code.</p>
+<div class="tip">
+<p><strong>Tip:</strong> What we just tried is called ‘zero-shot prompting’. Zero-shot means we didn’t give the LLM any examples to follow, we assume it knows what to do.</p>
+</div>
+</div>
+<div id="one-shot-and-multi-shot-prompts" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> One-shot and multi-shot prompts<a href="llm-prompting-fundamentals.html#one-shot-and-multi-shot-prompts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Giving an example (one-shot) or multiple examples (multi-shot) can improve the precision of the LLMs responses. Let’s update the system prompt to see if we get more reliable answers with some examples:</p>
+<pre><code>You are an expert in statistial analysis with the R program.  Write your response with R code in &lt;code&gt;&lt;/code&gt; tags.
+
+### Examples of formatting R code
+
+Single line example
+
+&lt;code&gt; dat &lt;- read.csv(&quot;myfile.csv&quot;) &lt;/code&gt; 
+
+Multiple line example
+
+&lt;code&gt; 
+dat &lt;- read.csv(&quot;myfile.csv&quot;) 
+ggplot(dat) + 
+  aes(x = x, y = y) + 
+  geom_point() 
+&lt;/code&gt; 
+</code></pre>
+<p>I saved this updated system to a file: “resources/stats-bot-simple-multiple-shot.md”. Now test it out.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="llm-prompting-fundamentals.html#cb11-1" tabindex="-1"></a>stats_bot_simple <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_file</span>(<span class="st">&quot;resources/stats-bot-simple-multiple-shot.md&quot;</span>)</span>
+<span id="cb11-2"><a href="llm-prompting-fundamentals.html#cb11-2" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="llm-prompting-fundamentals.html#cb11-3" tabindex="-1"></a>chat_stats <span class="ot">&lt;-</span> <span class="fu">chat_openrouter</span>(</span>
+<span id="cb11-4"><a href="llm-prompting-fundamentals.html#cb11-4" tabindex="-1"></a>          <span class="at">system_prompt =</span> stats_bot_simple,</span>
+<span id="cb11-5"><a href="llm-prompting-fundamentals.html#cb11-5" tabindex="-1"></a>        <span class="at">model =</span> <span class="st">&quot;anthropic/claude-3.7-sonnet&quot;</span>,</span>
+<span id="cb11-6"><a href="llm-prompting-fundamentals.html#cb11-6" tabindex="-1"></a>        <span class="at">api_args =</span> <span class="fu">list</span>(<span class="at">max_tokens =</span> <span class="dv">1000</span>)</span>
+<span id="cb11-7"><a href="llm-prompting-fundamentals.html#cb11-7" tabindex="-1"></a>    )</span>
+<span id="cb11-8"><a href="llm-prompting-fundamentals.html#cb11-8" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="llm-prompting-fundamentals.html#cb11-9" tabindex="-1"></a>response <span class="ot">&lt;-</span> chat_stats<span class="sc">$</span><span class="fu">chat</span>(<span class="st">&quot;What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data and code to show how to do the regression. &quot;</span>)</span>
+<span id="cb11-10"><a href="llm-prompting-fundamentals.html#cb11-10" tabindex="-1"></a>response</span></code></pre></div>
+<p>That worked for me. Hopefully it works for you too?</p>
+<p>Test that to see if it gives more reliable examples. We have to be a bit careful with choosing examples as these are for formatting, not for modelling. For instance, we don’t want to inadventantly suggest the LLM always recommend a particular statistical model type. ’</p>
+</div>
+<div id="making-a-simple-tool" class="section level3 hasAnchor" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> Making a simple tool<a href="llm-prompting-fundamentals.html#making-a-simple-tool" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tools are algorithms your assistant can use to perform tasks on your computer or a server. They are what turns a chatbot that can only respond in text into an Assistant that can write code that takes actions.</p>
+<div class="tip">
+<p><strong>Tip:</strong> You might also see the term ‘MCP’ (Model Context Protocol) used in association with LLM assistants. MCP is an interoperable standard for developing tools. This means a tool I write is consistent with other people’s tools. This helps developers and LLMs read and interpret tools. It is also important to allow LLM to use multiple tools at the same time. ’</p>
+</div>
+<p>If the request to use <code></code> tags works we can then parse the responses and save them as a file, ready to run. First create an R function that can parse responses and search for <code></code> tags (you can cut and paste my function or try using copilot to make one for you, it’s good at this type of tedious task):</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="llm-prompting-fundamentals.html#cb12-1" tabindex="-1"></a>write_response <span class="ot">&lt;-</span> <span class="cf">function</span>(response, <span class="at">filename =</span> <span class="st">&quot;rscript.R&quot;</span>){</span>
+<span id="cb12-2"><a href="llm-prompting-fundamentals.html#cb12-2" tabindex="-1"></a>  <span class="co"># Extract the text between &lt;code&gt; and &lt;/code&gt; tags using regex</span></span>
+<span id="cb12-3"><a href="llm-prompting-fundamentals.html#cb12-3" tabindex="-1"></a>  <span class="co"># Using dotall mode (?s) to match across multiple lines</span></span>
+<span id="cb12-4"><a href="llm-prompting-fundamentals.html#cb12-4" tabindex="-1"></a>  code_pattern <span class="ot">&lt;-</span> <span class="st">&quot;(?s)&lt;code&gt;(.*?)&lt;/code&gt;&quot;</span></span>
+<span id="cb12-5"><a href="llm-prompting-fundamentals.html#cb12-5" tabindex="-1"></a>  code_matches <span class="ot">&lt;-</span> <span class="fu">regmatches</span>(response, <span class="fu">gregexpr</span>(code_pattern, response, <span class="at">perl =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb12-6"><a href="llm-prompting-fundamentals.html#cb12-6" tabindex="-1"></a>  </span>
+<span id="cb12-7"><a href="llm-prompting-fundamentals.html#cb12-7" tabindex="-1"></a>  <span class="co"># Flatten the list and remove the tags</span></span>
+<span id="cb12-8"><a href="llm-prompting-fundamentals.html#cb12-8" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">length</span>(code_matches) <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;&amp;</span> <span class="fu">length</span>(code_matches[[<span class="dv">1</span>]]) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb12-9"><a href="llm-prompting-fundamentals.html#cb12-9" tabindex="-1"></a>    code_texts <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;&lt;code&gt;|&lt;/code&gt;&quot;</span>, <span class="st">&quot;&quot;</span>, code_matches[[<span class="dv">1</span>]])</span>
+<span id="cb12-10"><a href="llm-prompting-fundamentals.html#cb12-10" tabindex="-1"></a>    </span>
+<span id="cb12-11"><a href="llm-prompting-fundamentals.html#cb12-11" tabindex="-1"></a>    <span class="co"># Write all extracted code to the file</span></span>
+<span id="cb12-12"><a href="llm-prompting-fundamentals.html#cb12-12" tabindex="-1"></a>    <span class="fu">writeLines</span>(code_texts, filename)</span>
+<span id="cb12-13"><a href="llm-prompting-fundamentals.html#cb12-13" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;Code written to&quot;</span>, filename, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb12-14"><a href="llm-prompting-fundamentals.html#cb12-14" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb12-15"><a href="llm-prompting-fundamentals.html#cb12-15" tabindex="-1"></a>    <span class="fu">warning</span>(<span class="st">&quot;No code tags found in the response&quot;</span>)</span>
+<span id="cb12-16"><a href="llm-prompting-fundamentals.html#cb12-16" tabindex="-1"></a>  }</span>
+<span id="cb12-17"><a href="llm-prompting-fundamentals.html#cb12-17" tabindex="-1"></a>}</span></code></pre></div>
+<p>Now we can set-up our R code to write any suggestions to file:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="llm-prompting-fundamentals.html#cb13-1" tabindex="-1"></a>chat_stats <span class="ot">&lt;-</span> <span class="fu">chat_openrouter</span>(</span>
+<span id="cb13-2"><a href="llm-prompting-fundamentals.html#cb13-2" tabindex="-1"></a>          <span class="at">system_prompt =</span> stats_bot,</span>
+<span id="cb13-3"><a href="llm-prompting-fundamentals.html#cb13-3" tabindex="-1"></a>        <span class="at">model =</span> <span class="st">&quot;anthropic/claude-3.7-sonnet&quot;</span>,</span>
+<span id="cb13-4"><a href="llm-prompting-fundamentals.html#cb13-4" tabindex="-1"></a>        <span class="at">api_args =</span> <span class="fu">list</span>(<span class="at">max_tokens =</span> <span class="dv">400</span>)</span>
+<span id="cb13-5"><a href="llm-prompting-fundamentals.html#cb13-5" tabindex="-1"></a>    )</span>
+<span id="cb13-6"><a href="llm-prompting-fundamentals.html#cb13-6" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="llm-prompting-fundamentals.html#cb13-7" tabindex="-1"></a>response <span class="ot">&lt;-</span> chat_stats<span class="sc">$</span><span class="fu">chat</span>(<span class="st">&quot;What code can I use to regress temperature against fish_size, fish_size and temperature are both continuous real numbers. Include in your response code to simulate some example data and code to show how to do the regression. &quot;</span>)</span>
+<span id="cb13-8"><a href="llm-prompting-fundamentals.html#cb13-8" tabindex="-1"></a><span class="fu">write_response</span>(response, <span class="at">filename =</span> <span class="st">&quot;attempt1.R&quot;</span>)</span></code></pre></div>
+<p>Now check the file we just created. If it looks ok then try running it:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="llm-prompting-fundamentals.html#cb14-1" tabindex="-1"></a><span class="co">#CHECK THE FILE before running!!!!</span></span>
+<span id="cb14-2"><a href="llm-prompting-fundamentals.html#cb14-2" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;attempt1.R&quot;</span>)</span></code></pre></div>
+<p>The <code>source()</code> command will attempt to run the R code that was created. If it works you should see some plots pop up.</p>
+</div>
+<div id="summary-of-agents-and-tools" class="section level3 hasAnchor" number="3.4.4">
+<h3><span class="header-section-number">3.4.4</span> Summary of agents and tools<a href="llm-prompting-fundamentals.html#summary-of-agents-and-tools" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We’ve implemented a rudimentary tool and the beginnings of an LLM agent. Going forwards we’ll used specialised software for these tasks. You won’t need to code them yourself. But coding this examples is helpful to understand the fundamentals of how they work. To recap, the basic workflow an agent follows is:</p>
+<ol style="list-style-type: decimal">
+<li>Set-up a system prompt with detailed instructions for how the LLM should format responses</li>
+<li>User asks a question that is sent to the LLM</li>
+<li>LLM responds and sends response back to user</li>
+<li>Software on user’s computer attempts to parse and act on the response according to pre-determined rules</li>
+<li>User’s computers enacts the commands in the response and provides results to user</li>
+</ol>
+<p>Tools like Copilot Agent mode then go a step further and send the results of step 5 back to the LLM, which then interprets the results and the loop continues (sometimes with and sometimes without direct user approval).</p>
+<p>If you want to go further with making your own tools, then I suggest you check out <code>ellmer</code> package. It supports tool creation in a structured way. For instance, I made a tool that allows an <a href="https://ellmer.tidyverse.org/articles/tool-calling.html">LLM to download and save ocean data to your computer</a>.</p>
+</div>
+</div>
+<div id="reflection-on-prompting-fundamentals" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Reflection on prompting fundamentals<a href="llm-prompting-fundamentals.html#reflection-on-prompting-fundamentals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The key things I hoped you learnt from this lesson are:</p>
+<ul>
+<li>Basic LLM jargon, including tokens, temperature, API access and different LLM models.</li>
+<li>Some different prompt strategies, including role prompting, emphasis, chain of thought and one-shot.</li>
+<li>The fundamentals of tool use and agents.</li>
+</ul>
+<p>Now you understand the basics, let’s get into Github Copilot.</p>
 
 </div>
 </div>
@@ -375,7 +551,7 @@ Write an R function that parses and runs the code.</p>
         </div>
       </div>
 <a href="introduction-to-llms-for-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ethics-and-copyright.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="github-copilot-for-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

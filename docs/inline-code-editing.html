@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Inline code editing | Quality R analysis with large language models</title>
+  <title>Chapter 6 Inline code editing | Quality R analysis with large language models</title>
   <meta name="description" content="1-day workshop for using large language models to generate R code." />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Inline code editing | Quality R analysis with large language models" />
+  <meta property="og:title" content="Chapter 6 Inline code editing | Quality R analysis with large language models" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="1-day workshop for using large language models to generate R code." />
   <meta name="github-repo" content="cbrown5/R-llm-workshop" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Inline code editing | Quality R analysis with large language models" />
+  <meta name="twitter:title" content="Chapter 6 Inline code editing | Quality R analysis with large language models" />
   
   <meta name="twitter:description" content="1-day workshop for using large language models to generate R code." />
   
@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-18" />
+<meta name="date" content="2025-05-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="best-practices-project-setup.html"/>
-<link rel="next" href="planning-your-project-with-ask-mode.html"/>
+<link rel="next" href="planning-your-analysis-with-ask-mode.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -151,7 +151,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#software-licenses"><i class="fa fa-check"></i><b>1.5</b> Software licenses</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#r-packages-youll-need-for-this-workshop"><i class="fa fa-check"></i><b>1.6</b> R packages you’ll need for this workshop</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#benthic-cover-surveys-and-fish-habitat"><i class="fa fa-check"></i><b>1.7.1</b> Benthic cover surveys and fish habitat</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#rock-lobster-time-series"><i class="fa fa-check"></i><b>1.7.2</b> Rock lobster time-series</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introduction-to-llms-for-r.html"><a href="introduction-to-llms-for-r.html"><i class="fa fa-check"></i><b>2</b> Introduction to LLMs for R</a></li>
 <li class="chapter" data-level="3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html"><i class="fa fa-check"></i><b>3</b> LLM prompting fundamentals</a>
@@ -164,52 +168,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#comparing-model-complexity"><i class="fa fa-check"></i><b>3.2.3</b> Comparing model complexity</a></li>
 <li class="chapter" data-level="3.2.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#understanding-context-windows"><i class="fa fa-check"></i><b>3.2.4</b> Understanding context windows</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a></li>
-<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>4</b> Ethics and copyright</a>
+<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>4.1</b> Model biases</a></li>
-<li class="chapter" data-level="4.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>4.2</b> Energy use</a></li>
-<li class="chapter" data-level="4.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>4.3</b> Copyright</a></li>
-<li class="chapter" data-level="4.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>4.4</b> Managing data privacy</a></li>
+<li class="chapter" data-level="3.3.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#improving-the-stats-bot"><i class="fa fa-check"></i><b>3.3.1</b> Improving the stats bot</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>5</b> Github copilot for R</a></li>
-<li class="chapter" data-level="6" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>6</b> Best practices project setup</a>
+<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>6.1</b> Project organization</a></li>
-<li class="chapter" data-level="6.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#version-control-with-git"><i class="fa fa-check"></i><b>6.2</b> Version control with Git</a></li>
-<li class="chapter" data-level="6.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#r-project-setup"><i class="fa fa-check"></i><b>6.3</b> R project setup</a></li>
+<li class="chapter" data-level="3.4.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#zero-shot"><i class="fa fa-check"></i><b>3.4.1</b> Zero-shot</a></li>
+<li class="chapter" data-level="3.4.2" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#one-shot-and-multi-shot-prompts"><i class="fa fa-check"></i><b>3.4.2</b> One-shot and multi-shot prompts</a></li>
+<li class="chapter" data-level="3.4.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#making-a-simple-tool"><i class="fa fa-check"></i><b>3.4.3</b> Making a simple tool</a></li>
+<li class="chapter" data-level="3.4.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#summary-of-agents-and-tools"><i class="fa fa-check"></i><b>3.4.4</b> Summary of agents and tools</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>7</b> Inline code editing</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>7.1</b> 1. Code completion</a></li>
-<li class="chapter" data-level="7.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>7.2</b> 2. Inline code generation</a></li>
-<li class="chapter" data-level="7.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#understanding-inline-suggestions"><i class="fa fa-check"></i><b>7.3</b> Understanding inline suggestions</a></li>
-<li class="chapter" data-level="7.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#guiding-copilot-with-comments"><i class="fa fa-check"></i><b>7.4</b> Guiding Copilot with comments</a></li>
-<li class="chapter" data-level="7.5" data-path="inline-code-editing.html"><a href="inline-code-editing.html#common-patterns-for-r-programming"><i class="fa fa-check"></i><b>7.5</b> Common patterns for R programming</a></li>
-<li class="chapter" data-level="7.6" data-path="inline-code-editing.html"><a href="inline-code-editing.html#troubleshooting-and-refinement"><i class="fa fa-check"></i><b>7.6</b> Troubleshooting and refinement</a></li>
+<li class="chapter" data-level="3.5" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#reflection-on-prompting-fundamentals"><i class="fa fa-check"></i><b>3.5</b> Reflection on prompting fundamentals</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html"><i class="fa fa-check"></i><b>8</b> Planning your project with Ask mode</a>
+<li class="chapter" data-level="4" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>4</b> Github copilot for R</a></li>
+<li class="chapter" data-level="5" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>5</b> Best practices project setup</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#introduction-to-ask-mode"><i class="fa fa-check"></i><b>8.1</b> Introduction to Ask mode</a></li>
-<li class="chapter" data-level="8.2" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#project-planning-with-ask-mode"><i class="fa fa-check"></i><b>8.2</b> Project planning with Ask mode</a></li>
-<li class="chapter" data-level="8.3" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#asking-effective-questions"><i class="fa fa-check"></i><b>8.3</b> Asking effective questions</a></li>
-<li class="chapter" data-level="8.4" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#implementing-ask-mode-suggestions"><i class="fa fa-check"></i><b>8.4</b> Implementing Ask mode suggestions</a></li>
+<li class="chapter" data-level="5.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>5.1</b> Project organization</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#general-guidance"><i class="fa fa-check"></i><b>5.1.1</b> General guidance</a></li>
+<li class="chapter" data-level="5.1.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-directory-structure-example"><i class="fa fa-check"></i><b>5.1.2</b> Project directory structure example</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>9</b> Creating your code with Edit mode</a>
+<li class="chapter" data-level="5.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#the-readme.md-file"><i class="fa fa-check"></i><b>5.2</b> The README.md file</a></li>
+<li class="chapter" data-level="5.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#example-data"><i class="fa fa-check"></i><b>5.3</b> Example data</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#understanding-edit-mode"><i class="fa fa-check"></i><b>9.1</b> Understanding Edit mode</a></li>
-<li class="chapter" data-level="9.2" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-generation-strategies"><i class="fa fa-check"></i><b>9.2</b> Code generation strategies</a></li>
-<li class="chapter" data-level="9.3" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-transformation-techniques"><i class="fa fa-check"></i><b>9.3</b> Code transformation techniques</a></li>
-<li class="chapter" data-level="9.4" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#quality-control-and-refinement"><i class="fa fa-check"></i><b>9.4</b> Quality control and refinement</a></li>
+<li class="chapter" data-level="5.3.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#case-study-bumphead-parrotfish-topa-in-solomon-islands"><i class="fa fa-check"></i><b>5.3.1</b> Case-study: Bumphead parrotfish, ‘Topa’ in Solomon Islands</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>10</b> Automated workflows with Agent mode</a>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>6</b> Inline code editing</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>10.1</b> Introduction to Agent mode</a></li>
-<li class="chapter" data-level="10.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>10.2</b> Creating automated workflows</a></li>
-<li class="chapter" data-level="10.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>10.3</b> Common R workflow applications</a></li>
-<li class="chapter" data-level="10.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>10.4</b> Troubleshooting and optimization</a></li>
+<li class="chapter" data-level="6.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>6.1</b> 1. Code completion</a></li>
+<li class="chapter" data-level="6.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#using-comments"><i class="fa fa-check"></i><b>6.2</b> 2. Using comments</a></li>
+<li class="chapter" data-level="6.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion-settings"><i class="fa fa-check"></i><b>6.3</b> 3. Code completion settings</a></li>
+<li class="chapter" data-level="6.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>6.4</b> 4. Inline code generation</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#prompt-shortcuts"><i class="fa fa-check"></i><b>6.4.1</b> Prompt shortcuts</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html"><i class="fa fa-check"></i><b>7</b> Planning your analysis with Ask mode</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.1</b> The jagged frontier of LLM progress</a></li>
+<li class="chapter" data-level="7.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.2</b> How to prompt for better statistical advice</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.2.1</b> Guidelines for prompting for statistical advice</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt"><i class="fa fa-check"></i><b>7.3</b> Improving our initial prompt</a></li>
+<li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.4</b> Planning implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>8</b> Creating your code with Edit mode</a></li>
+<li class="chapter" data-level="9" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>9</b> Automated workflows with Agent mode</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>9.1</b> Introduction to Agent mode</a></li>
+<li class="chapter" data-level="9.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>9.2</b> Creating automated workflows</a></li>
+<li class="chapter" data-level="9.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>9.3</b> Common R workflow applications</a></li>
+<li class="chapter" data-level="9.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>9.4</b> Troubleshooting and optimization</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>10</b> Ethics and copyright</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>10.1</b> Model biases</a></li>
+<li class="chapter" data-level="10.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>10.2</b> Energy use</a></li>
+<li class="chapter" data-level="10.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>10.3</b> Copyright</a></li>
+<li class="chapter" data-level="10.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>10.4</b> Managing data privacy</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="advanced-llm-agents.html"><a href="advanced-llm-agents.html"><i class="fa fa-check"></i><b>11</b> Advanced LLM agents</a>
 <ul>
@@ -257,62 +276,74 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="inline-code-editing" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Inline code editing<a href="inline-code-editing.html#inline-code-editing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter explores techniques for using GitHub Copilot’s inline code editing capabilities to enhance your R programming workflow:</p>
-<div id="code-completion" class="section level2 hasAnchor" number="7.1">
-<h2><span class="header-section-number">7.1</span> 1. Code completion<a href="inline-code-editing.html#code-completion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="inline-code-editing" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Inline code editing<a href="inline-code-editing.html#inline-code-editing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter explores techniques for using GitHub Copilot’s inline code editing capabilities to enhance your R programming workflow.</p>
+<div id="code-completion" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> 1. Code completion<a href="inline-code-editing.html#code-completion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is only option supported in Rstudio (last time I checked).</p>
-<p>Example:</p>
-<p>Show how this works. How to get it moving on when its stuck in a loop.
-Show how to use comments to get it to work more effectively</p>
+<p>Assuming you have github copilot set-up you just need to start a new R script (remember to keep it organized and give it a useful name) and start typing. You’ll see suggested code completions appear in grey. Hit <code>tab</code> to complete them.</p>
+<p>Let’s read in the benthic site data and fish counts:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="inline-code-editing.html#cb17-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb17-2"><a href="inline-code-editing.html#cb17-2" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb17-3"><a href="inline-code-editing.html#cb17-3" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="inline-code-editing.html#cb17-4" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv&quot;</span>))</span>
+<span id="cb17-5"><a href="inline-code-editing.html#cb17-5" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="inline-code-editing.html#cb17-6" tabindex="-1"></a><span class="fu">head</span>(dat)</span>
+<span id="cb17-7"><a href="inline-code-editing.html#cb17-7" tabindex="-1"></a><span class="fu">summary</span>(dat)</span></code></pre></div>
+<p>Now try create a ggplot of <code>secchi</code> (a measure of water clarity, higher values mean clearer water) and <code>pres.topa</code> (count of topa, the bumphead parrotfish). Start typing <code>gg</code> and see what happens.</p>
+<p>You should a recommendation for a ggplot. But it won’t know the variable names.</p>
+<div class="tip">
+<p><strong>Tip:</strong> Sometimes GC gets stuck in a loop and keeps recommending the same line. To break it out of the loop try typing something new.</p>
 </div>
-<div id="inline-code-generation" class="section level2 hasAnchor" number="7.2">
-<h2><span class="header-section-number">7.2</span> 2. Inline code generation<a href="inline-code-editing.html#inline-code-generation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>cmd/cntrl-i . Show how to use this
-examples:
-selecting code to fix
-selecting code to explain
-Use of /fix, /document etc… as shortcuts to get it to do things.</p>
-<p>Note options for microphone, @ (shortcuts) and model choices</p>
 </div>
-<div id="understanding-inline-suggestions" class="section level2 hasAnchor" number="7.3">
-<h2><span class="header-section-number">7.3</span> Understanding inline suggestions<a href="inline-code-editing.html#understanding-inline-suggestions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>How Copilot generates inline code suggestions</li>
-<li>Interpreting and evaluating Copilot’s suggestions</li>
-<li>Accepting, modifying, or rejecting suggestions effectively</li>
-<li>Keyboard shortcuts and efficiency tips</li>
-</ul>
-</div>
-<div id="guiding-copilot-with-comments" class="section level2 hasAnchor" number="7.4">
-<h2><span class="header-section-number">7.4</span> Guiding Copilot with comments<a href="inline-code-editing.html#guiding-copilot-with-comments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Writing effective comments to steer Copilot’s suggestions</li>
-<li>Using natural language to describe your coding intentions</li>
-<li>Documenting complex statistical procedures for better suggestions</li>
-<li>Balancing detail and brevity in comments</li>
-</ul>
-</div>
-<div id="common-patterns-for-r-programming" class="section level2 hasAnchor" number="7.5">
-<h2><span class="header-section-number">7.5</span> Common patterns for R programming<a href="inline-code-editing.html#common-patterns-for-r-programming" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Data manipulation with tidyverse</li>
-<li>Statistical modeling and analysis</li>
-<li>Data visualization with ggplot2</li>
-<li>Working with specialized R packages</li>
-</ul>
-</div>
-<div id="troubleshooting-and-refinement" class="section level2 hasAnchor" number="7.6">
-<h2><span class="header-section-number">7.6</span> Troubleshooting and refinement<a href="inline-code-editing.html#troubleshooting-and-refinement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Strategies when Copilot provides incorrect or suboptimal suggestions</li>
-<li>Iterative refinement of code with Copilot’s assistance</li>
-<li>Handling R-specific syntax and idioms</li>
-<li>Adapting to Copilot’s learning curve</li>
-</ul>
-<p>Through practical examples and hands-on exercises, you’ll learn to seamlessly integrate Copilot’s inline suggestions into your R coding process, significantly accelerating your development while maintaining code quality.</p>
+<div id="using-comments" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> 2. Using comments<a href="inline-code-editing.html#using-comments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The code completion is using your script and all open scripts in VScode to predict your next line of code. It won’t know the variable names unless you’ve provided that. One way is to include them in the readme.md file and have that open, another is to use comments in the active script (which tends to work more reliably), e.g.</p>
+<pre><code># Make a point plot of secchi against pres.topa
+gg...</code></pre>
+<p>Should get you the write ggplot. Using variable names in your prompts is more precise and will help the LLM guess the right names.</p>
+<p>You could also try putting key variable names in comments at the top of your script.</p>
+<p>Another way to use autocomplete is not to write R at all, just to write comments and fix the R code. Try templating a series of plots like:</p>
+<pre><code># Make a point plot of secchi against pres.topa with a stat_smooth
 
+# Plot logged (two categories) and pres.topa as a boxplot
+
+# Plot CB_cover (branching coral cover) against secchi</code></pre>
+<p>Now go back through and click under each line to get the suggestions.</p>
+<p>This strategy is great in data wrangling workflows. As a simple example try make this grouped summary using comments only:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="inline-code-editing.html#cb20-1" tabindex="-1"></a>dat <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="inline-code-editing.html#cb20-2" tabindex="-1"></a>    <span class="fu">group_by</span>(logged, reeftype) <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="inline-code-editing.html#cb20-3" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">mean_topa =</span> <span class="fu">mean</span>(pres.topa), </span>
+<span id="cb20-4"><a href="inline-code-editing.html#cb20-4" tabindex="-1"></a>                <span class="at">mean_CB =</span> <span class="fu">mean</span>(CB_cover))</span></code></pre></div>
+<p>To make this I might write this series of comments:</p>
+<pre><code>    #group dat by logged and reeftype
+    #summarize pres.topa and CB_cover</code></pre>
+<p>If the variable names are documented above you can ofter be lazier and less precise with variable names here.</p>
+</div>
+<div id="code-completion-settings" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> 3. Code completion settings<a href="inline-code-editing.html#code-completion-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Click the octocat in the bottom right corner of VScode to fine-tune the settings. You can enable/disable code completions (sometimes they are annoying e.g. when writing a workshop!).</p>
+<p>You can also enable ‘next edit suggestions’. These are useful if editing an exisiting file. e.g. if you misspelt ‘sechi’ then updated it in one place, it will suggest updates through the script. Hit tab to move through these.</p>
+<p>The box will also tell you if indexing is available. Indexing allows AI to search your code faster.</p>
+</div>
+<div id="inline-code-generation" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> 4. Inline code generation<a href="inline-code-editing.html#inline-code-generation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In VScode you can also access an inline chat box with cmd/cntrl-i. This chat can chat as well as edit code.</p>
+<p>You can click anywhere and active this. I find it most useful though to select a section of code and then hit cmd/cntrl-i.</p>
+<p>This is most useful to
+- Add new code
+- Explain code
+- Fix bugs
+- Add tests</p>
+<p>Try select some of your code (e.g. a ggplot) and ask it to explain what the code does.</p>
+<p>Now try select one of your plots and ask for some style changes (e.g. theme, colours, axes label sizes etc…).</p>
+<p>Now add a bug into one of your plots. See if the inline chatbox can fix the bug.</p>
+<div id="prompt-shortcuts" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Prompt shortcuts<a href="inline-code-editing.html#prompt-shortcuts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Use the <code>/</code> to bring up a list of prompt shortcuts. The most useful in R are <code>/explain</code>, <code>/fix</code>, <code>/tests</code>. Try select some code then use these to see what happens.</p>
+
+</div>
 </div>
 </div>
             </section>
@@ -321,7 +352,7 @@ Use of /fix, /document etc… as shortcuts to get it to do things.</p>
         </div>
       </div>
 <a href="best-practices-project-setup.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="planning-your-project-with-ask-mode.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="planning-your-analysis-with-ask-mode.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -352,7 +383,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-inline-code-editing.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-inline-code-editing.Rmd",
 "text": "Edit"
 },
 "history": {

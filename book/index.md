@@ -16,10 +16,10 @@ github-repo: cbrown5/R-llm-workshop
 
 ## Summary
 
-If you are using R you are probably using language models (e.g. ChatGPT) to help you write code, but are you using them in the most effective way? Language models have different biases to humans and so make different types of errors. This 1-day workshop will cover how to use language models to learn R and conduct reliable environmental analyses. We will cover:  
+If you are using R you are probably using language model assistants (e.g. ChatGPT) to help you write code, but are you using them in the most effective way? Language models have different biases to humans and so make different types of errors. This 1-day workshop will cover how to use language models to learn R and conduct reliable environmental analyses. We will cover:  
 
-- Pros and cons of different tools from the simple interfaces like ChatGPT to advanced tools that can run and test code by themselves and keep going until the analysis is complete (and even written up).  
-- Best practice prompting techniques that can dramatically improve model performance for complex statistical applications  
+- Pros and cons of different assistants from the interfaces like ChatGPT to advanced coding assistants that can run and test code by themselves and keep going until the analysis is complete (and even written up).  
+- Best practice prompting techniques that can dramatically improve LLM performance for complex statistical applications  
 - Applying language models to common environmental applications such as GLMs, multivariate statistics and Bayesian statistics
 - Copyright and ethical issues  
 
@@ -52,25 +52,31 @@ In this presentation I'll cover how LLMs work, best practices prompt engineering
 
 **Continue Part 1 LLM fundamentals** 
 
-
-**Ethics and copyright**
-11:30-12:00 
-
-**Lunch break: 12:00-1:00pm**
+10:45-11:30am
 
 **Part 2 Github copilot for R**
 
-1:00pm-2:45pm
+11:30-12:00pm
+
+**Lunch break: 12:00-1:00pm**
+
+**Continue part 2 Github copilot for R**  
+
+1:00-2:15pm
+
+**Ethics and copyright**  
+
+2:15-2:45pm
 
 **Tea break 2:45-3:00pm**
 
-**Part 3 Advanced LLM agents** 
+**Part 3 Advanced coding assistants** 
 
 3:00-3:30pm
 
 **Conclusion and discussion of what it means for science**
 
-3:30pm-4:00pm
+3:30-4:00pm
 
 ## Software you'll need for this workshop
 
@@ -126,11 +132,22 @@ Once you have your API key, keep it secret. It's a password. Be careful not to p
 
 ## Data 
 
-Not yet complete...
+We'll load all data files directly via URL in the workshop notes. So no need to download any data now. Details on data attribution are below. 
 
-We'll work with some benthic cover data, direct links to csv files are here: 
+### Benthic cover surveys and fish habitat
+ 
+In this course we'll be analyzing benthic cover and fish survey data. These data were collected by divers doing standardized surveys on the reefs of Kia, Solomon Islands. These data were first publshed by [Hamilton et al. 2017](http://dx.doi.org/10.1016/j.biocon.2017.04.024) who showed that logging of forests is causing sedimentation and impact habitats of an important fishery species.
 
-text files for 2 papers. 
-time-series data? 
+ In a follow-up study [Brown and Hamilton 2018](http://dx.doi.org/10.1111/cobi.13079) developed a Bayesian model that estimates the size of the footprint of pollution from logging on reefs. 
 
+### Rock lobster time-series 
+
+We'll analyse time-series data from the Australian Temperate Reef Collaboration and the Reef Life Survey. [Original data are available here](TODO add link), and you should access the originals for any research. 
+This data is collected by divers every year who swim standardized transects and count reef fauna. 
+
+We'll use a simplified version I created to go with this course. The link is in the notes when we need it. 
+
+[Citation to the dataset](). 
+
+The analysis in the notes is inspired by [this study looking at how we forecast reef species change](). 
 

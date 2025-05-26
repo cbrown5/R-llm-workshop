@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Best practices project setup | Quality R analysis with large language models</title>
+  <title>Chapter 5 Best practices project setup | Quality R analysis with large language models</title>
   <meta name="description" content="1-day workshop for using large language models to generate R code." />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Best practices project setup | Quality R analysis with large language models" />
+  <meta property="og:title" content="Chapter 5 Best practices project setup | Quality R analysis with large language models" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="1-day workshop for using large language models to generate R code." />
   <meta name="github-repo" content="cbrown5/R-llm-workshop" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Best practices project setup | Quality R analysis with large language models" />
+  <meta name="twitter:title" content="Chapter 5 Best practices project setup | Quality R analysis with large language models" />
   
   <meta name="twitter:description" content="1-day workshop for using large language models to generate R code." />
   
@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-18" />
+<meta name="date" content="2025-05-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -151,7 +151,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#software-licenses"><i class="fa fa-check"></i><b>1.5</b> Software licenses</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#r-packages-youll-need-for-this-workshop"><i class="fa fa-check"></i><b>1.6</b> R packages you’ll need for this workshop</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.7</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#benthic-cover-surveys-and-fish-habitat"><i class="fa fa-check"></i><b>1.7.1</b> Benthic cover surveys and fish habitat</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#rock-lobster-time-series"><i class="fa fa-check"></i><b>1.7.2</b> Rock lobster time-series</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introduction-to-llms-for-r.html"><a href="introduction-to-llms-for-r.html"><i class="fa fa-check"></i><b>2</b> Introduction to LLMs for R</a></li>
 <li class="chapter" data-level="3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html"><i class="fa fa-check"></i><b>3</b> LLM prompting fundamentals</a>
@@ -164,52 +168,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#comparing-model-complexity"><i class="fa fa-check"></i><b>3.2.3</b> Comparing model complexity</a></li>
 <li class="chapter" data-level="3.2.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#understanding-context-windows"><i class="fa fa-check"></i><b>3.2.4</b> Understanding context windows</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a></li>
-<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>4</b> Ethics and copyright</a>
+<li class="chapter" data-level="3.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#diy-stats-bot"><i class="fa fa-check"></i><b>3.3</b> DIY stats bot</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>4.1</b> Model biases</a></li>
-<li class="chapter" data-level="4.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>4.2</b> Energy use</a></li>
-<li class="chapter" data-level="4.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>4.3</b> Copyright</a></li>
-<li class="chapter" data-level="4.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>4.4</b> Managing data privacy</a></li>
+<li class="chapter" data-level="3.3.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#improving-the-stats-bot"><i class="fa fa-check"></i><b>3.3.1</b> Improving the stats bot</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>5</b> Github copilot for R</a></li>
-<li class="chapter" data-level="6" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>6</b> Best practices project setup</a>
+<li class="chapter" data-level="3.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#advanced-prompting"><i class="fa fa-check"></i><b>3.4</b> Advanced prompting</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>6.1</b> Project organization</a></li>
-<li class="chapter" data-level="6.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#version-control-with-git"><i class="fa fa-check"></i><b>6.2</b> Version control with Git</a></li>
-<li class="chapter" data-level="6.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#r-project-setup"><i class="fa fa-check"></i><b>6.3</b> R project setup</a></li>
+<li class="chapter" data-level="3.4.1" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#zero-shot"><i class="fa fa-check"></i><b>3.4.1</b> Zero-shot</a></li>
+<li class="chapter" data-level="3.4.2" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#one-shot-and-multi-shot-prompts"><i class="fa fa-check"></i><b>3.4.2</b> One-shot and multi-shot prompts</a></li>
+<li class="chapter" data-level="3.4.3" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#making-a-simple-tool"><i class="fa fa-check"></i><b>3.4.3</b> Making a simple tool</a></li>
+<li class="chapter" data-level="3.4.4" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#summary-of-agents-and-tools"><i class="fa fa-check"></i><b>3.4.4</b> Summary of agents and tools</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>7</b> Inline code editing</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>7.1</b> 1. Code completion</a></li>
-<li class="chapter" data-level="7.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>7.2</b> 2. Inline code generation</a></li>
-<li class="chapter" data-level="7.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#understanding-inline-suggestions"><i class="fa fa-check"></i><b>7.3</b> Understanding inline suggestions</a></li>
-<li class="chapter" data-level="7.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#guiding-copilot-with-comments"><i class="fa fa-check"></i><b>7.4</b> Guiding Copilot with comments</a></li>
-<li class="chapter" data-level="7.5" data-path="inline-code-editing.html"><a href="inline-code-editing.html#common-patterns-for-r-programming"><i class="fa fa-check"></i><b>7.5</b> Common patterns for R programming</a></li>
-<li class="chapter" data-level="7.6" data-path="inline-code-editing.html"><a href="inline-code-editing.html#troubleshooting-and-refinement"><i class="fa fa-check"></i><b>7.6</b> Troubleshooting and refinement</a></li>
+<li class="chapter" data-level="3.5" data-path="llm-prompting-fundamentals.html"><a href="llm-prompting-fundamentals.html#reflection-on-prompting-fundamentals"><i class="fa fa-check"></i><b>3.5</b> Reflection on prompting fundamentals</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html"><i class="fa fa-check"></i><b>8</b> Planning your project with Ask mode</a>
+<li class="chapter" data-level="4" data-path="github-copilot-for-r.html"><a href="github-copilot-for-r.html"><i class="fa fa-check"></i><b>4</b> Github copilot for R</a></li>
+<li class="chapter" data-level="5" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html"><i class="fa fa-check"></i><b>5</b> Best practices project setup</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#introduction-to-ask-mode"><i class="fa fa-check"></i><b>8.1</b> Introduction to Ask mode</a></li>
-<li class="chapter" data-level="8.2" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#project-planning-with-ask-mode"><i class="fa fa-check"></i><b>8.2</b> Project planning with Ask mode</a></li>
-<li class="chapter" data-level="8.3" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#asking-effective-questions"><i class="fa fa-check"></i><b>8.3</b> Asking effective questions</a></li>
-<li class="chapter" data-level="8.4" data-path="planning-your-project-with-ask-mode.html"><a href="planning-your-project-with-ask-mode.html#implementing-ask-mode-suggestions"><i class="fa fa-check"></i><b>8.4</b> Implementing Ask mode suggestions</a></li>
+<li class="chapter" data-level="5.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-organization"><i class="fa fa-check"></i><b>5.1</b> Project organization</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#general-guidance"><i class="fa fa-check"></i><b>5.1.1</b> General guidance</a></li>
+<li class="chapter" data-level="5.1.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#project-directory-structure-example"><i class="fa fa-check"></i><b>5.1.2</b> Project directory structure example</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>9</b> Creating your code with Edit mode</a>
+<li class="chapter" data-level="5.2" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#the-readme.md-file"><i class="fa fa-check"></i><b>5.2</b> The README.md file</a></li>
+<li class="chapter" data-level="5.3" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#example-data"><i class="fa fa-check"></i><b>5.3</b> Example data</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#understanding-edit-mode"><i class="fa fa-check"></i><b>9.1</b> Understanding Edit mode</a></li>
-<li class="chapter" data-level="9.2" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-generation-strategies"><i class="fa fa-check"></i><b>9.2</b> Code generation strategies</a></li>
-<li class="chapter" data-level="9.3" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#code-transformation-techniques"><i class="fa fa-check"></i><b>9.3</b> Code transformation techniques</a></li>
-<li class="chapter" data-level="9.4" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html#quality-control-and-refinement"><i class="fa fa-check"></i><b>9.4</b> Quality control and refinement</a></li>
+<li class="chapter" data-level="5.3.1" data-path="best-practices-project-setup.html"><a href="best-practices-project-setup.html#case-study-bumphead-parrotfish-topa-in-solomon-islands"><i class="fa fa-check"></i><b>5.3.1</b> Case-study: Bumphead parrotfish, ‘Topa’ in Solomon Islands</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>10</b> Automated workflows with Agent mode</a>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inline-code-editing.html"><a href="inline-code-editing.html"><i class="fa fa-check"></i><b>6</b> Inline code editing</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>10.1</b> Introduction to Agent mode</a></li>
-<li class="chapter" data-level="10.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>10.2</b> Creating automated workflows</a></li>
-<li class="chapter" data-level="10.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>10.3</b> Common R workflow applications</a></li>
-<li class="chapter" data-level="10.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>10.4</b> Troubleshooting and optimization</a></li>
+<li class="chapter" data-level="6.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion"><i class="fa fa-check"></i><b>6.1</b> 1. Code completion</a></li>
+<li class="chapter" data-level="6.2" data-path="inline-code-editing.html"><a href="inline-code-editing.html#using-comments"><i class="fa fa-check"></i><b>6.2</b> 2. Using comments</a></li>
+<li class="chapter" data-level="6.3" data-path="inline-code-editing.html"><a href="inline-code-editing.html#code-completion-settings"><i class="fa fa-check"></i><b>6.3</b> 3. Code completion settings</a></li>
+<li class="chapter" data-level="6.4" data-path="inline-code-editing.html"><a href="inline-code-editing.html#inline-code-generation"><i class="fa fa-check"></i><b>6.4</b> 4. Inline code generation</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="inline-code-editing.html"><a href="inline-code-editing.html#prompt-shortcuts"><i class="fa fa-check"></i><b>6.4.1</b> Prompt shortcuts</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html"><i class="fa fa-check"></i><b>7</b> Planning your analysis with Ask mode</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.1</b> The jagged frontier of LLM progress</a></li>
+<li class="chapter" data-level="7.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.2</b> How to prompt for better statistical advice</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.2.1</b> Guidelines for prompting for statistical advice</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt"><i class="fa fa-check"></i><b>7.3</b> Improving our initial prompt</a></li>
+<li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.4</b> Planning implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="creating-your-code-with-edit-mode.html"><a href="creating-your-code-with-edit-mode.html"><i class="fa fa-check"></i><b>8</b> Creating your code with Edit mode</a></li>
+<li class="chapter" data-level="9" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html"><i class="fa fa-check"></i><b>9</b> Automated workflows with Agent mode</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#introduction-to-agent-mode"><i class="fa fa-check"></i><b>9.1</b> Introduction to Agent mode</a></li>
+<li class="chapter" data-level="9.2" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#creating-automated-workflows"><i class="fa fa-check"></i><b>9.2</b> Creating automated workflows</a></li>
+<li class="chapter" data-level="9.3" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#common-r-workflow-applications"><i class="fa fa-check"></i><b>9.3</b> Common R workflow applications</a></li>
+<li class="chapter" data-level="9.4" data-path="automated-workflows-with-agent-mode.html"><a href="automated-workflows-with-agent-mode.html#troubleshooting-and-optimization"><i class="fa fa-check"></i><b>9.4</b> Troubleshooting and optimization</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html"><i class="fa fa-check"></i><b>10</b> Ethics and copyright</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#model-biases"><i class="fa fa-check"></i><b>10.1</b> Model biases</a></li>
+<li class="chapter" data-level="10.2" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#energy-use"><i class="fa fa-check"></i><b>10.2</b> Energy use</a></li>
+<li class="chapter" data-level="10.3" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#copyright"><i class="fa fa-check"></i><b>10.3</b> Copyright</a></li>
+<li class="chapter" data-level="10.4" data-path="ethics-and-copyright.html"><a href="ethics-and-copyright.html#managing-data-privacy"><i class="fa fa-check"></i><b>10.4</b> Managing data privacy</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="advanced-llm-agents.html"><a href="advanced-llm-agents.html"><i class="fa fa-check"></i><b>11</b> Advanced LLM agents</a>
 <ul>
@@ -257,38 +276,117 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="best-practices-project-setup" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Best practices project setup<a href="best-practices-project-setup.html#best-practices-project-setup" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>How to be organized to maximise LLM effectiveness. Version control.</p>
-<p>This chapter focuses on establishing an optimal project structure and workflow to get the most out of LLMs in your R projects:</p>
-<div id="project-organization" class="section level2 hasAnchor" number="6.1">
-<h2><span class="header-section-number">6.1</span> Project organization<a href="best-practices-project-setup.html#project-organization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="best-practices-project-setup" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Best practices project setup<a href="best-practices-project-setup.html#best-practices-project-setup" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter focuses on establishing a project structure and workflow that can get the most out of your LLM assistants.</p>
+<div id="project-organization" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Project organization<a href="best-practices-project-setup.html#project-organization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Its helpful to set-up your projects in an organized and modularised way. In my experience most R users write most of their analysis in one long script. Don’t do this. It will be hard for ‘future you’ to navigate. If its hard for a human to navigate, it will also be hard for the assistant. Here’s how I set-up my projects.</p>
+<div id="general-guidance" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> General guidance<a href="best-practices-project-setup.html#general-guidance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Directory structures that facilitate LLM assistance</li>
-<li>Documentation practices that improve LLM understanding of your code</li>
-<li>Naming conventions and code organization principles</li>
-<li>Creating effective README files and project documentation</li>
+<li>Create a new folder for each new project.</li>
+<li>Optional but recommended: Initiliaze a git repo in that folder (I use github desktop).</li>
+<li>Set-up folders and files in an organized way</li>
+<li>Ideally put the data in this folder also. However, large datasets or sensitive data can be kept in other folders.</li>
+<li>Keep scripts short and modularized (e.g one for data analysis, one for modelling).</li>
 </ul>
+<p>Once you have your folder you can make it an Rstudio project (if using Rstudio) or just use ‘open folder’ in vscode. If want to link multiple folders in then use VScode workspaces.</p>
+<p>If you are not using git (version control), then I recommend you learn. LLM code editing tools can cause you to lose older versions. So best to back them up with proper use of git.</p>
 </div>
-<div id="version-control-with-git" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Version control with Git<a href="best-practices-project-setup.html#version-control-with-git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Basic Git workflow for R projects</li>
-<li>How version control enhances collaboration with LLMs</li>
-<li>Using Git to track changes made with LLM assistance</li>
-<li>Best practices for committing LLM-generated code</li>
-</ul>
+<div id="project-directory-structure-example" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Project directory structure example<a href="best-practices-project-setup.html#project-directory-structure-example" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here’s an example of a project directory structure. You don’t have to use this strucutre. the important thing is to be organized.</p>
+<pre><code>my-project/
+├── README.md 
+├── .gitignore
+├── Scripts/ # R code
+│   ├── 01_data-prep.R
+│   ├── 02_data-analysis.R
+│   └── 03_plots.R
+├── Shared/       
+│   ├── Outputs/
+│   │   ├── Figures/
+│   │   ├── data-prep/
+│   │   └── model-objects/
+│   ├── Data/
+│   └── Manuscripts/   
+└── Private/</code></pre>
 </div>
-<div id="r-project-setup" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> R project setup<a href="best-practices-project-setup.html#r-project-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Using RStudio projects or VSCode workspaces</li>
-<li>Setting up reproducible environments with renv or packrat</li>
-<li>Creating and maintaining package dependency documentation</li>
-<li>Organizing data, code, and output directories</li>
-</ul>
-<p>By implementing these best practices, you’ll create a development environment where LLMs can provide more accurate and contextually relevant assistance, leading to more efficient and reliable R programming workflows.</p>
+</div>
+<div id="the-readme.md-file" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> The README.md file<a href="best-practices-project-setup.html#the-readme.md-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The README.md is the memory for the project. If you use github it will also be the landing page for your repo, which is handy.</p>
+<p>Remember you are writing this for you and the LLMs. So think of it like a prompt.</p>
+<p>Here’s an example of some of the information you might want to include in your readme.</p>
+<pre><code># PROJECT TITLE
 
+## Summary
+
+## Aims
+
+## Data methodology
+
+## Tech context
+- We will use the R program
+- tidyverse packages for data manipulation
+- ggplot2 for data visualization
+
+Keep your scripts short and modular to facilitate debugging. Don&#39;t complete all of the steps below in one script. Finish scripts where it makes sense and save intermediate datasets. 
+
+## Steps
+As you go tick of the steps below. 
+
+[ ] Wrangle data
+[ ] Fit regression
+[ ] Plot verification
+[ ] ... 
+
+## Data 
+
+Include meta-data here and file paths. 
+
+## Directory structure 
+
+my-project/
+├── README.md 
+├── .gitignore
+├── Scripts/ # R code
+│   ├── 01_data-prep.R
+│   ├── 02_data-analysis.R
+│   └── 03_plots.R
+├── Shared/       
+│   ├── Outputs/
+│   │   ├── Figures/
+│   │   ├── data-prep/
+│   │   └── model-objects/
+│   ├── Data/
+│   └── Manuscripts/   
+└── Private/
+</code></pre>
+</div>
+<div id="example-data" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Example data<a href="best-practices-project-setup.html#example-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For the next few chapters we’ll work with some ecological data on benthic marine habitats and fish.</p>
+<div id="case-study-bumphead-parrotfish-topa-in-solomon-islands" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Case-study: Bumphead parrotfish, ‘Topa’ in Solomon Islands<a href="best-practices-project-setup.html#case-study-bumphead-parrotfish-topa-in-solomon-islands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bumphead parrotfish (<em>Bolbometopon muricatum</em>) are an enignmatic tropical fish species. Adults of these species are characterized by a large bump on their forehead that males use to display and fight during breeding. Sex determination for this species is unknown, but it is likely that an individual has the potential to develop into either a male or female at maturity.</p>
+<p>Adults travel in schools and consume algae by biting off chunks of coral and in the process they literally poo out clean sand. Because of their large size, schooling habit and late age at maturity they are susceptible to overfishing, and <a href="https://doi.org/10.1007/s00338-019-01801-z">many populations are in decline</a>.</p>
+<p>Their lifecycle is characterized by migration from lagoonal reef as juveniles (see image below) to reef flat and exposed reef habitats as adults. Early stage juveniles are carnivorous and feed on zooplankton, and then transform into herbivores at a young age.</p>
+<p><img src="images/bolbo-lifecycle.PNG" /></p>
+<p>Image: Lifecycle of bumphead parrotfish. Image by E. Stump and sourced from <a href="http://dx.doi.org/10.1016/j.biocon.2017.04.024">Hamilton et al. 2017</a>.</p>
+<p>Until the mid 2010s the habitat for settling postlarvae and juveniles was a mystery. However, the pattern of migrating from inshore to offshore over their known lifecycle suggests that the earliest benthic lifestages (‘recruits’) stages may occur on nearshore reef habitats.</p>
+<p>Nearshore reef habitats are susceptible to degradation from poor water quality, raising concerns that this species may also be in decline because of pollution. But the gap in data from the earliest lifestages hinders further exploration of this issue.</p>
+<p>In this course we’ll be analyzing the first survey that revealed the habitat preferences of early juveniles stages of bumphead parrotfish. These data were analyzed by <a href="http://dx.doi.org/10.1016/j.biocon.2017.04.024">Hamilton et al. 2017</a> and <a href="http://dx.doi.org/10.1111/cobi.13079">Brown and Hamilton 2018</a>.</p>
+<p>In the 2010s Rick Hamilton (The Nature Conservancy) lead a series of surveys in the nearshore reef habitats of Kia province, Solomon Islands. The aim was to look for the recruitment habitat for juvenile bumphead parrotfish. These surveys were motivated by concern from local communities in Kia that topa (the local name for bumpheads) are in decline.</p>
+<p>In the surveys, divers swam standardized transects and searched for juvenile bumphead in nearshore habitats, often along the edge of mangroves. All together they surveyed 49 sites across Kia.</p>
+<p>These surveys were made all the more challenging by the occurrence of crocodiles in mangrove habitat in the region. So these data are incredibly valuable.</p>
+<p>Logging in the Kia region has caused <a href="http://dx.doi.org/10.1111/cobi.13079">water quality issues that may impact nearshore coral habitats</a>. During logging, logs are transported from the land onto barges at ‘log ponds’. A log pond is an area of mangroves that is bulldozed to enable transfer of logs to barges. As you can imagine, logponds are very muddy. This damage creates significant sediment runoff which can smother and kill coral habitats.</p>
+<p>Rick and the team surveyed reefs near logponds and in areas that had no logging. They only ever found bumphead recruits hiding in branching coral species.</p>
+<p>In this course we will first ask if the occurrence of bumphead recruits is related to the cover of branching coral species. We will then develop a statistical model to analyse the relationship between pollution from logponds and bumphead recruits, and use this model to predict pollution impacts to bumpheads across the Kia region.</p>
+<p>The data and code for the original analyses are <a href="https://github.com/cbrown5/BenthicLatent">available at my github site</a>. In this course we will use simplified versions of the original data. We’re grateful to Rick Hamilton for providing the data for this course.</p>
+
+</div>
 </div>
 </div>
             </section>
@@ -328,7 +426,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-best-practices-setup.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-best-practices-setup.Rmd",
 "text": "Edit"
 },
 "history": {

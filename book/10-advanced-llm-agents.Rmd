@@ -7,6 +7,7 @@
 **Software requirements:** VScode with R, Roo code, API license.
 
 
+Use this with benthic readme. 
 
 This chapter introduces advanced LLM agents that go beyond GitHub Copilot's capabilities:
 

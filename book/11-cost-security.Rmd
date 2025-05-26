@@ -10,6 +10,8 @@ This chapter addresses important practical considerations when using LLMs for R 
 - Balancing cost with capability requirements
 - Budgeting for LLM usage in research and professional contexts
 
+Costs likely to go up in future once we are all hooked. 
+
 ## Security implications
 
 - Data privacy concerns when using LLMs

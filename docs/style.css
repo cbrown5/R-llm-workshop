@@ -12,3 +12,25 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.tip {
+  background-color: #e8f4fd;
+  border-left: 4px solid #1f85de;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.tip::before {
+  content: "💡 Tip";
+  font-weight: bold;
+  color: #1f85de;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tip p {
+  margin: 0;
+  line-height: 1.6;
+}

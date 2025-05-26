@@ -1,0 +1,32 @@
+# Github copilot for R
+
+**Time:** 11:30-12:00pm
+
+I'll show you how you can most effectively use github copilot to plan, code and write up your data analysis and modelling.
+
+**Software requirements:** VScode with R and github copilot license + extension for copilot.
+
+Github Copilot calls itself an 'AI programming assistant' or an 'AI pair programmer'. I'll refer to it as an 'LLM coding assistant' or just 'Assistant'.
+
+Assistants add a layer of software between you and the LLM. The software is doing some hidden interpretation of what you want to do, as well as trying to save costs. For instance, for most assistants we often don't get to control (or even see) the system message, the temperature or the number of output tokens. The assistant is also guessing context to include in the prompt, so it can automatically give the LLM more context. At the same time it is managing the LLM's context window and trying to save on costs. 
+
+There is no generic name for this type of software (the field is moving to fast to have standardized names). So I'll refer to them Assistants. In this bucket I'll also put chatGPT, Claude, Roo Code, Cline and others. Note that Github Copilot (which I'll call copilot for short) is different to the 'Copilot' assistant that is on the web and in the Teams app. 
+
+This software is also called 'chatbots', however, I prefer assistants as the tasks they can do are much broader than just chatting. 
+
+::: {.tip}
+**Tip:** You'll get the most of out Github Copilot if you use Visual Studio Code as your development environment (rather than RStudio). Setting up VScode with R can be a bit fiddly, check out my [my installation instructions](https://www.seascapemodels.org/rstats/2025/02/07/setting-up-vscode-r-cline.html) if you have trouble. Web searching advice is also a good idea if you are stuck. Its worth the effort. 
+:::
+
+Copilot It is developing rapidly, so it is quite likely that when you read this there will be changes and new features. 
+
+In this section I'll focus on showing the main ways you can use copilot. Just be aware the implementation may change in future. 
+
+We'll look at: 
+
+- Overview VScode for those that are new to this software
+- Best practices for setting up your project directory 
+- Inline code editing
+- Ask mode
+- Edit mode
+- Agent mode 
