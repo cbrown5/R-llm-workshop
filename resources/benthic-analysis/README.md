@@ -50,14 +50,18 @@ Variables
 - CODE: benthic organism code, matches `code` in BenthicCoverSurveys
 - CATEGORY: Long format name of benthic organism
 
-## JuvUVCSites_with_ReefTypes_16Jun2016
+## fish-coral-cover-sites
 
-![Site level covariates](https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv)
+![Site level covariates, fish and coral cover](https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/fish-coral-cover-sites.csv)
 
 Variables
 - site: Unique site IDs
 - reeftype: Type of reef (e.g. intra-lagoon or lagoon)
 - secchi: Secchi depth (m) a measure of water turbidity
 - flow: Factor indicating if tidal flow was "Strong" or "Mild" at the site
-- mindist: Distance to the nearest logging operation (m)
+- dist_to_logging_km: Distance to the nearest logging operation (km)
+- pres.topa: Abundance of Topa on each survey
+- CB_cover: Cover of branching coral cover (number of PIT points)
+- n_pts: Number of PIT points for benthic cover. used to standardize cover calculations
+- soft_cover: Soft coral cover (number PIT points)
 

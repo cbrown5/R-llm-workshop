@@ -14,7 +14,7 @@ Let's read in the benthic site data and fish counts:
 library(tidyverse)
 library(readr)
 
-dat <- read_csv(url("https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv"))
+dat <- read_csv(url("https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/fish-coral-cover-sites.csv"))
 
 head(dat)
 summary(dat)
@@ -57,7 +57,7 @@ This strategy is great in data wrangling workflows. As a simple example try make
 
 ```{r}
 dat %>%
-    group_by(logged, reeftype) %>%
+    group_by(logged) %>%
     summarize(mean_topa = mean(pres.topa), 
                 mean_CB = mean(CB_cover))
 ```
@@ -65,7 +65,7 @@ dat %>%
 To make this I might write this series of comments: 
 
 ```
-    #group dat by logged and reeftype
+    #group dat by logged 
     #summarize pres.topa and CB_cover
 ```
 

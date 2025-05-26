@@ -22,7 +22,7 @@ LLMs were created to write text. But it soon became apparent that they excel at 
 
 Since then AI companies have been optimising their training and development for coding and logic. 
 
-There are a series of standardized tests that are used to compare quality of LLMs. Common evaluation tests are the SWE benchmark which TODO add here, also add other evaluations, AINSE maths test... 
+There are a series of standardized tests that are used to compare quality of LLMs. Common evaluation tests are the SWE benchmark which looks at the ability of LLMs to autonomously create bug fixes. 
 
 These test different abilities. LLMs started to get so good at maths that they had to develop a new test. 
 

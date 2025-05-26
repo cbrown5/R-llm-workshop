@@ -287,7 +287,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="inline-code-editing.html#cb17-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb17-2"><a href="inline-code-editing.html#cb17-2" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb17-3"><a href="inline-code-editing.html#cb17-3" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="inline-code-editing.html#cb17-4" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv&quot;</span>))</span>
+<span id="cb17-4"><a href="inline-code-editing.html#cb17-4" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/fish-coral-cover-sites.csv&quot;</span>))</span>
 <span id="cb17-5"><a href="inline-code-editing.html#cb17-5" tabindex="-1"></a></span>
 <span id="cb17-6"><a href="inline-code-editing.html#cb17-6" tabindex="-1"></a><span class="fu">head</span>(dat)</span>
 <span id="cb17-7"><a href="inline-code-editing.html#cb17-7" tabindex="-1"></a><span class="fu">summary</span>(dat)</span></code></pre></div>
@@ -313,11 +313,11 @@ gg...</code></pre>
 <p>Now go back through and click under each line to get the suggestions.</p>
 <p>This strategy is great in data wrangling workflows. As a simple example try make this grouped summary using comments only:</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="inline-code-editing.html#cb20-1" tabindex="-1"></a>dat <span class="sc">%&gt;%</span></span>
-<span id="cb20-2"><a href="inline-code-editing.html#cb20-2" tabindex="-1"></a>    <span class="fu">group_by</span>(logged, reeftype) <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="inline-code-editing.html#cb20-2" tabindex="-1"></a>    <span class="fu">group_by</span>(logged) <span class="sc">%&gt;%</span></span>
 <span id="cb20-3"><a href="inline-code-editing.html#cb20-3" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">mean_topa =</span> <span class="fu">mean</span>(pres.topa), </span>
 <span id="cb20-4"><a href="inline-code-editing.html#cb20-4" tabindex="-1"></a>                <span class="at">mean_CB =</span> <span class="fu">mean</span>(CB_cover))</span></code></pre></div>
 <p>To make this I might write this series of comments:</p>
-<pre><code>    #group dat by logged and reeftype
+<pre><code>    #group dat by logged 
     #summarize pres.topa and CB_cover</code></pre>
 <p>If the variable names are documented above you can ofter be lazier and less precise with variable names here.</p>
 </div>
