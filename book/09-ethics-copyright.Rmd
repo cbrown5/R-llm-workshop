@@ -8,6 +8,8 @@ This chapter overviews important ethical and legal considerations when using LLM
 - Recognizing when biases might affect statistical analysis
 - Techniques for mitigating bias in LLM-generated code and analysis
 
+Supervisor create custom intstructions for lab
+
 ## Energy use
 
 - Environmental impact of LLM usage

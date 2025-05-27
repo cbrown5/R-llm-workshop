@@ -1,7 +1,71 @@
 # Creating your code with Edit mode
 
-This chapter explores how to leverage GitHub Copilot's Edit mode to efficiently create and modify R code:
+Edit mode will edit files for you. The best way to learn how is to just see it in action. 
 
-Use this to do the MDS. 
+Open the Chat panel and click the 'Ask' button, then select 'Edit'. 
 
-Create some tests as well. 
+## Adding a plan to the readme
+
+Open the README.md. Then type this prompt: 
+
+```
+Help me plan the implementation of this project. Add the plan to the ## Steps section
+```
+
+Click 'Keep' if you like what it did. Or you can suggest improvements. Alternatively, accept it for now and then edit it afterwards. 
+
+::: {.tip}
+**Tip:** Sometimes you can't go back once copilot has made edits to a file. So its good practice to use git and commmit changes before and after editing. 
+:::
+
+### Working through your plan 
+
+Once you're happy with the plan, you can get copilot to implement it. You can continue the current chat, or start a new chat to do this (depending on the length of the task). 
+
+Now step through, asking copilot to create each file as you. 
+
+At this point everyone's answers will diverge, as there is an element of randomness to the LLM's responses. We will compare as a class to see if everyone gets to a similar analysis and answer. 
+
+::: {.tip}
+**Tip:** We are using the readme.md is copilot's memory. This means the assitant always has the context it needs across different chat sessions (where it would otherwise forget). So its important to keep the readme updated. Its also useful to help you remember if you come back to the project some months or years later. 
+:::
+
+### Why so much code? 
+
+Copilot is designed as a programming assistant. We don't know its system message, but given the main market for this software is professional programmers, we can guess it has a strong emphasis on programming robust code. 
+
+You might notice that copilot tend to 'over-engineer' your R scripts. For instance, it has a tendancy to make an `if` statement to check if each new package needs installing, before loading it. 
+
+If you don't like this style you can add a statement to the readme asking it to keep implementation simple. 
+
+## Workflows and tips for edit mode 
+
+Remember its an assistant, its not doing the project for you. So you need to make sure it stays on track. Left unattended (if you just accept, accept, accept without reading) it can go down rabbit holes. Sometimes it creates superfluous analyses or even incorret statistics. 
+
+So here's how I recommend you use it: 
+
+- Use git for version control so you can go back in to older versions. 
+- Read the suggested edits before accepting
+- Keep the readme.md updated and keep attaching it to your prompts. This will help keep it focused on the tasks that matter
+- Use a two-step approach to identifying the statistical tests first, then implementing them as R code second. If you conflate these tasks you risk letting copilot guide the stats and getting it wrong. 
+- You can use it to help implement multiple different types of statistical tests for experimenting. If you do this, I just suggest you still use a two-step approach: plan a list of stats options first, then get copilot to implement them so you can compare results. 
+
+::: {.tip}
+**Tip:** LLMs will tend to suggest the most obvious statistical analyses. If you want to innovate creative new types of analyses you need to work a bit harder. One way to do this is to mix up your prompts to try and get cross-disciplinary pollination. For instance, you could ask it: "Suggest methods I could use for this analysis, taking inspiriation from different disciplines such as medicine, psychology and climate research".
+:::
+
+### Suggested workflow for new analyses
+
+Here's a workflow I've found works well if I'm doing an analysis that is new to means
+
+1. Read the literature to identify the appropriate analysis for the research question and data. 
+
+2. Once I've narrowed down the options I look for useful domain knowledge: vignettes, manuals or blogs that have suitable R examples. 
+
+3. Start a new folder, setting up the directory and readme as descriped in this workshop. 
+
+4. Use copilot to implement the analysis, attaching data summaries and the domain knowledge to get the best prompts. 
+
+### Suggested workflow for analyses I know well
+
+Much the same as above, just less planning and you don't need to search the literature because you know what you want to do. If you save useful domain knowledge when you see it you will also have the documents on hand to support the assistant. 

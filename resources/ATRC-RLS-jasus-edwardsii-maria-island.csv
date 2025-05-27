@@ -1,0 +1,1845 @@
+survey_id,species_name,total,site_code,latitude,longitude,year,protection_status,site
+7000597,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2008,No take,NT3
+7000598,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2008,No take,NT3
+812302791,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302792,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302793,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302794,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302801,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302802,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302803,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302804,Jasus edwardsii,5,MIR-S11,-42.56,148.07,1992,Fishing,F11
+812302811,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302812,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302813,Jasus edwardsii,7,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302814,Jasus edwardsii,3,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302821,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302822,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302823,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302824,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1993,Fishing,F11
+812302831,Jasus edwardsii,3,MIR-S11,-42.56,148.07,1994,Fishing,F11
+812302832,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1994,Fishing,F11
+812302833,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1994,Fishing,F11
+812302834,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1994,Fishing,F11
+812302911,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302912,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302913,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302914,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302921,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302922,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302923,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302924,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1992,Fishing,F9
+812302931,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302932,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302933,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302934,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302941,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302942,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302943,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302944,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1993,Fishing,F9
+812302951,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1994,Fishing,F9
+812302952,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1994,Fishing,F9
+812302953,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1994,Fishing,F9
+812302954,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1994,Fishing,F9
+812302961,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302962,Jasus edwardsii,3,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302963,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302964,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302971,Jasus edwardsii,3,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302972,Jasus edwardsii,3,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302973,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302974,Jasus edwardsii,3,MIR-S10,-42.72,148.01,1992,Fishing,F10
+812302981,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302982,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302983,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302984,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302991,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302992,Jasus edwardsii,3,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302993,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812302994,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1993,Fishing,F10
+812303001,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1994,Fishing,F10
+812303002,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1994,Fishing,F10
+812303003,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1994,Fishing,F10
+812303004,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1994,Fishing,F10
+812303061,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303062,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303063,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303064,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303071,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303072,Jasus edwardsii,3,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303073,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303074,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1992,No take,NT1
+812303081,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303082,Jasus edwardsii,2,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303083,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303084,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303091,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303092,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303093,Jasus edwardsii,3,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303094,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1993,No take,NT1
+812303101,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1994,No take,NT1
+812303102,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1994,No take,NT1
+812303103,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1994,No take,NT1
+812303104,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1994,No take,NT1
+812303111,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303112,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303121,Jasus edwardsii,4,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303122,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303123,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303124,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1992,No take,NT2
+812303131,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303132,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303133,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303134,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303141,Jasus edwardsii,4,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303142,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303143,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303144,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1993,No take,NT2
+812303151,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1994,No take,NT2
+812303152,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1994,No take,NT2
+812303153,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1994,No take,NT2
+812303154,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1994,No take,NT2
+812303161,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303162,Jasus edwardsii,5,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303163,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303164,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303171,Jasus edwardsii,3,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303172,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303173,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303174,Jasus edwardsii,6,MIR-S3,-42.59,148.05,1992,No take,NT3
+812303181,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303182,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303183,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303184,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303191,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303192,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303193,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303194,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1993,No take,NT3
+812303201,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1994,No take,NT3
+812303202,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1994,No take,NT3
+812303203,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1994,No take,NT3
+812303204,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1994,No take,NT3
+812303211,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303212,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303221,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303222,Jasus edwardsii,3,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303223,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303224,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812303231,Jasus edwardsii,2,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303232,Jasus edwardsii,3,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303233,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303234,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303241,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303242,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303243,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303244,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1993,No take,NT5
+812303251,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1994,No take,NT5
+812303252,Jasus edwardsii,4,MIR-S5,-42.63,148.02,1994,No take,NT5
+812303253,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1994,No take,NT5
+812303254,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1994,No take,NT5
+812303261,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303262,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303263,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303264,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303271,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303272,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303273,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303274,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1992,No take,NT7
+812303281,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303282,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303283,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303284,Jasus edwardsii,3,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303291,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303292,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303293,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303294,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1993,No take,NT7
+812303301,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1994,No take,NT7
+812303302,Jasus edwardsii,17,MIR-S7,-42.58,148.05,1994,No take,NT7
+812303303,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1994,No take,NT7
+812303304,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1994,No take,NT7
+812303311,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303312,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303313,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303314,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303321,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303322,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303323,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303324,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1992,No take,NT8
+812303331,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303332,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303333,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303334,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303341,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303342,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303343,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303344,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1993,No take,NT8
+812303351,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1994,No take,NT8
+812303352,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1994,No take,NT8
+812303353,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1994,No take,NT8
+812303354,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1994,No take,NT8
+812303381,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303382,Jasus edwardsii,7,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303391,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303392,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303393,Jasus edwardsii,3,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303394,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812303401,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303402,Jasus edwardsii,3,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303403,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303404,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303411,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303412,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303413,Jasus edwardsii,5,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303414,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1993,Fishing,F13
+812303421,Jasus edwardsii,2,MIR-S13,-42.55,147.95,1994,Fishing,F13
+812303422,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1994,Fishing,F13
+812303423,Jasus edwardsii,10,MIR-S13,-42.55,147.95,1994,Fishing,F13
+812303424,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1994,Fishing,F13
+812303471,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303472,Jasus edwardsii,7,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303473,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303474,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303481,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303482,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303483,Jasus edwardsii,5,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303484,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1992,Fishing,F14
+812303491,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303492,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303493,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303494,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303501,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303502,Jasus edwardsii,2,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303503,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303504,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1993,Fishing,F14
+812303511,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1994,Fishing,F14
+812303512,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1994,Fishing,F14
+812303513,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1994,Fishing,F14
+812303514,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1994,Fishing,F14
+812303521,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303522,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303523,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303524,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303531,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303532,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303533,Jasus edwardsii,2,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303534,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1992,Fishing,F12
+812303541,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303542,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303543,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303544,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303551,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303552,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303553,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303554,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1993,Fishing,F12
+812303561,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1994,Fishing,F12
+812303562,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1994,Fishing,F12
+812303563,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1994,Fishing,F12
+812303564,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1994,Fishing,F12
+812305661,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1995,Fishing,F11
+812305662,Jasus edwardsii,3,MIR-S11,-42.56,148.07,1995,Fishing,F11
+812305663,Jasus edwardsii,4,MIR-S11,-42.56,148.07,1995,Fishing,F11
+812305664,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1995,Fishing,F11
+812305671,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1996,Fishing,F11
+812305672,Jasus edwardsii,3,MIR-S11,-42.56,148.07,1996,Fishing,F11
+812305673,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1996,Fishing,F11
+812305674,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1996,Fishing,F11
+812305681,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305682,Jasus edwardsii,3,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305683,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305684,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305691,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305692,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305693,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305694,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1997,Fishing,F11
+812305701,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1998,Fishing,F11
+812305702,Jasus edwardsii,4,MIR-S11,-42.56,148.07,1998,Fishing,F11
+812305703,Jasus edwardsii,5,MIR-S11,-42.56,148.07,1998,Fishing,F11
+812305704,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1998,Fishing,F11
+812305711,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305712,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305713,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305714,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305721,Jasus edwardsii,2,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305722,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305723,Jasus edwardsii,1,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305724,Jasus edwardsii,0,MIR-S11,-42.56,148.07,1999,Fishing,F11
+812305731,Jasus edwardsii,4,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305732,Jasus edwardsii,5,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305733,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305734,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305741,Jasus edwardsii,3,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305742,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305743,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305744,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2000,Fishing,F11
+812305751,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305752,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305753,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305754,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305761,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305762,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305763,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305764,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2001,Fishing,F11
+812305771,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2002,Fishing,F11
+812305772,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2002,Fishing,F11
+812305773,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2002,Fishing,F11
+812305774,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2002,Fishing,F11
+812305821,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1995,Fishing,F9
+812305822,Jasus edwardsii,1,MIR-S9,-42.66,148.01,1995,Fishing,F9
+812305823,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1995,Fishing,F9
+812305824,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1995,Fishing,F9
+812305831,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1996,Fishing,F9
+812305832,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1996,Fishing,F9
+812305833,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1996,Fishing,F9
+812305834,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1996,Fishing,F9
+812305841,Jasus edwardsii,1,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305842,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305843,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305844,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305851,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305852,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305853,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305854,Jasus edwardsii,1,MIR-S9,-42.66,148.01,1997,Fishing,F9
+812305861,Jasus edwardsii,1,MIR-S9,-42.66,148.01,1998,Fishing,F9
+812305862,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1998,Fishing,F9
+812305863,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1998,Fishing,F9
+812305864,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1998,Fishing,F9
+812305871,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305872,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305873,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305874,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305881,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305882,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305883,Jasus edwardsii,0,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305884,Jasus edwardsii,2,MIR-S9,-42.66,148.01,1999,Fishing,F9
+812305891,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305892,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305893,Jasus edwardsii,2,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305894,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305901,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305902,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305903,Jasus edwardsii,2,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305904,Jasus edwardsii,2,MIR-S9,-42.66,148.01,2000,Fishing,F9
+812305911,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305912,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305913,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305914,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305921,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305922,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305923,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305924,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2001,Fishing,F9
+812305931,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2002,Fishing,F9
+812305932,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2002,Fishing,F9
+812305933,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2002,Fishing,F9
+812305934,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2002,Fishing,F9
+812305941,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1995,Fishing,F10
+812305942,Jasus edwardsii,4,MIR-S10,-42.72,148.01,1995,Fishing,F10
+812305943,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1995,Fishing,F10
+812305944,Jasus edwardsii,5,MIR-S10,-42.72,148.01,1995,Fishing,F10
+812305951,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1996,Fishing,F10
+812305952,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1996,Fishing,F10
+812305953,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1996,Fishing,F10
+812305954,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1996,Fishing,F10
+812305961,Jasus edwardsii,5,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305962,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305963,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305964,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305971,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305972,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305973,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305974,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1997,Fishing,F10
+812305981,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1998,Fishing,F10
+812305982,Jasus edwardsii,1,MIR-S10,-42.72,148.01,1998,Fishing,F10
+812305983,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1998,Fishing,F10
+812305984,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1998,Fishing,F10
+812305991,Jasus edwardsii,5,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812305992,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812305993,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812305994,Jasus edwardsii,10,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812306001,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812306002,Jasus edwardsii,0,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812306003,Jasus edwardsii,7,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812306004,Jasus edwardsii,2,MIR-S10,-42.72,148.01,1999,Fishing,F10
+812306011,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306012,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306013,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306014,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306021,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306022,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306023,Jasus edwardsii,4,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306024,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2000,Fishing,F10
+812306031,Jasus edwardsii,4,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306032,Jasus edwardsii,5,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306033,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306034,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306041,Jasus edwardsii,4,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306042,Jasus edwardsii,7,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306043,Jasus edwardsii,4,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306044,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2001,Fishing,F10
+812306051,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2002,Fishing,F10
+812306052,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2002,Fishing,F10
+812306053,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2002,Fishing,F10
+812306054,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2002,Fishing,F10
+812306071,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1995,No take,NT1
+812306072,Jasus edwardsii,4,MIR-S1,-42.58,148.06,1995,No take,NT1
+812306073,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1995,No take,NT1
+812306074,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1995,No take,NT1
+812306081,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1996,No take,NT1
+812306082,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1996,No take,NT1
+812306083,Jasus edwardsii,4,MIR-S1,-42.58,148.06,1996,No take,NT1
+812306084,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1996,No take,NT1
+812306091,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306092,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306093,Jasus edwardsii,5,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306094,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306101,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306102,Jasus edwardsii,3,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306103,Jasus edwardsii,10,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306104,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1997,No take,NT1
+812306111,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1998,No take,NT1
+812306112,Jasus edwardsii,5,MIR-S1,-42.58,148.06,1998,No take,NT1
+812306113,Jasus edwardsii,5,MIR-S1,-42.58,148.06,1998,No take,NT1
+812306114,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1998,No take,NT1
+812306121,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306122,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306123,Jasus edwardsii,5,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306124,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306131,Jasus edwardsii,3,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306132,Jasus edwardsii,1,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306133,Jasus edwardsii,5,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306134,Jasus edwardsii,0,MIR-S1,-42.58,148.06,1999,No take,NT1
+812306141,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306142,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306143,Jasus edwardsii,7,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306144,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306151,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306152,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306153,Jasus edwardsii,5,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306154,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2000,No take,NT1
+812306161,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306162,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306163,Jasus edwardsii,10,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306164,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306171,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306172,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306173,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306174,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2001,No take,NT1
+812306181,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2002,No take,NT1
+812306182,Jasus edwardsii,9,MIR-S1,-42.58,148.06,2002,No take,NT1
+812306183,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2002,No take,NT1
+812306184,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2002,No take,NT1
+812306191,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1995,No take,NT2
+812306192,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1995,No take,NT2
+812306193,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1995,No take,NT2
+812306194,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1995,No take,NT2
+812306201,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1996,No take,NT2
+812306202,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1996,No take,NT2
+812306203,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1996,No take,NT2
+812306204,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1996,No take,NT2
+812306211,Jasus edwardsii,4,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306212,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306213,Jasus edwardsii,5,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306214,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306221,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306222,Jasus edwardsii,12,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306223,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306224,Jasus edwardsii,4,MIR-S2,-42.6,148.05,1997,No take,NT2
+812306231,Jasus edwardsii,4,MIR-S2,-42.6,148.05,1998,No take,NT2
+812306232,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1998,No take,NT2
+812306233,Jasus edwardsii,5,MIR-S2,-42.6,148.05,1998,No take,NT2
+812306234,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1998,No take,NT2
+812306241,Jasus edwardsii,2,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306242,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306243,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306244,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306251,Jasus edwardsii,3,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306252,Jasus edwardsii,28,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306253,Jasus edwardsii,9,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306254,Jasus edwardsii,6,MIR-S2,-42.6,148.05,1999,No take,NT2
+812306261,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306262,Jasus edwardsii,6,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306263,Jasus edwardsii,6,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306264,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306271,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306272,Jasus edwardsii,6,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306273,Jasus edwardsii,7,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306274,Jasus edwardsii,9,MIR-S2,-42.6,148.05,2000,No take,NT2
+812306281,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306282,Jasus edwardsii,9,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306283,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306284,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306291,Jasus edwardsii,10,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306292,Jasus edwardsii,9,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306293,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306294,Jasus edwardsii,7,MIR-S2,-42.6,148.05,2001,No take,NT2
+812306301,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2002,No take,NT2
+812306302,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2002,No take,NT2
+812306303,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2002,No take,NT2
+812306304,Jasus edwardsii,13,MIR-S2,-42.6,148.05,2002,No take,NT2
+812306311,Jasus edwardsii,2,MIR-S3,-42.59,148.05,1995,No take,NT3
+812306312,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1995,No take,NT3
+812306313,Jasus edwardsii,1,MIR-S3,-42.59,148.05,1995,No take,NT3
+812306314,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1995,No take,NT3
+812306321,Jasus edwardsii,1,MIR-S3,-42.59,148.05,1996,No take,NT3
+812306322,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1996,No take,NT3
+812306323,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1996,No take,NT3
+812306324,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1996,No take,NT3
+812306331,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306332,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306333,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306334,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306341,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306342,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306343,Jasus edwardsii,3,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306344,Jasus edwardsii,1,MIR-S3,-42.59,148.05,1997,No take,NT3
+812306351,Jasus edwardsii,5,MIR-S3,-42.59,148.05,1998,No take,NT3
+812306352,Jasus edwardsii,4,MIR-S3,-42.59,148.05,1998,No take,NT3
+812306353,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1998,No take,NT3
+812306354,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1998,No take,NT3
+812306361,Jasus edwardsii,2,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306362,Jasus edwardsii,4,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306363,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306364,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306371,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306372,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306373,Jasus edwardsii,0,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306374,Jasus edwardsii,8,MIR-S3,-42.59,148.05,1999,No take,NT3
+812306381,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306382,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306383,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306384,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306391,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306392,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306393,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306394,Jasus edwardsii,11,MIR-S3,-42.59,148.05,2000,No take,NT3
+812306401,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306402,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306403,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306404,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306411,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306412,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306413,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306414,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2001,No take,NT3
+812306421,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2002,No take,NT3
+812306422,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2002,No take,NT3
+812306423,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2002,No take,NT3
+812306424,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2002,No take,NT3
+812306431,Jasus edwardsii,4,MIR-S5,-42.63,148.02,1995,No take,NT5
+812306432,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1995,No take,NT5
+812306433,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1995,No take,NT5
+812306434,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1995,No take,NT5
+812306441,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1996,No take,NT5
+812306442,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1996,No take,NT5
+812306443,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1996,No take,NT5
+812306444,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1996,No take,NT5
+812306451,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306452,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306453,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306454,Jasus edwardsii,3,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306461,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306462,Jasus edwardsii,6,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306463,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306464,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1997,No take,NT5
+812306471,Jasus edwardsii,3,MIR-S5,-42.63,148.02,1998,No take,NT5
+812306472,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1998,No take,NT5
+812306473,Jasus edwardsii,5,MIR-S5,-42.63,148.02,1998,No take,NT5
+812306474,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1998,No take,NT5
+812306481,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306482,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306483,Jasus edwardsii,9,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306484,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306491,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306492,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306493,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306494,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1999,No take,NT5
+812306501,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306502,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306503,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306504,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306511,Jasus edwardsii,4,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306512,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306513,Jasus edwardsii,5,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306514,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2000,No take,NT5
+812306521,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306522,Jasus edwardsii,5,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306523,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306524,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306531,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306532,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306533,Jasus edwardsii,3,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306534,Jasus edwardsii,3,MIR-S5,-42.63,148.02,2001,No take,NT5
+812306541,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2002,No take,NT5
+812306542,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2002,No take,NT5
+812306543,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2002,No take,NT5
+812306544,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2002,No take,NT5
+812306551,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1995,No take,NT7
+812306552,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1995,No take,NT7
+812306553,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1995,No take,NT7
+812306554,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1995,No take,NT7
+812306561,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1996,No take,NT7
+812306562,Jasus edwardsii,5,MIR-S7,-42.58,148.05,1996,No take,NT7
+812306563,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1996,No take,NT7
+812306564,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1996,No take,NT7
+812306571,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306572,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306573,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306574,Jasus edwardsii,4,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306581,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306582,Jasus edwardsii,4,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306583,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306584,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1997,No take,NT7
+812306591,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1998,No take,NT7
+812306592,Jasus edwardsii,5,MIR-S7,-42.58,148.05,1998,No take,NT7
+812306593,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1998,No take,NT7
+812306594,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1998,No take,NT7
+812306601,Jasus edwardsii,2,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306602,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306603,Jasus edwardsii,1,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306604,Jasus edwardsii,9,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306611,Jasus edwardsii,3,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306612,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306613,Jasus edwardsii,3,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306614,Jasus edwardsii,0,MIR-S7,-42.58,148.05,1999,No take,NT7
+812306621,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306622,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306623,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306624,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306631,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306632,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306633,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306634,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2000,No take,NT7
+812306641,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306642,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306643,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306644,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306651,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306652,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306653,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306654,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2001,No take,NT7
+812306661,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2002,No take,NT7
+812306662,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2002,No take,NT7
+812306663,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2002,No take,NT7
+812306664,Jasus edwardsii,6,MIR-S7,-42.58,148.05,2002,No take,NT7
+812306671,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1995,No take,NT8
+812306672,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1995,No take,NT8
+812306673,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1995,No take,NT8
+812306674,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1995,No take,NT8
+812306681,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1996,No take,NT8
+812306682,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1996,No take,NT8
+812306683,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1996,No take,NT8
+812306684,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1996,No take,NT8
+812306691,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306692,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306693,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306694,Jasus edwardsii,3,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306701,Jasus edwardsii,6,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306702,Jasus edwardsii,3,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306703,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306704,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1997,No take,NT8
+812306711,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1998,No take,NT8
+812306712,Jasus edwardsii,5,MIR-S8,-42.59,148.05,1998,No take,NT8
+812306713,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1998,No take,NT8
+812306714,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1998,No take,NT8
+812306721,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306722,Jasus edwardsii,3,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306723,Jasus edwardsii,4,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306724,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306731,Jasus edwardsii,1,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306732,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306733,Jasus edwardsii,2,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306734,Jasus edwardsii,0,MIR-S8,-42.59,148.05,1999,No take,NT8
+812306741,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306742,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306743,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306744,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306751,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306752,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306753,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306754,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2000,No take,NT8
+812306761,Jasus edwardsii,7,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306762,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306763,Jasus edwardsii,6,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306764,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306771,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306772,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306773,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306774,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2001,No take,NT8
+812306781,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2002,No take,NT8
+812306782,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2002,No take,NT8
+812306783,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2002,No take,NT8
+812306784,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2002,No take,NT8
+812306791,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1995,Fishing,F13
+812306792,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1995,Fishing,F13
+812306793,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1995,Fishing,F13
+812306794,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1995,Fishing,F13
+812306801,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1996,Fishing,F13
+812306802,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1996,Fishing,F13
+812306803,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1996,Fishing,F13
+812306804,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1996,Fishing,F13
+812306811,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306812,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306813,Jasus edwardsii,5,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306814,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306821,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306822,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306823,Jasus edwardsii,3,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306824,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1997,Fishing,F13
+812306831,Jasus edwardsii,2,MIR-S13,-42.55,147.95,1998,Fishing,F13
+812306832,Jasus edwardsii,7,MIR-S13,-42.55,147.95,1998,Fishing,F13
+812306833,Jasus edwardsii,9,MIR-S13,-42.55,147.95,1998,Fishing,F13
+812306834,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1998,Fishing,F13
+812306841,Jasus edwardsii,2,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306842,Jasus edwardsii,0,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306843,Jasus edwardsii,17,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306844,Jasus edwardsii,5,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306851,Jasus edwardsii,2,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306852,Jasus edwardsii,12,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306853,Jasus edwardsii,6,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306854,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1999,Fishing,F13
+812306861,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306862,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306863,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306864,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306871,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306872,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306873,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306874,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2000,Fishing,F13
+812306881,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306882,Jasus edwardsii,4,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306883,Jasus edwardsii,3,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306884,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306891,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306892,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306893,Jasus edwardsii,3,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306894,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2001,Fishing,F13
+812306901,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2002,Fishing,F13
+812306902,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2002,Fishing,F13
+812306903,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2002,Fishing,F13
+812306904,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2002,Fishing,F13
+812306911,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1995,Fishing,F14
+812306912,Jasus edwardsii,2,MIR-S14,-42.58,147.92,1995,Fishing,F14
+812306913,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1995,Fishing,F14
+812306914,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1995,Fishing,F14
+812306921,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1996,Fishing,F14
+812306922,Jasus edwardsii,2,MIR-S14,-42.58,147.92,1996,Fishing,F14
+812306923,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1996,Fishing,F14
+812306924,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1996,Fishing,F14
+812306931,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306932,Jasus edwardsii,8,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306933,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306934,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306941,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306942,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306943,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306944,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1997,Fishing,F14
+812306951,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1998,Fishing,F14
+812306952,Jasus edwardsii,3,MIR-S14,-42.58,147.92,1998,Fishing,F14
+812306953,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1998,Fishing,F14
+812306954,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1998,Fishing,F14
+812306961,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306962,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306963,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306964,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306971,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306972,Jasus edwardsii,1,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306973,Jasus edwardsii,4,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306974,Jasus edwardsii,0,MIR-S14,-42.58,147.92,1999,Fishing,F14
+812306981,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306982,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306983,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306984,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306991,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306992,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306993,Jasus edwardsii,3,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812306994,Jasus edwardsii,3,MIR-S14,-42.58,147.92,2000,Fishing,F14
+812307001,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307002,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307003,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307004,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307011,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307012,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307013,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307014,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2001,Fishing,F14
+812307021,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2002,Fishing,F14
+812307022,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2002,Fishing,F14
+812307023,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2002,Fishing,F14
+812307024,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2002,Fishing,F14
+812307031,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1995,Fishing,F12
+812307032,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1995,Fishing,F12
+812307033,Jasus edwardsii,2,MIR-S12,-42.52,147.97,1995,Fishing,F12
+812307034,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1995,Fishing,F12
+812307041,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1996,Fishing,F12
+812307042,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1996,Fishing,F12
+812307043,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1996,Fishing,F12
+812307044,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1996,Fishing,F12
+812307051,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307052,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307053,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307054,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307061,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307062,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307063,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307064,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1997,Fishing,F12
+812307071,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1998,Fishing,F12
+812307072,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1998,Fishing,F12
+812307073,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1998,Fishing,F12
+812307074,Jasus edwardsii,3,MIR-S12,-42.52,147.97,1998,Fishing,F12
+812307081,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307082,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307083,Jasus edwardsii,10,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307084,Jasus edwardsii,2,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307091,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307092,Jasus edwardsii,1,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307093,Jasus edwardsii,2,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307094,Jasus edwardsii,0,MIR-S12,-42.52,147.97,1999,Fishing,F12
+812307101,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307102,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307103,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307104,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307111,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307112,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307113,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307114,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2000,Fishing,F12
+812307121,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307122,Jasus edwardsii,3,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307123,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307124,Jasus edwardsii,4,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307131,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307132,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307133,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307134,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2001,Fishing,F12
+812307141,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2002,Fishing,F12
+812307142,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2002,Fishing,F12
+812307143,Jasus edwardsii,4,MIR-S12,-42.52,147.97,2002,Fishing,F12
+812307144,Jasus edwardsii,5,MIR-S12,-42.52,147.97,2002,Fishing,F12
+812316601,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2007,Fishing,F11
+812316602,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2007,Fishing,F11
+812316603,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2007,Fishing,F11
+812316604,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2007,Fishing,F11
+812316611,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2007,Fishing,F9
+812316612,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2007,Fishing,F9
+812316613,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2007,Fishing,F9
+812316614,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2007,Fishing,F9
+812316621,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2007,Fishing,F10
+812316622,Jasus edwardsii,5,MIR-S10,-42.72,148.01,2007,Fishing,F10
+812316623,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2007,Fishing,F10
+812316624,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2007,Fishing,F10
+812316631,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2007,No take,NT1
+812316632,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2007,No take,NT1
+812316633,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2007,No take,NT1
+812316634,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2007,No take,NT1
+812316641,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2007,No take,NT2
+812316642,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2007,No take,NT2
+812316643,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2007,No take,NT2
+812316644,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2007,No take,NT2
+812316651,Jasus edwardsii,7,MIR-S3,-42.59,148.05,2007,No take,NT3
+812316652,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2007,No take,NT3
+812316653,Jasus edwardsii,7,MIR-S3,-42.59,148.05,2007,No take,NT3
+812316654,Jasus edwardsii,9,MIR-S3,-42.59,148.05,2007,No take,NT3
+812316661,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2007,No take,NT5
+812316662,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2007,No take,NT5
+812316663,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2007,No take,NT5
+812316664,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2007,No take,NT5
+812316671,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2007,No take,NT7
+812316672,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2007,No take,NT7
+812316673,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2007,No take,NT7
+812316674,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2007,No take,NT7
+812316681,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2007,No take,NT8
+812316682,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2007,No take,NT8
+812316683,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2007,No take,NT8
+812316684,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2007,No take,NT8
+812316691,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2007,Fishing,F13
+812316692,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2007,Fishing,F13
+812316693,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2007,Fishing,F13
+812316694,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2007,Fishing,F13
+812316701,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2007,Fishing,F14
+812316702,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2007,Fishing,F14
+812316703,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2007,Fishing,F14
+812316704,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2007,Fishing,F14
+812316711,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2007,Fishing,F12
+812316712,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2007,Fishing,F12
+812316713,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2007,Fishing,F12
+812316714,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2007,Fishing,F12
+812317241,Jasus edwardsii,3,MIR-S11,-42.56,148.07,2004,Fishing,F11
+812317242,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2004,Fishing,F11
+812317243,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2004,Fishing,F11
+812317244,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2004,Fishing,F11
+812317251,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2005,Fishing,F11
+812317252,Jasus edwardsii,8,MIR-S11,-42.56,148.07,2005,Fishing,F11
+812317253,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2005,Fishing,F11
+812317254,Jasus edwardsii,3,MIR-S11,-42.56,148.07,2005,Fishing,F11
+812317261,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317262,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317263,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317264,Jasus edwardsii,3,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317271,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317272,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317273,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317274,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2006,Fishing,F11
+812317281,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2004,Fishing,F9
+812317282,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2004,Fishing,F9
+812317283,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2004,Fishing,F9
+812317284,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2004,Fishing,F9
+812317291,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2005,Fishing,F9
+812317292,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2005,Fishing,F9
+812317293,Jasus edwardsii,2,MIR-S9,-42.66,148.01,2005,Fishing,F9
+812317294,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2005,Fishing,F9
+812317301,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317302,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317303,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317304,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317311,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317312,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317313,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317314,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2006,Fishing,F9
+812317321,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2004,Fishing,F10
+812317322,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2004,Fishing,F10
+812317323,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2004,Fishing,F10
+812317324,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2004,Fishing,F10
+812317331,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2005,Fishing,F10
+812317332,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2005,Fishing,F10
+812317333,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2005,Fishing,F10
+812317334,Jasus edwardsii,4,MIR-S10,-42.72,148.01,2005,Fishing,F10
+812317341,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317342,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317343,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317344,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317351,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317352,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317353,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317354,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2006,Fishing,F10
+812317361,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2004,No take,NT1
+812317362,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2004,No take,NT1
+812317363,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2004,No take,NT1
+812317364,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2004,No take,NT1
+812317371,Jasus edwardsii,12,MIR-S1,-42.58,148.06,2005,No take,NT1
+812317372,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2005,No take,NT1
+812317373,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2005,No take,NT1
+812317374,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2005,No take,NT1
+812317381,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317382,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317383,Jasus edwardsii,5,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317384,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317391,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317392,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317393,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317394,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2006,No take,NT1
+812317401,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2004,No take,NT2
+812317402,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2004,No take,NT2
+812317403,Jasus edwardsii,6,MIR-S2,-42.6,148.05,2004,No take,NT2
+812317404,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2004,No take,NT2
+812317411,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2005,No take,NT2
+812317412,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2005,No take,NT2
+812317413,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2005,No take,NT2
+812317414,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2005,No take,NT2
+812317421,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317422,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317423,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317424,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317431,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317432,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317433,Jasus edwardsii,7,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317434,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2006,No take,NT2
+812317441,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2004,No take,NT3
+812317442,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2004,No take,NT3
+812317443,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2004,No take,NT3
+812317444,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2004,No take,NT3
+812317451,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2005,No take,NT3
+812317452,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2005,No take,NT3
+812317453,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2005,No take,NT3
+812317454,Jasus edwardsii,10,MIR-S3,-42.59,148.05,2005,No take,NT3
+812317461,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317462,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317463,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317464,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317471,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317472,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317473,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317474,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2006,No take,NT3
+812317481,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2004,No take,NT5
+812317482,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2004,No take,NT5
+812317483,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2004,No take,NT5
+812317484,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2004,No take,NT5
+812317491,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2005,No take,NT5
+812317492,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2005,No take,NT5
+812317493,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2005,No take,NT5
+812317494,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2005,No take,NT5
+812317501,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317502,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317503,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317504,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317511,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317512,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317513,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317514,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2006,No take,NT5
+812317521,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2004,No take,NT7
+812317522,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2004,No take,NT7
+812317523,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2004,No take,NT7
+812317524,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2004,No take,NT7
+812317531,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2005,No take,NT7
+812317532,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2005,No take,NT7
+812317533,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2005,No take,NT7
+812317534,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2005,No take,NT7
+812317541,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317542,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317543,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317544,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317551,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317552,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317553,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317554,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2006,No take,NT7
+812317561,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2004,No take,NT8
+812317562,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2004,No take,NT8
+812317563,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2004,No take,NT8
+812317564,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2004,No take,NT8
+812317571,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2005,No take,NT8
+812317572,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2005,No take,NT8
+812317573,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2005,No take,NT8
+812317574,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2005,No take,NT8
+812317581,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317582,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317583,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317584,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317591,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317592,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317593,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317594,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2006,No take,NT8
+812317601,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2004,Fishing,F13
+812317602,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2004,Fishing,F13
+812317603,Jasus edwardsii,6,MIR-S13,-42.55,147.95,2004,Fishing,F13
+812317604,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2004,Fishing,F13
+812317611,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2005,Fishing,F13
+812317612,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2005,Fishing,F13
+812317613,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2005,Fishing,F13
+812317614,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2005,Fishing,F13
+812317621,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317622,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317623,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317624,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317631,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317632,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317633,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317634,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2006,Fishing,F13
+812317651,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2004,Fishing,F14
+812317652,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2004,Fishing,F14
+812317653,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2004,Fishing,F14
+812317654,Jasus edwardsii,3,MIR-S14,-42.58,147.92,2004,Fishing,F14
+812317661,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2005,Fishing,F14
+812317662,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2005,Fishing,F14
+812317663,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2005,Fishing,F14
+812317664,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2005,Fishing,F14
+812317671,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317672,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317673,Jasus edwardsii,9,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317674,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317681,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317682,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317683,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317684,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2006,Fishing,F14
+812317691,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2004,Fishing,F12
+812317692,Jasus edwardsii,3,MIR-S12,-42.52,147.97,2004,Fishing,F12
+812317693,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2004,Fishing,F12
+812317694,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2004,Fishing,F12
+812317701,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2005,Fishing,F12
+812317702,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2005,Fishing,F12
+812317703,Jasus edwardsii,8,MIR-S12,-42.52,147.97,2005,Fishing,F12
+812317704,Jasus edwardsii,3,MIR-S12,-42.52,147.97,2005,Fishing,F12
+812317711,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317712,Jasus edwardsii,11,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317713,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317714,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317721,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317722,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317723,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812317724,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2006,Fishing,F12
+812320293,Jasus edwardsii,0,MIR-S2,-42.6,148.05,1992,No take,NT2
+812320294,Jasus edwardsii,1,MIR-S2,-42.6,148.05,1992,No take,NT2
+812320303,Jasus edwardsii,0,MIR-S5,-42.63,148.02,1992,No take,NT5
+812320304,Jasus edwardsii,1,MIR-S5,-42.63,148.02,1992,No take,NT5
+812320313,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812320314,Jasus edwardsii,1,MIR-S13,-42.55,147.95,1992,Fishing,F13
+812321751,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2008,Fishing,F11
+812321752,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2008,Fishing,F11
+812321753,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2008,Fishing,F11
+812321754,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2008,Fishing,F11
+812321761,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2008,Fishing,F9
+812321762,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2008,Fishing,F9
+812321763,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2008,Fishing,F9
+812321764,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2008,Fishing,F9
+812321771,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2008,Fishing,F10
+812321772,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2008,Fishing,F10
+812321773,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2008,Fishing,F10
+812321774,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2008,Fishing,F10
+812321781,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2008,No take,NT1
+812321782,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2008,No take,NT1
+812321783,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2008,No take,NT1
+812321784,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2008,No take,NT1
+812321791,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2008,No take,NT2
+812321792,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2008,No take,NT2
+812321793,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2008,No take,NT2
+812321794,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2008,No take,NT2
+812321801,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2008,No take,NT3
+812321802,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2008,No take,NT3
+812321803,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2008,No take,NT3
+812321804,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2008,No take,NT3
+812321811,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2008,No take,NT5
+812321812,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2008,No take,NT5
+812321813,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2008,No take,NT5
+812321814,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2008,No take,NT5
+812321821,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2008,No take,NT7
+812321822,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2008,No take,NT7
+812321823,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2008,No take,NT7
+812321824,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2008,No take,NT7
+812321831,Jasus edwardsii,5,MIR-S8,-42.59,148.05,2008,No take,NT8
+812321832,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2008,No take,NT8
+812321833,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2008,No take,NT8
+812321834,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2008,No take,NT8
+812321841,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2008,Fishing,F13
+812321842,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2008,Fishing,F13
+812321843,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2008,Fishing,F13
+812321844,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2008,Fishing,F13
+812321851,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2008,Fishing,F14
+812321852,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2008,Fishing,F14
+812321853,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2008,Fishing,F14
+812321854,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2008,Fishing,F14
+812321861,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2008,Fishing,F12
+812321862,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2008,Fishing,F12
+812321863,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2008,Fishing,F12
+812321864,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2008,Fishing,F12
+812322391,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2009,Fishing,F11
+812322392,Jasus edwardsii,8,MIR-S11,-42.56,148.07,2009,Fishing,F11
+812322393,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2009,Fishing,F11
+812322394,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2009,Fishing,F11
+812322401,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2009,Fishing,F9
+812322402,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2009,Fishing,F9
+812322403,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2009,Fishing,F9
+812322404,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2009,Fishing,F9
+812322411,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2009,Fishing,F10
+812322412,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2009,Fishing,F10
+812322413,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2009,Fishing,F10
+812322414,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2009,Fishing,F10
+812322421,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2009,No take,NT1
+812322422,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2009,No take,NT1
+812322423,Jasus edwardsii,7,MIR-S1,-42.58,148.06,2009,No take,NT1
+812322424,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2009,No take,NT1
+812322431,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2009,No take,NT2
+812322432,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2009,No take,NT2
+812322433,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2009,No take,NT2
+812322434,Jasus edwardsii,12,MIR-S2,-42.6,148.05,2009,No take,NT2
+812322441,Jasus edwardsii,11,MIR-S3,-42.59,148.05,2009,No take,NT3
+812322442,Jasus edwardsii,10,MIR-S3,-42.59,148.05,2009,No take,NT3
+812322443,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2009,No take,NT3
+812322444,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2009,No take,NT3
+812322451,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2009,No take,NT5
+812322452,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2009,No take,NT5
+812322453,Jasus edwardsii,4,MIR-S5,-42.63,148.02,2009,No take,NT5
+812322454,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2009,No take,NT5
+812322461,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2009,No take,NT7
+812322462,Jasus edwardsii,10,MIR-S7,-42.58,148.05,2009,No take,NT7
+812322463,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2009,No take,NT7
+812322464,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2009,No take,NT7
+812322471,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2009,No take,NT8
+812322472,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2009,No take,NT8
+812322473,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2009,No take,NT8
+812322474,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2009,No take,NT8
+812322481,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2009,Fishing,F13
+812322482,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2009,Fishing,F13
+812322483,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2009,Fishing,F13
+812322484,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2009,Fishing,F13
+812322491,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2009,Fishing,F14
+812322492,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2009,Fishing,F14
+812322493,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2009,Fishing,F14
+812322494,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2009,Fishing,F14
+812322501,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2009,Fishing,F12
+812322502,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2009,Fishing,F12
+812322503,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2009,Fishing,F12
+812322504,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2009,Fishing,F12
+812323291,Jasus edwardsii,9,MIR-S11,-42.56,148.07,2010,Fishing,F11
+812323292,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2010,Fishing,F11
+812323293,Jasus edwardsii,5,MIR-S11,-42.56,148.07,2010,Fishing,F11
+812323294,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2010,Fishing,F11
+812323301,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2010,Fishing,F9
+812323302,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2010,Fishing,F9
+812323303,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2010,Fishing,F9
+812323304,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2010,Fishing,F9
+812323311,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2010,Fishing,F10
+812323312,Jasus edwardsii,8,MIR-S10,-42.72,148.01,2010,Fishing,F10
+812323313,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2010,Fishing,F10
+812323314,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2010,Fishing,F10
+812323321,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2010,No take,NT1
+812323322,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2010,No take,NT1
+812323323,Jasus edwardsii,13,MIR-S1,-42.58,148.06,2010,No take,NT1
+812323324,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2010,No take,NT1
+812323331,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2010,No take,NT2
+812323332,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2010,No take,NT2
+812323333,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2010,No take,NT2
+812323334,Jasus edwardsii,11,MIR-S2,-42.6,148.05,2010,No take,NT2
+812323341,Jasus edwardsii,10,MIR-S3,-42.59,148.05,2010,No take,NT3
+812323342,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2010,No take,NT3
+812323343,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2010,No take,NT3
+812323344,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2010,No take,NT3
+812323351,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2010,No take,NT5
+812323352,Jasus edwardsii,4,MIR-S5,-42.63,148.02,2010,No take,NT5
+812323353,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2010,No take,NT5
+812323354,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2010,No take,NT5
+812323361,Jasus edwardsii,8,MIR-S7,-42.58,148.05,2010,No take,NT7
+812323362,Jasus edwardsii,9,MIR-S7,-42.58,148.05,2010,No take,NT7
+812323363,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2010,No take,NT7
+812323364,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2010,No take,NT7
+812323371,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2010,No take,NT8
+812323372,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2010,No take,NT8
+812323373,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2010,No take,NT8
+812323374,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2010,No take,NT8
+812323381,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2010,Fishing,F13
+812323382,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2010,Fishing,F13
+812323383,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2010,Fishing,F13
+812323384,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2010,Fishing,F13
+812323391,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2010,Fishing,F14
+812323392,Jasus edwardsii,4,MIR-S14,-42.58,147.92,2010,Fishing,F14
+812323393,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2010,Fishing,F14
+812323394,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2010,Fishing,F14
+812323401,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2010,Fishing,F12
+812323402,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2010,Fishing,F12
+812323403,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2010,Fishing,F12
+812323404,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2010,Fishing,F12
+812323501,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2011,Fishing,F10
+812323502,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2011,Fishing,F10
+812323503,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2011,Fishing,F10
+812323504,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2011,Fishing,F10
+812323521,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2011,No take,NT1
+812323522,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2011,No take,NT1
+812323523,Jasus edwardsii,9,MIR-S1,-42.58,148.06,2011,No take,NT1
+812323524,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2011,No take,NT1
+812323541,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2011,No take,NT2
+812323542,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2011,No take,NT2
+812323543,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2011,No take,NT2
+812323544,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2011,No take,NT2
+812323551,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2011,No take,NT3
+812323552,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2011,No take,NT3
+812323553,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2011,No take,NT3
+812323554,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2011,No take,NT3
+812323561,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2011,No take,NT5
+812323562,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2011,No take,NT5
+812323563,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2011,No take,NT5
+812323564,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2011,No take,NT5
+812323571,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2011,No take,NT7
+812323572,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2011,No take,NT7
+812323573,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2011,No take,NT7
+812323574,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2011,No take,NT7
+812323581,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2011,Fishing,F9
+812323582,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2011,Fishing,F9
+812323583,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2011,Fishing,F9
+812323584,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2011,Fishing,F9
+812323591,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2011,No take,NT8
+812323592,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2011,No take,NT8
+812323593,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2011,No take,NT8
+812323594,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2011,No take,NT8
+812323601,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2011,Fishing,F13
+812323602,Jasus edwardsii,3,MIR-S13,-42.55,147.95,2011,Fishing,F13
+812323603,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2011,Fishing,F13
+812323604,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2011,Fishing,F13
+812323611,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2011,Fishing,F14
+812323612,Jasus edwardsii,7,MIR-S14,-42.58,147.92,2011,Fishing,F14
+812323613,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2011,Fishing,F14
+812323614,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2011,Fishing,F14
+812323621,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2011,Fishing,F12
+812323622,Jasus edwardsii,3,MIR-S12,-42.52,147.97,2011,Fishing,F12
+812323623,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2011,Fishing,F12
+812323624,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2011,Fishing,F12
+812323631,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2011,Fishing,F11
+812323632,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2011,Fishing,F11
+812323633,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2011,Fishing,F11
+812323634,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2011,Fishing,F11
+812324931,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2012,Fishing,F10
+812324932,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2012,Fishing,F10
+812324933,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2012,Fishing,F10
+812324934,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2012,Fishing,F10
+812324941,Jasus edwardsii,13,MIR-S3,-42.59,148.05,2012,No take,NT3
+812324942,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2012,No take,NT3
+812324943,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2012,No take,NT3
+812324944,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2012,No take,NT3
+812324951,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2012,Fishing,F9
+812324952,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2012,Fishing,F9
+812324953,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2012,Fishing,F9
+812324954,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2012,Fishing,F9
+812324961,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2012,Fishing,F13
+812324962,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2012,Fishing,F13
+812324963,Jasus edwardsii,4,MIR-S13,-42.55,147.95,2012,Fishing,F13
+812324964,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2012,Fishing,F13
+812324971,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+812324972,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+812324973,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+812324974,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2012,No take,NT5
+812324981,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2012,No take,NT8
+812324982,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2012,No take,NT8
+812324983,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2012,No take,NT8
+812324984,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2012,No take,NT8
+812324991,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2012,No take,NT1
+812324992,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2012,No take,NT1
+812324993,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2012,No take,NT1
+812324994,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2012,No take,NT1
+812325001,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2012,No take,NT7
+812325002,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2012,No take,NT7
+812325003,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2012,No take,NT7
+812325004,Jasus edwardsii,5,MIR-S7,-42.58,148.05,2012,No take,NT7
+812325011,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2012,Fishing,F11
+812325012,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2012,Fishing,F11
+812325013,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2012,Fishing,F11
+812325014,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2012,Fishing,F11
+812325021,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2012,Fishing,F14
+812325022,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2012,Fishing,F14
+812325023,Jasus edwardsii,12,MIR-S14,-42.58,147.92,2012,Fishing,F14
+812325024,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2012,Fishing,F14
+812325031,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2012,No take,NT2
+812325032,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2012,No take,NT2
+812325033,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2012,No take,NT2
+812325034,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2012,No take,NT2
+812325041,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2012,Fishing,F12
+812325042,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2012,Fishing,F12
+812325043,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2012,Fishing,F12
+812325044,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2012,Fishing,F12
+812325931,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2013,Fishing,F9
+812325932,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2013,Fishing,F9
+812325933,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2013,Fishing,F9
+812325934,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2013,Fishing,F9
+812325941,Jasus edwardsii,3,MIR-S11,-42.56,148.07,2013,Fishing,F11
+812325942,Jasus edwardsii,9,MIR-S11,-42.56,148.07,2013,Fishing,F11
+812325943,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2013,Fishing,F11
+812325944,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2013,Fishing,F11
+812325951,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2013,Fishing,F10
+812325952,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2013,Fishing,F10
+812325953,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2013,Fishing,F10
+812325954,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2013,Fishing,F10
+812325961,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2013,No take,NT1
+812325962,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2013,No take,NT1
+812325963,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2013,No take,NT1
+812325964,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2013,No take,NT1
+812325971,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2013,No take,NT3
+812325972,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2013,No take,NT3
+812325973,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2013,No take,NT3
+812325974,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2013,No take,NT3
+812325981,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2013,No take,NT5
+812325982,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2013,No take,NT5
+812325983,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2013,No take,NT5
+812325984,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2013,No take,NT5
+812325991,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2013,No take,NT7
+812325992,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2013,No take,NT7
+812325993,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2013,No take,NT7
+812325994,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2013,No take,NT7
+812326001,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2013,No take,NT8
+812326002,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2013,No take,NT8
+812326003,Jasus edwardsii,6,MIR-S8,-42.59,148.05,2013,No take,NT8
+812326004,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2013,No take,NT8
+812326011,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2013,Fishing,F13
+812326012,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2013,Fishing,F13
+812326013,Jasus edwardsii,12,MIR-S13,-42.55,147.95,2013,Fishing,F13
+812326014,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2013,Fishing,F13
+812326021,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2013,Fishing,F14
+812326022,Jasus edwardsii,7,MIR-S14,-42.58,147.92,2013,Fishing,F14
+812326023,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2013,Fishing,F14
+812326024,Jasus edwardsii,3,MIR-S14,-42.58,147.92,2013,Fishing,F14
+812326031,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2013,No take,NT2
+812326032,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2013,No take,NT2
+812326033,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2013,No take,NT2
+812326034,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2013,No take,NT2
+812326041,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2013,Fishing,F12
+812326042,Jasus edwardsii,5,MIR-S12,-42.52,147.97,2013,Fishing,F12
+812326043,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2013,Fishing,F12
+812326044,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2013,Fishing,F12
+812326241,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2014,Fishing,F11
+812326242,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2014,Fishing,F11
+812326243,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2014,Fishing,F11
+812326244,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2014,Fishing,F11
+812326251,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2014,Fishing,F9
+812326252,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2014,Fishing,F9
+812326253,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2014,Fishing,F9
+812326254,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2014,Fishing,F9
+812326261,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2014,Fishing,F10
+812326262,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2014,Fishing,F10
+812326263,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2014,Fishing,F10
+812326264,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2014,Fishing,F10
+812326271,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2014,No take,NT3
+812326272,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2014,No take,NT3
+812326273,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2014,No take,NT3
+812326274,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2014,No take,NT3
+812326281,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2014,No take,NT5
+812326282,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2014,No take,NT5
+812326283,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2014,No take,NT5
+812326284,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2014,No take,NT5
+812326291,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2014,No take,NT8
+812326292,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2014,No take,NT8
+812326293,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2014,No take,NT8
+812326294,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2014,No take,NT8
+812326301,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2014,Fishing,F13
+812326302,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2014,Fishing,F13
+812326303,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2014,Fishing,F13
+812326304,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2014,Fishing,F13
+812326311,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2014,Fishing,F14
+812326312,Jasus edwardsii,5,MIR-S14,-42.58,147.92,2014,Fishing,F14
+812326313,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2014,Fishing,F14
+812326314,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2014,Fishing,F14
+812326981,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2015,Fishing,F9
+812326982,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2015,Fishing,F9
+812326983,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2015,Fishing,F9
+812326984,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2015,Fishing,F9
+812326991,Jasus edwardsii,6,MIR-S3,-42.59,148.05,2015,No take,NT3
+812326992,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2015,No take,NT3
+812326993,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2015,No take,NT3
+812326994,Jasus edwardsii,7,MIR-S3,-42.59,148.05,2015,No take,NT3
+812327001,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2015,No take,NT1
+812327002,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2015,No take,NT1
+812327003,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2015,No take,NT1
+812327004,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2015,No take,NT1
+812327011,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2015,Fishing,F14
+812327012,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2015,Fishing,F14
+812327013,Jasus edwardsii,9,MIR-S14,-42.58,147.92,2015,Fishing,F14
+812327014,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2015,Fishing,F14
+812327021,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2015,Fishing,F13
+812327022,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2015,Fishing,F13
+812327023,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2015,Fishing,F13
+812327024,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2015,Fishing,F13
+812327031,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2015,Fishing,F12
+812327032,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2015,Fishing,F12
+812327033,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2015,Fishing,F12
+812327034,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2015,Fishing,F12
+812327041,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2015,Fishing,F10
+812327042,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2015,Fishing,F10
+812327043,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2015,Fishing,F10
+812327044,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2015,Fishing,F10
+812327051,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2015,No take,NT2
+812327052,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2015,No take,NT2
+812327053,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2015,No take,NT2
+812327054,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2015,No take,NT2
+812327061,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2015,No take,NT7
+812327062,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2015,No take,NT7
+812327063,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2015,No take,NT7
+812327064,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2015,No take,NT7
+812327071,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2015,No take,NT8
+812327072,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2015,No take,NT8
+812327073,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2015,No take,NT8
+812327074,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2015,No take,NT8
+812327081,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2015,No take,NT5
+812327082,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2015,No take,NT5
+812327083,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2015,No take,NT5
+812327084,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2015,No take,NT5
+812327091,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2015,Fishing,F11
+812327092,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2015,Fishing,F11
+812327093,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2015,Fishing,F11
+812327094,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2015,Fishing,F11
+812327481,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2014,Fishing,F12
+812327482,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2014,Fishing,F12
+812327483,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2014,Fishing,F12
+812327484,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2014,Fishing,F12
+812327491,Jasus edwardsii,5,MIR-S7,-42.58,148.05,2014,No take,NT7
+812327492,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2014,No take,NT7
+812327493,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2014,No take,NT7
+812327494,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2014,No take,NT7
+812327501,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2014,No take,NT1
+812327502,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2014,No take,NT1
+812327503,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2014,No take,NT1
+812327504,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2014,No take,NT1
+812327511,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2014,No take,NT2
+812327512,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2014,No take,NT2
+812327513,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2014,No take,NT2
+812327514,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2014,No take,NT2
+812327951,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2017,No take,NT5
+812327952,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2017,No take,NT5
+812327953,Jasus edwardsii,9,MIR-S5,-42.63,148.02,2017,No take,NT5
+812327954,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2017,No take,NT5
+812327961,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2017,Fishing,F10
+812327962,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2017,Fishing,F10
+812327963,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2017,Fishing,F10
+812327964,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2017,Fishing,F10
+812327971,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2017,Fishing,F9
+812327972,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2017,Fishing,F9
+812327973,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2017,Fishing,F9
+812327974,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2017,Fishing,F9
+812327981,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2017,Fishing,F14
+812327982,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2017,Fishing,F14
+812327983,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2017,Fishing,F14
+812327984,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2017,Fishing,F14
+812327991,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2017,Fishing,F12
+812327992,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2017,Fishing,F12
+812327993,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2017,Fishing,F12
+812327994,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2017,Fishing,F12
+812328001,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2017,Fishing,F13
+812328002,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2017,Fishing,F13
+812328003,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2017,Fishing,F13
+812328004,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2017,Fishing,F13
+812328011,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2017,No take,NT8
+812328012,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2017,No take,NT8
+812328013,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2017,No take,NT8
+812328014,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2017,No take,NT8
+812328021,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2017,No take,NT1
+812328022,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2017,No take,NT1
+812328023,Jasus edwardsii,9,MIR-S1,-42.58,148.06,2017,No take,NT1
+812328024,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2017,No take,NT1
+812328031,Jasus edwardsii,4,MIR-S11,-42.56,148.07,2017,Fishing,F11
+812328032,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2017,Fishing,F11
+812328033,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2017,Fishing,F11
+812328034,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2017,Fishing,F11
+812328041,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2017,No take,NT2
+812328042,Jasus edwardsii,7,MIR-S2,-42.6,148.05,2017,No take,NT2
+812328043,Jasus edwardsii,14,MIR-S2,-42.6,148.05,2017,No take,NT2
+812328044,Jasus edwardsii,13,MIR-S2,-42.6,148.05,2017,No take,NT2
+812328051,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2017,No take,NT3
+812328052,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2017,No take,NT3
+812328053,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2017,No take,NT3
+812328054,Jasus edwardsii,6,MIR-S3,-42.59,148.05,2017,No take,NT3
+812328061,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2017,No take,NT7
+812328062,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2017,No take,NT7
+812328063,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2017,No take,NT7
+812328064,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2017,No take,NT7
+812329081,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2016,Fishing,F11
+812329082,Jasus edwardsii,7,MIR-S11,-42.56,148.07,2016,Fishing,F11
+812329083,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2016,Fishing,F11
+812329084,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2016,Fishing,F11
+812329091,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2016,Fishing,F9
+812329092,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2016,Fishing,F9
+812329093,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2016,Fishing,F9
+812329094,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2016,Fishing,F9
+812329101,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2016,Fishing,F10
+812329102,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2016,Fishing,F10
+812329103,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2016,Fishing,F10
+812329104,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2016,Fishing,F10
+812329111,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2016,No take,NT1
+812329112,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2016,No take,NT1
+812329113,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2016,No take,NT1
+812329114,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2016,No take,NT1
+812329121,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2016,No take,NT2
+812329122,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2016,No take,NT2
+812329123,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2016,No take,NT2
+812329124,Jasus edwardsii,7,MIR-S2,-42.6,148.05,2016,No take,NT2
+812329131,Jasus edwardsii,10,MIR-S3,-42.59,148.05,2016,No take,NT3
+812329132,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2016,No take,NT3
+812329133,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2016,No take,NT3
+812329134,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2016,No take,NT3
+812329141,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2016,No take,NT5
+812329142,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2016,No take,NT5
+812329143,Jasus edwardsii,4,MIR-S5,-42.63,148.02,2016,No take,NT5
+812329144,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2016,No take,NT5
+812329151,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2016,No take,NT7
+812329152,Jasus edwardsii,5,MIR-S7,-42.58,148.05,2016,No take,NT7
+812329153,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2016,No take,NT7
+812329154,Jasus edwardsii,5,MIR-S7,-42.58,148.05,2016,No take,NT7
+812329161,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2016,No take,NT8
+812329162,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2016,No take,NT8
+812329163,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2016,No take,NT8
+812329164,Jasus edwardsii,9,MIR-S8,-42.59,148.05,2016,No take,NT8
+812329171,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2016,Fishing,F13
+812329172,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2016,Fishing,F13
+812329173,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2016,Fishing,F13
+812329174,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2016,Fishing,F13
+812329181,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2016,Fishing,F14
+812329182,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2016,Fishing,F14
+812329183,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2016,Fishing,F14
+812329184,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2016,Fishing,F14
+812329191,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2016,Fishing,F12
+812329192,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2016,Fishing,F12
+812329193,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2016,Fishing,F12
+812329194,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2016,Fishing,F12
+812331481,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2018,No take,NT8
+812331482,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2018,No take,NT8
+812331483,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2018,No take,NT8
+812331484,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2018,No take,NT8
+812331501,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2018,Fishing,F11
+812331502,Jasus edwardsii,9,MIR-S11,-42.56,148.07,2018,Fishing,F11
+812331503,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2018,Fishing,F11
+812331504,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2018,Fishing,F11
+812331511,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2018,Fishing,F10
+812331512,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2018,Fishing,F10
+812331513,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2018,Fishing,F10
+812331514,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2018,Fishing,F10
+812331541,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2018,No take,NT1
+812331542,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2018,No take,NT1
+812331543,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2018,No take,NT1
+812331544,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2018,No take,NT1
+812331551,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2018,No take,NT2
+812331552,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2018,No take,NT2
+812331553,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2018,No take,NT2
+812331554,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2018,No take,NT2
+812331561,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2018,No take,NT3
+812331562,Jasus edwardsii,4,MIR-S3,-42.59,148.05,2018,No take,NT3
+812331563,Jasus edwardsii,7,MIR-S3,-42.59,148.05,2018,No take,NT3
+812331564,Jasus edwardsii,12,MIR-S3,-42.59,148.05,2018,No take,NT3
+812331571,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2018,No take,NT7
+812331572,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2018,No take,NT7
+812331573,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2018,No take,NT7
+812331574,Jasus edwardsii,6,MIR-S7,-42.58,148.05,2018,No take,NT7
+812331591,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2018,Fishing,F13
+812331592,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2018,Fishing,F13
+812331593,Jasus edwardsii,7,MIR-S13,-42.55,147.95,2018,Fishing,F13
+812331594,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2018,Fishing,F13
+812331601,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2018,Fishing,F12
+812331602,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2018,Fishing,F12
+812331603,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2018,Fishing,F12
+812331604,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2018,Fishing,F12
+812331611,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2018,Fishing,F9
+812331612,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2018,Fishing,F9
+812331613,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2018,Fishing,F9
+812331614,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2018,Fishing,F9
+812331621,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2018,No take,NT5
+812331622,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2018,No take,NT5
+812331623,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2018,No take,NT5
+812331624,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2018,No take,NT5
+812331631,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2018,Fishing,F14
+812331632,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2018,Fishing,F14
+812331633,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2018,Fishing,F14
+812331634,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2018,Fishing,F14
+912340041,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2012,No take,NT2
+912340042,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2012,No take,NT2
+912340043,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2012,No take,NT2
+912340044,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2012,No take,NT2
+912340045,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+912340046,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+912340047,Jasus edwardsii,10,MIR-S5,-42.63,148.02,2012,No take,NT5
+912340048,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2012,No take,NT5
+912344083,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2014,No take,NT2
+912344084,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2014,No take,NT2
+912352768,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2019,Fishing,F10
+912352769,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2019,Fishing,F10
+912352770,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2019,Fishing,F10
+912352771,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2019,Fishing,F10
+912352772,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2019,No take,NT2
+912352773,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2019,No take,NT2
+912352774,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2019,No take,NT2
+912352775,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2019,No take,NT2
+912352776,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2019,No take,NT5
+912352777,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2019,No take,NT5
+912352778,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2019,No take,NT5
+912352779,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2019,No take,NT5
+912352780,Jasus edwardsii,15,MIR-S3,-42.59,148.05,2019,No take,NT3
+912352781,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2019,No take,NT3
+912352782,Jasus edwardsii,13,MIR-S3,-42.59,148.05,2019,No take,NT3
+912352783,Jasus edwardsii,1,MIR-S3,-42.59,148.05,2019,No take,NT3
+912352784,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2019,Fishing,F14
+912352785,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2019,Fishing,F14
+912352786,Jasus edwardsii,5,MIR-S14,-42.58,147.92,2019,Fishing,F14
+912352787,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2019,Fishing,F14
+912352788,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2019,Fishing,F12
+912352789,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2019,Fishing,F12
+912352790,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2019,Fishing,F12
+912352791,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2019,Fishing,F12
+912352792,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2019,No take,NT1
+912352793,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2019,No take,NT1
+912352794,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2019,No take,NT1
+912352795,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2019,No take,NT1
+912352796,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2019,No take,NT8
+912352797,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2019,No take,NT8
+912352798,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2019,No take,NT8
+912352799,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2019,No take,NT8
+912352800,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2019,Fishing,F11
+912352801,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2019,Fishing,F11
+912352802,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2019,Fishing,F11
+912352803,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2019,Fishing,F11
+912352804,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2019,No take,NT7
+912352805,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2019,No take,NT7
+912352806,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2019,No take,NT7
+912352807,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2019,Fishing,F9
+912352808,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2019,Fishing,F9
+912352809,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2019,Fishing,F9
+912352810,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2019,Fishing,F9
+912352811,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2019,Fishing,F13
+912352812,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2019,Fishing,F13
+912352813,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2019,Fishing,F13
+912352814,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2019,Fishing,F13
+912352815,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2019,No take,NT7
+912353713,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2020,No take,NT1
+912353714,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2020,No take,NT1
+912353715,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2020,No take,NT1
+912353716,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2020,No take,NT1
+912353717,Jasus edwardsii,4,MIR-S11,-42.56,148.07,2020,Fishing,F11
+912353718,Jasus edwardsii,8,MIR-S11,-42.56,148.07,2020,Fishing,F11
+912353719,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2020,Fishing,F11
+912353720,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2020,Fishing,F11
+912353721,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2020,No take,NT8
+912353722,Jasus edwardsii,4,MIR-S8,-42.59,148.05,2020,No take,NT8
+912353723,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2020,No take,NT8
+912353724,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2020,No take,NT8
+912353725,Jasus edwardsii,4,MIR-S2,-42.6,148.05,2020,No take,NT2
+912353726,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2020,No take,NT2
+912353727,Jasus edwardsii,6,MIR-S2,-42.6,148.05,2020,No take,NT2
+912353728,Jasus edwardsii,11,MIR-S2,-42.6,148.05,2020,No take,NT2
+912353729,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2020,Fishing,F13
+912353730,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2020,Fishing,F13
+912353731,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2020,Fishing,F13
+912353732,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2020,Fishing,F13
+912353733,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2020,No take,NT3
+912353734,Jasus edwardsii,33,MIR-S3,-42.59,148.05,2020,No take,NT3
+912353735,Jasus edwardsii,12,MIR-S3,-42.59,148.05,2020,No take,NT3
+912353736,Jasus edwardsii,7,MIR-S3,-42.59,148.05,2020,No take,NT3
+912353737,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2020,No take,NT7
+912353738,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2020,No take,NT7
+912353739,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2020,No take,NT7
+912353740,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2020,No take,NT7
+912353741,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2020,No take,NT5
+912353742,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2020,No take,NT5
+912353743,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2020,No take,NT5
+912353744,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2020,No take,NT5
+912353745,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2020,Fishing,F9
+912353746,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2020,Fishing,F9
+912353747,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2020,Fishing,F9
+912353748,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2020,Fishing,F9
+912353749,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2020,Fishing,F12
+912353750,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2020,Fishing,F12
+912353751,Jasus edwardsii,6,MIR-S12,-42.52,147.97,2020,Fishing,F12
+912353752,Jasus edwardsii,2,MIR-S12,-42.52,147.97,2020,Fishing,F12
+912353753,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2020,Fishing,F10
+912353754,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2020,Fishing,F10
+912353755,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2020,Fishing,F10
+912353756,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2020,Fishing,F10
+912353757,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2020,Fishing,F14
+912353758,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2020,Fishing,F14
+912353759,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2020,Fishing,F14
+912353760,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2020,Fishing,F14
+923400711,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2021,No take,NT1
+923400712,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2021,No take,NT1
+923400713,Jasus edwardsii,1,MIR-S1,-42.58,148.06,2021,No take,NT1
+923400714,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2021,Fishing,F12
+923400715,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2021,Fishing,F11
+923400716,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2021,No take,NT1
+923400717,Jasus edwardsii,1,MIR-S12,-42.52,147.97,2021,Fishing,F12
+923400718,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2021,Fishing,F12
+923400719,Jasus edwardsii,2,MIR-S7,-42.58,148.05,2021,No take,NT7
+923400720,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2021,Fishing,F12
+923400721,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2021,No take,NT7
+923400722,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2021,No take,NT7
+923400723,Jasus edwardsii,4,MIR-S7,-42.58,148.05,2021,No take,NT7
+923400724,Jasus edwardsii,0,MIR-S2,-42.6,148.05,2021,No take,NT2
+923400725,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2021,Fishing,F11
+923400726,Jasus edwardsii,15,MIR-S2,-42.6,148.05,2021,No take,NT2
+923400727,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2021,Fishing,F11
+923400728,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2021,No take,NT2
+923400729,Jasus edwardsii,5,MIR-S11,-42.56,148.07,2021,Fishing,F11
+923400730,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2021,No take,NT2
+923400731,Jasus edwardsii,3,MIR-S13,-42.55,147.95,2021,Fishing,F13
+923400732,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2021,Fishing,F13
+923400733,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2021,Fishing,F13
+923400734,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2021,No take,NT5
+923400735,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2021,No take,NT5
+923400736,Jasus edwardsii,13,MIR-S3,-42.59,148.05,2021,No take,NT3
+923400737,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2021,No take,NT3
+923400738,Jasus edwardsii,0,MIR-S3,-42.59,148.05,2021,No take,NT3
+923400739,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2021,Fishing,F13
+923400740,Jasus edwardsii,9,MIR-S3,-42.59,148.05,2021,No take,NT3
+923400741,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2021,Fishing,F14
+923400742,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2021,Fishing,F14
+923400743,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2021,Fishing,F14
+923400744,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2021,No take,NT8
+923400745,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2021,Fishing,F14
+923400746,Jasus edwardsii,11,MIR-S5,-42.63,148.02,2021,No take,NT5
+923400747,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2021,No take,NT5
+923400748,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2021,No take,NT8
+923400749,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2021,No take,NT8
+923400750,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2021,No take,NT8
+923400751,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2021,Fishing,F10
+923400752,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2021,Fishing,F10
+923400753,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2021,Fishing,F10
+923400754,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2021,Fishing,F9
+923400755,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2021,Fishing,F9
+923400756,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2021,Fishing,F9
+923400757,Jasus edwardsii,3,MIR-S9,-42.66,148.01,2021,Fishing,F9
+923400758,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2021,Fishing,F10
+923401644,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2022,Fishing,F11
+923401645,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401646,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2022,Fishing,F10
+923401647,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2022,No take,NT5
+923401648,Jasus edwardsii,2,MIR-S11,-42.56,148.07,2022,Fishing,F11
+923401649,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2022,No take,NT1
+923401650,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2022,No take,NT5
+923401651,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2022,No take,NT1
+923401652,Jasus edwardsii,1,MIR-S13,-42.55,147.95,2022,Fishing,F13
+923401653,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2022,Fishing,F12
+923401654,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2022,Fishing,F13
+923401655,Jasus edwardsii,5,MIR-S7,-42.58,148.05,2022,No take,NT7
+923401656,Jasus edwardsii,3,MIR-S7,-42.58,148.05,2022,No take,NT7
+923401657,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2022,No take,NT8
+923401658,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2022,No take,NT8
+923401659,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2022,Fishing,F9
+923401660,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2022,No take,NT3
+923401661,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401662,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2022,No take,NT2
+923401663,Jasus edwardsii,2,MIR-S10,-42.72,148.01,2022,Fishing,F10
+923401664,Jasus edwardsii,5,MIR-S12,-42.52,147.97,2022,Fishing,F12
+923401665,Jasus edwardsii,6,MIR-S3,-42.59,148.05,2022,No take,NT3
+923401666,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2022,No take,NT2
+923401667,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2022,Fishing,F9
+923401668,Jasus edwardsii,0,MIR-S10,-42.72,148.01,2022,Fishing,F10
+923401669,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2022,Fishing,F11
+923401670,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401671,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2022,No take,NT5
+923401672,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2022,Fishing,F13
+923401673,Jasus edwardsii,1,MIR-S5,-42.63,148.02,2022,No take,NT5
+923401674,Jasus edwardsii,1,MIR-S11,-42.56,148.07,2022,Fishing,F11
+923401675,Jasus edwardsii,6,MIR-S1,-42.58,148.06,2022,No take,NT1
+923401676,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2022,Fishing,F13
+923401677,Jasus edwardsii,6,MIR-S1,-42.58,148.06,2022,No take,NT1
+923401678,Jasus edwardsii,6,MIR-S12,-42.52,147.97,2022,Fishing,F12
+923401679,Jasus edwardsii,3,MIR-S3,-42.59,148.05,2022,No take,NT3
+923401680,Jasus edwardsii,6,MIR-S7,-42.58,148.05,2022,No take,NT7
+923401681,Jasus edwardsii,7,MIR-S7,-42.58,148.05,2022,No take,NT7
+923401682,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2022,No take,NT8
+923401683,Jasus edwardsii,8,MIR-S2,-42.6,148.05,2022,No take,NT2
+923401684,Jasus edwardsii,2,MIR-S2,-42.6,148.05,2022,No take,NT2
+923401685,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2022,Fishing,F10
+923401686,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2022,Fishing,F9
+923401687,Jasus edwardsii,2,MIR-S3,-42.59,148.05,2022,No take,NT3
+923401688,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401689,Jasus edwardsii,5,MIR-S12,-42.52,147.97,2022,Fishing,F12
+923401690,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2022,Fishing,F9
+923401691,Jasus edwardsii,1,MIR-S8,-42.59,148.05,2022,No take,NT8
+923401936,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401937,Jasus edwardsii,2,MIR-S14,-42.58,147.92,2022,Fishing,F14
+923401939,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923401946,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923401961,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923401963,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923401966,Jasus edwardsii,3,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923401981,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923402760,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2023,Fishing,F10
+923402761,Jasus edwardsii,3,MIR-S10,-42.72,148.01,2023,Fishing,F10
+923402762,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2023,Fishing,F13
+923402763,Jasus edwardsii,5,MIR-S2,-42.6,148.05,2023,No take,NT2
+923402764,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2023,Fishing,F13
+923402765,Jasus edwardsii,3,MIR-S8,-42.59,148.05,2023,No take,NT8
+923402766,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2023,No take,NT8
+923402767,Jasus edwardsii,1,MIR-S7,-42.58,148.05,2023,No take,NT7
+923402768,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2023,No take,NT7
+923402769,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2023,Fishing,F9
+923402770,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2023,Fishing,F9
+923402771,Jasus edwardsii,10,MIR-S3,-42.59,148.05,2023,No take,NT3
+923402772,Jasus edwardsii,1,MIR-S2,-42.6,148.05,2023,No take,NT2
+923402773,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2023,No take,NT5
+923402774,Jasus edwardsii,1,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923402775,Jasus edwardsii,7,MIR-S11,-42.56,148.07,2023,Fishing,F11
+923402776,Jasus edwardsii,2,MIR-S5,-42.63,148.02,2023,No take,NT5
+923402777,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923402778,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2023,Fishing,F11
+923402779,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2023,Fishing,F12
+923402780,Jasus edwardsii,12,MIR-S3,-42.59,148.05,2023,No take,NT3
+923402781,Jasus edwardsii,4,MIR-S1,-42.58,148.06,2023,No take,NT1
+923402782,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2023,Fishing,F12
+923402783,Jasus edwardsii,0,MIR-S1,-42.58,148.06,2023,No take,NT1
+923402784,Jasus edwardsii,3,MIR-S12,-42.52,147.97,2023,Fishing,F12
+923402785,Jasus edwardsii,5,MIR-S10,-42.72,148.01,2023,Fishing,F10
+923402786,Jasus edwardsii,1,MIR-S10,-42.72,148.01,2023,Fishing,F10
+923402787,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2023,No take,NT2
+923402788,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2023,No take,NT7
+923402789,Jasus edwardsii,0,MIR-S13,-42.55,147.95,2023,Fishing,F13
+923402790,Jasus edwardsii,2,MIR-S13,-42.55,147.95,2023,Fishing,F13
+923402791,Jasus edwardsii,2,MIR-S8,-42.59,148.05,2023,No take,NT8
+923402792,Jasus edwardsii,0,MIR-S8,-42.59,148.05,2023,No take,NT8
+923402793,Jasus edwardsii,0,MIR-S7,-42.58,148.05,2023,No take,NT7
+923402794,Jasus edwardsii,1,MIR-S9,-42.66,148.01,2023,Fishing,F9
+923402795,Jasus edwardsii,0,MIR-S9,-42.66,148.01,2023,Fishing,F9
+923402796,Jasus edwardsii,3,MIR-S2,-42.6,148.05,2023,No take,NT2
+923402797,Jasus edwardsii,8,MIR-S5,-42.63,148.02,2023,No take,NT5
+923402798,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923402799,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2023,Fishing,F11
+923402800,Jasus edwardsii,0,MIR-S5,-42.63,148.02,2023,No take,NT5
+923402801,Jasus edwardsii,3,MIR-S1,-42.58,148.06,2023,No take,NT1
+923402802,Jasus edwardsii,0,MIR-S14,-42.58,147.92,2023,Fishing,F14
+923402803,Jasus edwardsii,0,MIR-S11,-42.56,148.07,2023,Fishing,F11
+923402804,Jasus edwardsii,5,MIR-S3,-42.59,148.05,2023,No take,NT3
+923402805,Jasus edwardsii,2,MIR-S1,-42.58,148.06,2023,No take,NT1
+923402806,Jasus edwardsii,9,MIR-S3,-42.59,148.05,2023,No take,NT3
+923402807,Jasus edwardsii,0,MIR-S12,-42.52,147.97,2023,Fishing,F12

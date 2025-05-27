@@ -1,10 +1,82 @@
 # Automated workflows with Agent mode
 
+Agents are LLMs that have tools that allow them to work autonomously. In effect they review the results of tool use (such as writing code and running code), then respond to those results. 
 
-Use this for time-series analysis 
+In Copilot's chat window you can set it to 'Agent' mode to enable these features. 
+
+After each tool use copilot will ask you to confirm the changes and the next action. At that point you can review its changes, make edits, or continue chatting to suggest refinements. 
+
+![](https://code.visualstudio.com/assets/blogs/2025/02/24/diagram.png)
+
+**Image:** Agent mode from https://code.visualstudio.com
+
+You can also just accept every suggestion without reading it, also called 'vibe coding'. However, I don't recommend doing that, especially when you are starting out. You need to get a feel of how much direction it needs and problems it might create. Without human intervention the algorithms have a tendency to go off task: 
+
+```{r eval = TRUE, echo=FALSE}
+library(ggplot2)
+library(grid)
+library(gridExtra)
+
+# Create data for the workflows, now flowing vertically
+workflow1 <- data.frame(
+    x = rep(1, 100),
+    y = seq(0, 10, length.out = 100)
+)
+
+# Add checkin points
+checkins <- data.frame(
+    x = rep(1, 5),
+    y = seq(1, 9, by = 2)
+)
+
+# Create divergent workflow
+workflow2 <- data.frame(
+    x = 1 + 0.2 * (seq(0, 10, length.out = 100) - 3)^2 / 10,
+    y = seq(0, 10, length.out = 100)
+)
+workflow2$x[1:31] <- 1
+
+# Create the plot
+p <- ggplot() +
+    # Draw workflows
+    geom_path(data = workflow1, aes(x = x, y = y), 
+                        color = "blue", size = 1, arrow = arrow(length = unit(0.3, "cm"))) +
+    geom_path(data = workflow2, aes(x = x, y = y), 
+                        color = "red", size = 1,  arrow = arrow(length = unit(0.3, "cm"))) +
+    # Add checkin points
+    geom_point(data = checkins, aes(x = x, y = y), 
+                         color = "blue", size = 3) +
+    # Add start and end points (now at top and bottom)
+    annotate("text", x = 1, y = -0.3, label = "A (Start)", size = 8) +
+    annotate("text", x = 1, y = 11, label = "B (Goal)", size = 8) +
+    
+    # Add labels
+    annotate("text", x = 0.7, y = 5, label = "Workflow with checkins", color = "blue", size = 7, angle = 90) +
+    annotate("text", x = 2.5, y = 7, label = "Divergent workflow\n(no checkins)", color = "red", size = 7) +
+    
+    # Theme adjustments
+    theme_minimal() +
+    theme(
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid = element_blank()
+    ) +
+    ylim(-0.5, 11) +
+    xlim(0.5, 3.5)
+
+p
+```
+
+Have a readme with clear steps that you attach as a prompt is also helpful for Agent mode. It helps it stay on topic. 
+
+Agent mode also allows installation of additional tools, which we'll explore later. 
+
+## Agent mode for Bayesian time-series analysis
+
+Let's explore Agent mode for some data analysis. 
 
 
-This chapter explores how to use GitHub Copilot's Agent mode to create automated workflows for R programming and data analysis:
 
 ## Introduction to Agent mode
 
