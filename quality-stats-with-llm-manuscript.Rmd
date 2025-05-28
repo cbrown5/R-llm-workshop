@@ -1,10 +1,22 @@
-# Quality statistics with large language models
+--- 
+title: "Perspective: Quality statistics with large language models"
+author: "CJ Brown (c.j.brown@utas.edu.au)"
+date: "`r Sys.Date()`"
+url: https://www.seascapemodels.org/R-llm-workshop/
+description: |
+  Perspective article on prompting
+github-repo: cbrown5/R-llm-workshop
+---
 
-CJ Brown
+CJ Brown - c.j.brown@utas.edu.au
+
+University of Tasmania
 
 Perspective article
 
-Aim for environmental sciences journal, e.g. Methods in Ecology and Evolution or Environmental Modelling and Software
+**Citation: Brown (2025). Quality statistics with large language models. Unpublished manuscript**
+
+Pre-print forthcoming soon... 
 
 Aim for 2000-3000 words
 
@@ -55,7 +67,7 @@ Beyond implementation benefits, LLMs offer valuable opportunities for statistica
 
 However, realizing these benefits requires understanding the fundamental nature of LLMs and their limitations. Unlike traditional statistical software that implements specific algorithms, LLMs generate responses based on patterns learned from training data. This distinction is crucial—LLMs do not "understand" statistics in the way human experts do, but rather predict what text would likely follow in a statistical context. The implications of this prediction-based approach are significant for statistical practice, as these models may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations. 
 
-A further risk of accelerating statistical computation is the opportunities it creates for p-hacking. Researchers can write code to explore 10s or 100s of alternatives for solving a statistical issue, creating further opportunities for 
+A further risk of accelerating statistical computation is the opportunities it creates for p-hacking. Researchers can write code to explore 10s or 100s of alternatives for solving a statistical issue, creating further opportunities for selective picking the 'best' results. Strong research reporting and research ethics is ultimately needed to combat this issue. 
 
 The challenge, therefore, is to develop prompting strategies that maximize LLMs' strengths while compensating for their weaknesses. Effective prompting requires providing sufficient context about research questions, data characteristics, and analytical constraints to guide the model toward appropriate statistical recommendations. It also involves maintaining critical oversight of model outputs, particularly for decisions requiring deeper statistical understanding such as assumption checking and result interpretation.
 
@@ -157,6 +169,10 @@ For each, explain the assumptions, advantages, and limitations.
 
 These strategies have been shown to significantly improve the quality of statistical guidance. For example, including data context and domain knowledge increased accuracy in statistical test selection from 43% to 78% in one evaluation (ref).
 
+7. **Honest reporting** 
+
+But discuss issue of opportunities for p-hacking
+
 ### Code Implementation Advice
 
 For implementing statistical analyses in R, different prompting strategies apply:
@@ -167,6 +183,8 @@ For implementing statistical analyses in R, different prompting strategies apply
 Help me plan R code to implement this analysis based on the project context 
 in the README.
 ```
+
+See the example in Supplemental file 1. 
 
 2. **Use a two-step approach**: First plan the analysis structure, then implement specific components:
 
@@ -241,3 +259,122 @@ Several critical research needs emerge from this analysis:
 5. **Ethical frameworks for LLM use in research**: Guidelines for appropriate attribution, transparency, and responsibility when using LLM-assisted analyses in published research.
 
 By addressing these research needs and adopting thoughtful prompting strategies, environmental scientists can harness the power of large language models to enhance rather than compromise statistical quality. The future of environmental statistics likely lies not in choosing between human expertise and artificial intelligence, but in developing effective partnerships that leverage the unique strengths of each.
+
+## Acknowledgements
+
+## References
+
+
+## Figures
+
+```{r risk-framework, fig.width=5, fig.height=3, dpi=300, echo = FALSE}
+
+library(DiagrammeR)
+
+# Create a decision tree diagram for statistical risk mitigation
+DiagrammeR::grViz("
+digraph risk_framework {
+  # Graph settings
+  graph [rankdir = TD, fontname = 'Arial', nodesep = 0.8, ranksep = 0.5]
+  node [shape = rectangle, fontname = 'Arial', fontsize = 12, style = 'filled', 
+        fillcolor = 'white', width = 3, height = 0.8, margin = 0.2]
+  edge [fontname = 'Arial', fontsize = 10]
+
+  # Decision nodes
+  task_complexity [label = 'Assess Task Complexity', fillcolor = '#e6f3ff', shape = diamond]
+  error_consequence_low [label = 'Assess Consequence of Errors\n(Low Complexity)', fillcolor = '#e6f3ff', shape = diamond]
+  error_consequence_high [label = 'Assess Consequence of Errors\n(High Complexity)', fillcolor = '#e6f3ff', shape = diamond]
+  
+  # Risk levels and mitigation strategies
+  low_risk [label = 'Low Risk\n- Use standard prompts\n- Basic verification', fillcolor = '#ccffcc']
+  medium_risk1 [label = 'Medium Risk\n- Provide rich context\n- Use Chain of Thought\n- Compare multiple approaches', fillcolor = '#ffffcc']
+  medium_risk2 [label = 'Medium Risk\n- Expert review required\n- Include domain knowledge\n- Request self-evaluation', fillcolor = '#ffffcc']
+  high_risk [label = 'High Risk\n- Use LLM for code only\n- Human decision-making\n- Peer review essential\n- Extensive validation', fillcolor = '#ffcccc']
+  
+  # Connections
+  task_complexity -> error_consequence_low [label = 'Low\n(Descriptive stats,\nbasic plotting,\nsimple tests)']
+  task_complexity -> error_consequence_high [label = 'High\n(Complex models,\nmultivariate analysis,\nspecialized methods)']
+  
+  error_consequence_low -> low_risk [label = 'Low\n(Exploratory,\nnon-critical)']
+  error_consequence_low -> medium_risk1 [label = 'High\n(Publication,\ndecision-making)']
+  
+  error_consequence_high -> medium_risk2 [label = 'Low\n(Exploratory,\nnon-critical)']
+  error_consequence_high -> high_risk [label = 'High\n(Publication,\ndecision-making)']
+  
+  # Additional guidance nodes
+  subgraph cluster_guidance {
+    label = 'General Risk Mitigation Guidelines'
+    style = filled
+    fillcolor = '#f0f0f0'
+    node [shape = box, margin = 0.1, fontsize = 10, width = 2.5]
+    
+    guidance1 [label = 'Always document LLM use\nand prompting strategies']
+    guidance2 [label = 'Validate against established\nstatistical literature']
+    guidance3 [label = 'Consider reproducibility\nand transparency']
+    
+    guidance1 -> guidance2 -> guidance3 [style = invis]
+  }
+}
+")
+```
+
+**Figure XXX**
+Decision tree showing how to identify and mitigate risks in LLM statistical advice based on task complexity and consequence of errors.
+
+
+```{r workflow-diagram, fig.width=5, fig.height=3, dpi=300, echo = FALSE}
+library(DiagrammeR)
+
+DiagrammeR::grViz("
+digraph workflow {
+  # Graph settings
+  graph [rankdir = TD, fontname = 'Arial', nodesep = 0.8, ranksep = 0.8]
+  node [shape = rectangle, fontname = 'Arial', fontsize = 12, style = 'filled', 
+        fillcolor = 'white', margin = 0.2]
+  edge [fontname = 'Arial', fontsize = 10]
+
+  # Main workflow steps
+  step1 [label = 'Step 1: Statistical Approach Selection', fillcolor = '#e6f3ff', width = 3, height = 0.8]
+  step2 [label = 'Step 2: Implementation Planning', fillcolor = '#e6f3ff', width = 3, height = 0.8]
+  step3 [label = 'Step 3: Code Generation', fillcolor = '#e6f3ff', width = 3, height = 0.8]
+  step4 [label = 'Step 4: Interpretation Guidance', fillcolor = '#e6f3ff', width = 3, height = 0.8]
+  
+  # Recommendations for each step
+  rec1 [label = 'Recommendations:\\n• Explore multiple analytical approaches\\n• Provide domain knowledge and relevant literature\\n• Request step-by-step reasoning with Chain of Thought\\n• Compare statistical approaches with alternatives\\n• Prompt for cross-disciplinary perspectives\\n• Verify against statistical textbooks and guidelines', 
+        shape = 'box', fillcolor = '#f0f8ff', width = 6]
+        
+  rec2 [label = 'Recommendations:\\n• Create a detailed README with analysis context\\n• Define clear research questions and hypotheses\\n• Specify data characteristics and structure\\n• Outline analytical constraints and assumptions\\n• Plan workflow before implementation\\n• Establish validation criteria in advance', 
+        shape = 'box', fillcolor = '#f0f8ff', width = 6]
+        
+  rec3 [label = 'Recommendations:\\n• Use a two-step approach: plan then implement\\n• Provide implementation constraints (packages, style)\\n• Request modular, well-documented code\\n• Include verification and diagnostic steps\\n• Iteratively refine from simple to complex models\\n• Add comments explaining statistical decisions', 
+        shape = 'box', fillcolor = '#f0f8ff', width = 6]
+        
+  rec4 [label = 'Recommendations:\\n• Never blindly trust LLM interpretations\\n• Request multiple visualization options\\n• Ask for limitations and assumptions of results\\n• Prompt for alternative interpretations\\n• Request guidance on reporting standards\\n• Maintain human oversight of conclusions', 
+        shape = 'box', fillcolor = '#f0f8ff', width = 6]
+
+  # Connections between steps
+  step1 -> step2 -> step3 -> step4 [weight = 5]
+  
+  # Connect steps to their recommendations
+  step1 -> rec1 [dir = none, style = dashed]
+  step2 -> rec2 [dir = none, style = dashed]  
+  step3 -> rec3 [dir = none, style = dashed]
+  step4 -> rec4 [dir = none, style = dashed]
+  
+  # Human oversight element
+  {rank = same; human [label = 'Human Oversight\\nand Critical Evaluation', 
+                      shape = 'oval', fillcolor = '#ffffcc', 
+                      style = 'filled,dashed', width = 3]}
+                      
+  human -> step1 [dir = both, style = dashed, constraint = false]
+  human -> step2 [dir = both, style = dashed, constraint = false]
+  human -> step3 [dir = both, style = dashed, constraint = false]
+  human -> step4 [dir = both, style = dashed, constraint = false]
+}
+")
+```
+
+**Figure 2**
+Recommended workflow for using LLMs in statistical analysis, showing the four key steps alongside specific recommendations for effectively leveraging LLMs at each stage while maintaining scientific rigor.
+
+
