@@ -119,7 +119,7 @@ library(tidyverse)
 dat <- readr::read_csv(url("https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/ATRC-RLS-jasus-edwardsii-maria-island.csv"))
 ```
 
-[You can see the readme.md I used to get started here](TODO). I encourage you to write your own to get a feel for how it works and develop your own style. 
+[You can see the readme.md I used to get started here](https://github.com/cbrown5/R-llm-workshop/tree/main/resources/forecasting-with-inla). I encourage you to write your own to get a feel for how it works and develop your own style. 
 
 ### Prompts I used
 

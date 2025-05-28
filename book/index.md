@@ -142,12 +142,12 @@ In this course we'll be analyzing benthic cover and fish survey data. These data
 
 ### Rock lobster time-series 
 
-We'll analyse time-series data from the Australian Temperate Reef Collaboration and the Reef Life Survey. [Original data are available here](TODO add link), and you should access the originals for any research. 
+We'll analyse time-series data from the Australian Temperate Reef Collaboration and the Reef Life Survey. [Original data are available here](https://portal.aodn.org.au/), and you should access the originals for any research. 
 This data is collected by divers every year who swim standardized transects and count reef fauna. 
 
 We'll use a simplified version I created to go with this course. The link is in the notes when we need it. 
 
-[Citation to the dataset](). 
+[Citation to the dataset](https://www.cambridge.org/core/journals/environmental-conservation/article/an-assessment-of-population-responses-of-common-inshore-fishes-and-invertebrates-following-declaration-of-five-australian-marine-protected-areas/E43C5AA810E76BC4E1A6DEFF0F288FD0). 
 
-The analysis in the notes is inspired by [this study looking at how we forecast reef species change](). 
+The analysis in the notes is inspired by [this study looking at how we forecast reef species change](https://www.biorxiv.org/content/10.1101/2025.01.23.634630v1.abstract). 
 
