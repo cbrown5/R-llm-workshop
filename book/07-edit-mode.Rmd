@@ -50,6 +50,8 @@ So here's how I recommend you use it:
 - Use a two-step approach to identifying the statistical tests first, then implementing them as R code second. If you conflate these tasks you risk letting copilot guide the stats and getting it wrong. 
 - You can use it to help implement multiple different types of statistical tests for experimenting. If you do this, I just suggest you still use a two-step approach: plan a list of stats options first, then get copilot to implement them so you can compare results. 
 
+NEVER edit the file while copilot is working! To edit files it uses string matching to locate the position to insert the edits. If you change the file it may not find the correct place to insert the new code. 
+
 ::: {.tip}
 **Tip:** LLMs will tend to suggest the most obvious statistical analyses. If you want to innovate creative new types of analyses you need to work a bit harder. One way to do this is to mix up your prompts to try and get cross-disciplinary pollination. For instance, you could ask it: "Suggest methods I could use for this analysis, taking inspiriation from different disciplines such as medicine, psychology and climate research".
 :::

@@ -1,20 +1,52 @@
 # Ethics and copyright
 
+UP TO HERE
+
 This chapter overviews important ethical and legal considerations when using LLMs for R programming and data analysis. 
 
 ## Model biases
+
+
+
+Must redd paper:
+https://www.nature.com/articles/s41586-024-07146-0
 
 - Understanding inherent biases in LLMs
 - Recognizing when biases might affect statistical analysis
 - Techniques for mitigating bias in LLM-generated code and analysis
 
-Supervisor create custom intstructions for lab
+Supervisor create custom intstructions for lab, could include folders to ignore
+
+There's no optimal way to prompt, jsut better ways. Sometimes best to write the way you prefer (as long as you are precise)
 
 ## Energy use
 
 - Environmental impact of LLM usage
 - Balancing computational efficiency with analytical needs
 - Strategies for reducing the carbon footprint of LLM-powered workflows
+
+a ChatGPT request uses 2.9 watt-hour. So say that's similar cost for coding applicatoins (probably more due to the additional context we are loading with every prompt). Then looking at my chat history I had 14 conversations in the last week (not counting in-line editing). Average was 3x requests per conversation, so in a year that equals:
+2.9 * 14 * 3 * 52 = 6.33 kW-hours
+USA 367 grams C02 per kW-hour. (https://www.eia.gov/tools/faqs/faq.php?id=74&t=11)
+So my conservative estimated yearly usage for coding: 6.33 x 367 = 2.32 kg C02
+FOr comparison flying the 1.5 hours from Halifax to Montreal is about 172kg of emissions. 
+So my personal annual emissions for coding are perhaps about 10x than a short plane flight. 
+
+But cumulative across the globe this is a significant energy expense. 
+
+[AI prompt 10x more energy than a traditional google search](https://www.euronews.com/my-europe/2025/03/17/chatgpt-deepseek-co-how-much-energy-do-ai-powered-chatbots-consume)
+
+Microsoft emissions have risen 30% since 2020 due to data centers
+
+https://www.forbes.com/sites/cindygordon/2024/03/12/chatgpt-and-generative-ai-innovations-are-creating-sustainability-havoc/
+"ChatGPT's daily power usage is nearly equal to 180,000 U.S. households, each using about twenty-nine kilowatts."
+
+Water is used for cooling in data centres: 
+"A single ChatGPT conversation uses about fifty centilitres of water, equivalent to one plastic bottle."
+
+Based on calculations above, this equates to about 1000L per year. That's equivalent to about 22 x 5-minute showers. Of course the water for servers is being used in a different place to where I'm showering. So by using this resource I'm really just making the water problem worse for Americans. 
+
+## Rising inequality
 
 ## Copyright
 
