@@ -19,7 +19,11 @@ Brown, C.J. (2025). Quality R analysis with large language models.
 Workshop materials. https://www.seascapemodels.org/R-llm-workshop/
 ```
 
-I am working on an accompanying paper with prompting advice for statistics. Stay tuned for that! 
+If following the prompting advice please consider citing my accompanying article:
+
+[**Citation: Brown (2025). Quality statistics with large language models. Unpublished manuscript**](https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html)
+
+Pre-print coming soon... 
 
 ## Workshop Overview
 

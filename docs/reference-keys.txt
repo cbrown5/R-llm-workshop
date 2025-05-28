@@ -2,6 +2,7 @@ quality-r-analysis-with-large-language-models
 summary
 who-should-take-this-workshop
 about-chris
+citation-for-course
 course-outline
 software-youll-need-for-this-workshop
 optional-software

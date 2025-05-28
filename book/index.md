@@ -37,6 +37,14 @@ experienced professionals. The workshop is not suitable for those that need an i
 
 I'm an Associate Professor of Fisheries Science at University of Tasmania and an Australian Research Council Future Fellow. I specialise in data analysis and modelling, skills I use to better inform environmental decision makers. R takes me many places and I've worked with marine ecosystems from tuna fisheries to mangrove forests. I'm an experienced teacher of R. I have taught R to 100s people over the years, from the basics to sophisticated modelling and for everyone from undergraduates to my own supervisors.
 
+## Citation for course
+
+If following the prompting advice please consider citing my accompanying article:
+
+[**Citation: Brown (2025). Quality statistics with large language models. Unpublished manuscript**](https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html)
+
+To be submitted soon (and updated here)
+
 ## Course outline
 
 **Introduction to LLMs for R** 
