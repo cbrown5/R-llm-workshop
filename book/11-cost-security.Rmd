@@ -4,33 +4,26 @@ This chapter addresses important practical considerations when using LLMs for R 
 
 ## Cost considerations
 
-- Understanding the pricing models of different LLM providers
-- API costs vs. subscription models
+- PIs need to consider cost and impact on research budget
+- e.g. Copilot subscription free for students
+- Tools like Roo Code can be more expensive (pay per use as using API). 
+- Still less than a person (currently)
+- e.g. processing 6000 abstracts to extract data for a lit review might cost about USD300 (including cost of developing prompts)
 - Strategies for optimizing token usage
 - Balancing cost with capability requirements
-- Budgeting for LLM usage in research and professional contexts
 
-Costs likely to go up in future once we are all hooked. 
+AI companies are running at a loss and its quite likely that costs will go up in future. The aim right now is to get us all dependent on the technology, so that we have to keep paying in future (another reason I think its improtant our own countries develop these capaibilites, and that we also need to strive to be capable to work in AI free ways as well. )
 
-## Security implications
-
-- Data privacy concerns when using LLMs
-- Understanding what data is sent to LLM providers
-- Risks of exposing sensitive or proprietary information
-- Compliance considerations for different industries and research contexts
-
-## Best practices for secure usage
+## API security
 
 - Managing API keys and credentials
 - Sanitizing inputs to remove sensitive information
 - Local vs. cloud-based LLM solutions
 - Auditing and monitoring LLM interactions
 
-## Institutional considerations
+## Agent security 
 
-- Developing organizational policies for LLM usage
-- Training researchers and staff on secure practices
-- Documentation and transparency requirements
-- Balancing innovation with risk management
+- Can run code on your computer
+- Be careful what it is doing
+- Read prompts before running them 
 
-This chapter provides practical guidance for managing the financial and security aspects of incorporating LLMs into your R workflow, helping you make informed decisions about when and how to use these powerful tools.

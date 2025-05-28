@@ -6,13 +6,6 @@ We'll discuss as a group what LLMs mean for the way we do science, and creating 
 
 This chapter synthesizes the key insights from the workshop and explores the broader implications of LLMs for scientific practice:
 
-## Workshop summary
-
-- Recap of key concepts and techniques covered
-- Integration of different LLM tools and approaches
-- Progression from basic prompting to advanced autonomous agents
-- Practical applications for R programming and data analysis
-
 ## The changing landscape of scientific computing
 
 - How LLMs are transforming research workflows
@@ -35,3 +28,28 @@ This chapter synthesizes the key insights from the workshop and explores the bro
 - Preparing for the next generation of AI-assisted data science
 
 This concluding discussion encourages critical reflection on how we can harness the power of LLMs while maintaining the integrity and quality of scientific research and analysis.
+
+## Recommendations for students and ECRs 
+
+Manage your learning. If it is 'easy' you aren't learning as much. Still strive to do things 'AI free' as you will learn more that way. 
+
+Use the AI to aid learning, rather than replace you. e.g. ask it for stats, code or writing advice, rather than asking it just to do the task. 
+
+## What should supervisors (PIs) do?
+
+Discuss standards with your lab
+
+Define boundaries for AI use (e.g. how much for coding, citations etc... )
+
+Consider $ cost and plan for that. 
+
+Try to avoid over-dependence on AI. 
+
+For prompting for specific tasks, I suggest its the supervisor who's writing System prompts that the lab uses. For example, this could be for lit reviews, stats guidelines, writing etc... The students are writing the user prompts to interact with their specific problem. 
+
+## Everyone
+
+Consider your ethics
+
+Develop protocols for AI use, keep a library of your prompts and resources, what works, what didn't work. 
+
