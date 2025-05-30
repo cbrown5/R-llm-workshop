@@ -6,6 +6,7 @@ url: https://www.seascapemodels.org/R-llm-workshop/
 description: |
   Perspective article on prompting
 github-repo: cbrown5/R-llm-workshop
+bibliography: manuscript/references.bib  
 ---
 
 CJ Brown - c.j.brown@utas.edu.au
@@ -27,33 +28,15 @@ Large language models (LLMs) are rapidly transforming scientific workflows, incl
 
 ## Introduction
 
-Large language models (LLMs) are rapidly transforming scientific workflows across disciplines, including environmental sciences. These AI tools offer unprecedented capabilities in generating code, analyzing data, and providing statistical guidance. Recent surveys indicate that over XXX% of researchers now incorporate LLMs into their workflows, with applications ranging from literature reviews to complex statistical analyses (reference). While LLMs present opportunities to enhance research efficiency and quality, they also introduce new challenges for maintaining statistical rigor in scientific work.
+Large language models (LLMs) are rapidly transforming scientific workflows across disciplines, including environmental sciences. Recent surveys indicate that over XXX% of researchers now incorporate LLMs into their workflows. A recent focus of LLM development has been in the areas of math, reasoning and computer programming. LLMs are making rapid gains in these domains, even showing the ability to out-perform human experts on a range of scientific topics (ref, but  ...). Given their abilities in these domains, LLMs will likely become increasingly  used for the statistical analysis of data. Modern data analysis requires two inter-related skills that depend on logical reasoning: computer programming and statistical analysis. It requires extensive training to develop proficiency in these skills and there is a large gap between scientists working at the forefront of statistical computing and those who are experts in other domains and only need to use statistics and programming irregularly for data analysis. Indeed, our conversations indicate that more than half of our colleagues are using LLMs specifically to provide advice on statistical analyses or to aid scientific programming. The incentive to use these tools is strong: they can almost instantaneously provide advice on statistics and write program code, seemingly removing knowledge barriers regarding statistics and speeding up workflows many times. For instance, with current freely avaiable software (2025-05-30) it is possible to get an LLM to create a sophisticated ordination of an ecological community within 15 minutes (see example in supplemental material). This includes creating a document with figures, methods and interpretation of results. Given the competitiveness of research culture, it is therefore likely that published results are increasingly depending on LLM derived analyses and advice. Therefore, there is a growing imperitive to study the quality of advice from LLMs with regards to environmental statistics and computing, as well as to develop guidelines for robust use patterns. 
 
-The quality of statistical analyses in environmental sciences has long been a concern. Reviews have identified persistent issues including inappropriate model selection, inadequate consideration of assumptions, and improper interpretation of results (refs e.g. Zuur ; Forstmeier). These challenges are particularly acute in environmental sciences, where complex ecological data often violate standard statistical assumptions and require specialized analytical approaches.
+Without clear standards for use, LLMs may escalate exisiting issues with the quality of statistical analyses in environmental sciences. LLMs rapidly speed up our abilities to try new statistical methods, giving the unscrupulous research a magnitude more options for models from which to choose the 'ideal' results (p-hacking). Indeed, p-hacking and other forms of bias caused by manipulating analyses after viewing results are prevalent in ecology and evolution and frequently justified by individuals as neccessary for career survival (@fraser2018, @Forstmeier2017). There are also many less nefarious ways LLMs could harm the quality of science. LLMs almost always provide an answer and are typically over-confident of having the right answer. This challenge may be a particular problem in environmental sciences, where complex ecological data often violate standard statistical assumptions and require specialized analytical approaches. It is not clear that current LLMs appreciate these nuances of environmental data. Inexperienced statisticians could be led to use inappropriate analyses, or erronious code. Lack of training in statistics is a widespread problem that undermines the progress of knowledge and application of science to environmental issues. Examples include inappropriate transformations of response variables (@ohara2010) applying methods that assume independent samples to time-series analysis (@brown2011), application of linear regression zero-inflated data (@warton2016), conflating prediction with causality (@arif2022) and inappropriate use of multi-model averages (@bolker2024). 
 
-Recent evaluations of LLM performance in statistical tasks have revealed a concerning pattern: while these models excel at many tasks, their statistical recommendations often fall short of expert quality. Evaluations of several models, including GPT-4, found accuracy at suggesting correct statistical tests ranging from just 8% to 90% depending on the complexity of the statistical question (-ref). LLMs performed well on descriptive statistics (up to 90% accuracy) but struggled with inferential tests, particularly for complex designs requiring contingency tables (20-43% accuracy).
+There are a handful of emerging evaluations of LLMs in the peer-reviewed and pre-print literature. In the environmental literature recent studies have shown LLMs can extract some types of structured data for literature reviews (@Gougherty2024) and are effective partners for evidence synthesis (@Spillias2024). These studies speak to the "jagged frontier" of LLM progress (@mollick2025) - they excel in some tasks like logic and semantic searches of documents but lag in other domains such as statistical analysis. One evaluation of the ability of 2024 LLMs to suggest appropriate statistical analyses for questions about an analysis found disappointing results (@zhu2024large). Accuracy at suggesting the correct statistical tests ranged from just 8% to 90% and was typically less than 40% for anything more sophisticated than basic descriptive statistics. A key result from all of these studies is the importance of prompt writing. For example, accuracy at picking the right statistical test for a problem could double with the right prompting strategy. 
 
-This "jagged frontier" of LLM capabilities—where performance varies dramatically across tasks—creates a situation where users may overestimate LLM reliability for statistical guidance. However, these same evaluations revealed that appropriate prompting strategies could significantly improve LLM performance, in some cases doubling accuracy rates.
+This perspective article provides preliminary guidelines for effective prompting that can help improve the quality of LLM responses on scientific computing and statistical analysis. LLM progress and uptake by scientists is currently moving too rapidly for us to wait for formal peer-reviewed evaluations to develop guidelines. Therefore, we draw on diverse sources, including our peer-reviewed studies, extensive practical experience applying LLMs to environmental statistics, experience with teaching, AI industry guidelines and the AI literature more broadly. We conclude by calling for formal evaluations and development of thorough community standards for statistical uses. By understanding LLM capabilities and limitations and employing structured prompting strategies, researchers can harness these technologies to improve rather than compromise statistical quality in environmental research.
 
-This perspective article addresses the need for effective prompting guidelines to ensure quality statistical analyses when using LLMs. Drawing on empirical evaluations and practical experience, I provide a framework for environmental scientists to leverage these powerful tools while maintaining statistical rigor. By understanding LLM capabilities and limitations and employing structured prompting strategies, researchers can harness these technologies to improve rather than compromise statistical quality in environmental research.
-
-## Current Status of Quality Statistics in Environmental Sciences
-
-Statistical practices in environmental sciences have long faced scrutiny. Reviews across ecological and environmental journals have consistently identified concerning patterns in statistical implementation and reporting. See Brown et al. 2011
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200303
-https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x
-https://pubmed.ncbi.nlm.nih.gov/27879038/
-
-These challenges stem from several factors unique to environmental research. Environmental data often exhibit complex spatial and temporal dependencies, zero-inflation, overdispersion, and non-linear relationships that violate assumptions of standard statistical methods. Additionally, environmental scientists frequently come from diverse disciplinary backgrounds with varying levels of statistical training.
-
-The rise of increasingly sophisticated statistical methods—from generalized linear mixed models to Bayesian approaches—has improved analytical capabilities but also widened the gap between statistical best practices and typical implementation. This gap creates a situation where environmental scientists may turn to LLMs for guidance without fully understanding the limitations of these AI systems in statistical contexts.
-
-Recent meta-analyses of statistical practices in environmental journals indicate some improvement in basic statistical reporting but persistent issues with more complex analyses. ref to consider - https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913
-
-
-As LLMs become increasingly integrated into research workflows, there is both opportunity and risk. Without proper guidance, researchers may uncritically implement LLM-suggested analyses that perpetuate or even amplify existing problems. However, with appropriate prompting strategies, LLMs could potentially help address the statistical quality gap by providing more consistent, transparent, and rigorous analytical approaches.
-
-## Opportunity for LLMs to Improve Statistics, If Used Correctly
+## Applications of LLMs to scientific computing and statistics
 
 Large language models present significant opportunities to enhance statistical practice in environmental sciences when used with appropriate guidance and oversight. These AI tools can democratize access to statistical expertise, providing researchers who lack ready access to statistical collaborators with guidance on appropriate methods and implementation strategies. This democratization is particularly valuable in resource-constrained settings or for early-career researchers still developing their statistical networks. For example, researchers in remote field stations or from institutions without dedicated statistical support can leverage LLMs to explore analytical options that might otherwise be inaccessible.
 
@@ -61,13 +44,14 @@ The code generation capabilities of LLMs represent another substantial benefit f
 
 LLMs also facilitate rapid exploration of alternative analytical approaches, enabling researchers to quickly generate and compare multiple statistical strategies. This capability encourages more robust sensitivity analyses, as researchers can efficiently implement various models to assess how analytical choices influence results. For instance, an ecologist studying species distributions could use an LLM to implement both frequentist and Bayesian approaches to the same question, comparing outcomes and assumptions without investing extensive time in coding each approach from scratch.
 
+The opportunity to run many analyses also creates a risk of accelerating of opportunities for p-hacking. Researchers can write code to explore 10s or 100s of alternatives for solving a statistical issue, creating further opportunities for selective picking the 'best' results. Strong research reporting and research ethics is ultimately needed to combat this issue. 
+
 Documentation and transparency—critical elements of rigorous science—can be substantially improved through LLM assistance. These tools can help generate detailed methodological descriptions, create reproducible workflows with appropriate documentation, and ensure consistent reporting of statistical procedures. By prompting LLMs to document analytical decisions and assumptions explicitly, researchers can enhance the transparency of their statistical workflows, making them more accessible to reviewers and future researchers seeking to build upon their work.
 
 Beyond implementation benefits, LLMs offer valuable opportunities for statistical learning and skill development. When used as interactive tutors rather than black-box solution providers, these models can enhance researchers' statistical understanding by explaining concepts, suggesting relevant literature, and demonstrating proper implementation techniques. This educational function is particularly valuable in environmental sciences, where researchers often come from diverse disciplinary backgrounds with varying levels of statistical training. By engaging with LLMs through carefully structured prompts that request explanations and justifications, researchers can develop deeper statistical intuition alongside practical implementation skills.
 
 However, realizing these benefits requires understanding the fundamental nature of LLMs and their limitations. Unlike traditional statistical software that implements specific algorithms, LLMs generate responses based on patterns learned from training data. This distinction is crucial—LLMs do not "understand" statistics in the way human experts do, but rather predict what text would likely follow in a statistical context. The implications of this prediction-based approach are significant for statistical practice, as these models may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations. 
 
-A further risk of accelerating statistical computation is the opportunities it creates for p-hacking. Researchers can write code to explore 10s or 100s of alternatives for solving a statistical issue, creating further opportunities for selective picking the 'best' results. Strong research reporting and research ethics is ultimately needed to combat this issue. 
 
 The challenge, therefore, is to develop prompting strategies that maximize LLMs' strengths while compensating for their weaknesses. Effective prompting requires providing sufficient context about research questions, data characteristics, and analytical constraints to guide the model toward appropriate statistical recommendations. It also involves maintaining critical oversight of model outputs, particularly for decisions requiring deeper statistical understanding such as assumption checking and result interpretation.
 
@@ -83,11 +67,17 @@ Several key parameters influence LLM behavior:
 
 1. **Temperature**: Controls randomness in token prediction. Lower temperatures (closer to 0) make responses more deterministic and conservative, while higher temperatures (closer to 2) increase creativity but potentially reduce reliability. For statistical applications, lower temperatures typically produce more consistent and conventional recommendations.
 
-2. **Context window**: The amount of text an LLM can consider when generating a response. Modern LLMs have context windows ranging from 100,000 to 1,000,000 tokens. Larger context windows allow for including more detailed information about data, research questions, and statistical requirements.
+2. **Context window**: The amount of text an LLM can consider when generating a response. Current LLMs have context windows typically in the range from 100,000 to 1,000,000 tokens. Larger context windows allow for including more detailed information about data, research questions, and statistical requirements.
 
 3. **Model complexity**: Different models have varying capabilities based on their size, training data, and architecture. More complex models (e.g., Claude-3.7-Sonnet vs. Claude-3.5-Haiku) generally provide more nuanced statistical guidance but at higher computational and financial cost.
 
 4. **System prompt**: Sets the overall context and constraints for the LLM. This "behind-the-scenes" instruction shapes how the model responds to user queries and can significantly impact statistical advice quality.
+
+5. **AI assistant, AI programmer pair** 
+
+6. **Tools and MCP** 
+
+7. **Agents** 
 
 Understanding these parameters allows researchers to optimize LLM interactions for statistical applications. For example, using lower temperatures for statistical recommendations increases consistency, while larger context windows enable including more detailed information about data characteristics and research questions.
 
@@ -116,64 +106,75 @@ This separation of responsibilities helps prevent overreliance on LLMs for decis
 
 ### Statistical Advice
 
-When seeking statistical guidance from LLMs, several prompting strategies can significantly improve response quality:
+When seeking statistical guidance from LLMs, several prompting strategies can significantly improve response quality.Whereas, we have found that many other prompting strategies commonly spruiked by tech commenators are less effective for elicting good  statistical advice. 
 
-1. **Include domain knowledge**: Attach relevant literature, guidelines, or textbook excerpts to prompts. For example:
+To elicit better statistical advice the most effective approaches are to be clear about your hypotheses, attach domain knowledge, include context about the data and data collection process. Below we provide several illustrative examples. 
+
+**Example 1: Be clear and provide domain knowledge** 
+
+This example is written from the point of view of a researcher who knows their hypothesis and data, but is unclear about what methods they should use: 
 
 ```
-How can I statistically test the relationship between pres.topa and CB_cover? 
-pres.topa is count data representing fish abundance. Use @websearch to find 
+How can I statistically test the dependence of fish abundance on coral cover? 
+Abundances are count data representing, and the cover variable is proportional data. Use @websearch to find 
 robust recommendations for ecologists to analyze count data before proceeding 
 with your recommendations.
 ```
 
-2. **Provide data context**: Always include information about data types, distributions, and structure:
+In this prompt we made use of several strategies. First we were clear about the hypothesis (we think pres.topa should depend on CB_cover, not the other way around). We specificed the variable names as they appear in the data (e.g. `pres.topa`), this mean the LLM is more likely to write accurate code. We gave context about the data, by telling the LLM we had count data the response is more likely to include count appropriate methods (e.g. Poisson GLM). Finally, we asked the LLM to use a web search to find domain knowledge in our field. 
+
+**Example 2: Provide context on experimental/observational design** 
+
+Extending the previous example we could also provide context about survey design: 
 
 ```
-I need to analyze the relationship between fish abundance (integer counts, 
-zero-inflated) and coral cover (continuous percentage). Sites are spatially 
+I need to analyze the dependence of fish abundance (integer counts, 
+zero-inflated) on coral cover (continuous percentage). Sites are spatially 
 clustered within regions. What statistical approaches would be appropriate?
 ```
 
-3. **Attach actual data**: Include data summaries, head() output, or small datasets directly in prompts:
+In this prompt by including the context that sites are spatial replicates the LLM is more likely to recommend methods that account for spatial structure in the data. 
+
+**Example 3: Attach data** 
 
 ```
-How can I statistically test the relationship between pres.topa and CB_cover? 
+How can I statistically test the depdence of `pres.topa` on `CB_cover`? 
 Here are the first 6 rows of data:
 [data table]
 ```
 
-4. **Use Chain of Thought reasoning**: Explicitly request step-by-step reasoning:
+Here we have specifically named the variables as they appear in the dataset (e.g. `pres.topa`). We have also dragged and dropped the first 6 rows of the data into the prompt (this is possible with many assistants, e.g. github copilot). Often (but not always) the LLM will appropriately recognize the response as a count variable if the data is attached. 
+
+**Example 3: Use Chain of Thought reasoning with reputable source attached**
 
 ```
 Using Chain of Thought reasoning, what statistical approach would be most 
 appropriate for analyzing the relationship between fish abundance (count data) 
-and coral cover (continuous)?
+and coral cover (continuous)? We have attached a guideline for analysis of count data in ecology: [attach reference]
 ```
 
-However, CoT is not effective at improving statistical advice on its own. It needsd to be combined with other approaches, particuarly domain knowledge and attaching data. 
+Chain of Thought reasoning is a common and easy prompting strategy that can dramatically improve responses in many domains, particularly reasoning. This works because LLMs 'think' by writing (a trait they share with good researchers). However, it does not improve statistical advice on its own (@zhu2024large). If used on its own, CoT will cause the LLM to elaborate on the same incorrect suggestions. In this prompt we dragged and dropped a reference (e.g. a blog from a reputable source, or a vignette from a popular ecological modelling R package). Therefore, the LLM could reason accurately with its improved domain knowledge. 
 
-5. **Request self-evaluation**: Ask the LLM to evaluate its own recommendations:
+**Example 4: Request self-evaluation and multiple options** 
 
 ```
-Great. Evaluate the robustness of each suggestion on a 1-10 scale and explain 
+Evaluate the robustness of each suggestion on a 1-10 scale and explain 
 the strengths and limitations of each approach.
 ```
 
-6. **Compare multiple approaches**: Request alternative methods and comparisons:
+or 
 
 ```
 What are three different statistical approaches I could use for this analysis? 
 For each, explain the assumptions, advantages, and limitations.
 ```
 
-These strategies have been shown to significantly improve the quality of statistical guidance. For example, including data context and domain knowledge increased accuracy in statistical test selection from 43% to 78% in one evaluation (ref).
+These suggestions is related to CoT, it just promotes further thinking. Once again, best used in a chain of prompts when you have attached a reputable reference. Note that most LLM assistants have the imperitive to provide options baked in by the providers, so it is usually not neccessary to explictly ask for options, just ask to think about them. 
 
-7. **Honest reporting** 
-
-But discuss issue of opportunities for p-hacking
 
 ### Code Implementation Advice
+
+UP TO HERE
 
 For implementing statistical analyses in R, different prompting strategies apply:
 

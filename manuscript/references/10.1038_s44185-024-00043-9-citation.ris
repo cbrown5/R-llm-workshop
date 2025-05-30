@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Gougherty, Andrew V.
+AU  - Clipp, Hannah L.
+PY  - 2024
+DA  - 2024/05/16
+TI  - Testing the reliability of an AI-based large language model to extract ecological information from the scientific literature
+JO  - npj Biodiversity
+SP  - 13
+VL  - 3
+IS  - 1
+AB  - Artificial intelligence-based large language models (LLMs) have the potential to substantially improve the efficiency and scale of ecological research, but their propensity for delivering incorrect information raises significant concern about their usefulness in their current state. Here, we formally test how quickly and accurately an LLM performs in comparison to a human reviewer when tasked with extracting various types of ecological data from the scientific literature. We found the LLM was able to extract relevant data over 50 times faster than the reviewer and had very high accuracy (>90%) in extracting discrete and categorical data, but it performed poorly when extracting certain quantitative data. Our case study shows that LLMs offer great potential for generating large ecological databases at unprecedented speed and scale, but additional quality assurance steps are required to ensure data integrity.
+SN  - 2731-4243
+UR  - https://doi.org/10.1038/s44185-024-00043-9
+DO  - 10.1038/s44185-024-00043-9
+ID  - Gougherty2024
+ER  - 
