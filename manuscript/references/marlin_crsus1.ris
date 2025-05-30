@@ -1,29 +1,13 @@
-
-TY  - JOUR
-T1  - Human-AI collaboration to identify literature for evidence synthesis
-AU  - Spillias, Scott
-AU  - Tuohy, Paris
-AU  - Andreotta, Matthew
-AU  - Annand-Jones, Ruby
-AU  - Boschetti, Fabio
-AU  - Cvitanovic, Christopher
-AU  - Duggan, Joseph
-AU  - Fulton, Elisabeth A.
-AU  - Karcher, Denis B.
-AU  - Paris, Cécile
-AU  - Shellock, Rebecca
-AU  - Trebilco, Rowan
-Y1  - 2024/07/26
-PY  - 2024
-N1  - doi: 10.1016/j.crsus.2024.100132
-DO  - 10.1016/j.crsus.2024.100132
-T2  - Cell Reports Sustainability
-JF  - Cell Reports Sustainability
-VL  - 1
-IS  - 7
-PB  - Elsevier
-SN  - 2949-7906
-M3  - doi: 10.1016/j.crsus.2024.100132
-UR  - https://doi.org/10.1016/j.crsus.2024.100132
-Y2  - 2025/05/30
-ER  - 
+@article{Spillias2024,
+    title = {Human-AI collaboration to identify literature for evidence synthesis},
+    author = {Spillias, Scott and Tuohy, Paris and Andreotta, Matthew and Annand-Jones, Ruby and Boschetti, Fabio and Cvitanovic, Christopher and Duggan, Joseph and Fulton, Elisabeth A. and Karcher, Denis B. and Paris, Cécile and Shellock, Rebecca and Trebilco, Rowan},
+    journal = {Cell Reports Sustainability},
+    volume = {1},
+    number = {7},
+    year = {2024},
+    month = {7},
+    publisher = {Elsevier},
+    doi = {10.1016/j.crsus.2024.100132},
+    issn = {2949-7906},
+    url = {https://doi.org/10.1016/j.crsus.2024.100132}
+}
