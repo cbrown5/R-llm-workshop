@@ -226,9 +226,11 @@ modeling. Follow tidyverse style guidelines and prioritize code readability.
 4. **Request modular code**: Ask for code organized into logical functions and scripts:
 
 ```
-Create modular scripts for this analysis with separate files for data 
+Create modular scripts for this analysis with separate files for data
 preparation, model fitting, diagnostics, and visualization.
 ```
+
+Modular code organization significantly enhances reproducibility and maintainability of statistical analyses, particularly for complex environmental data. When prompting LLMs, explicitly request that code be structured into discrete, logical components with clear separation of concerns. This approach yields several benefits: it facilitates easier troubleshooting as errors can be isolated to specific modules; enables collaborative workflows where different team members can work on separate components; improves readability by breaking complex analyses into conceptually coherent units; and supports iterative development where individual components can be refined independently. For environmental analyses that often involve multiple stages—data cleaning, transformation, model fitting, diagnostics, and visualization—this modular structure is particularly valuable. LLMs excel at generating this type of organized code when explicitly prompted, but may default to monolithic scripts if not specifically directed. Request separate functions or files for each major analytical step, with clear documentation of inputs, outputs, and dependencies between components. This structure not only improves immediate code quality but also enhances long-term project sustainability and knowledge transfer.
 
 5. **Include verification steps**: Request code that validates assumptions and checks model fit:
 
