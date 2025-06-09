@@ -70,6 +70,9 @@ Second, LLMs exhibit overconfidence in their statistical recommendations. They a
 
 Third, LLMs lack true statistical understanding. Unlike traditional statistical software that implements specific algorithms, LLMs generate responses based on patterns learned from training data. They do not "understand" statistics in the way human experts do, but rather predict what text would likely follow in a statistical context. This fundamental limitation means they may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations.
 
+Note to add: <!-- this has been essentially true up till now, however now google have a diffusion model which works completely differently. I think the argument is still relevant, but might be better to say that "LLMs work by predicting statistically likely responses to text - therefore the challenge is to use prompts that shift the distribution of likely response to better overlap with accurate responses" or something like that: https://deepmind.google/models/gemini-diffusion/ -->
+
+
 Fourth, inexperienced users may be particularly vulnerable to these risks. Without sufficient statistical background to critically evaluate LLM suggestions, researchers might implement inappropriate analyses or misinterpret results. The apparent authority and confidence of LLM responses can create a false sense of security, potentially leading to erroneous conclusions that influence scientific understanding and policy decisions.
 
 Finally, there is a risk of statistical deskilling in the research community. If researchers increasingly rely on LLMs for statistical decisions without developing their own understanding, the collective statistical literacy of the field could decline over time. This would create a dangerous dependency on tools that lack true statistical reasoning capabilities.
@@ -90,7 +93,7 @@ Several key parameters influence LLM behavior:
 
 2. **Context window**: The amount of text an LLM can consider when generating a response. Current LLMs have context windows typically in the range from 100,000 to 1,000,000 tokens. Larger context windows allow for including more detailed information about data, research questions, and statistical requirements.
 
-3. **Model complexity**: Different models have varying capabilities based on their size, training data, and architecture. More complex models (e.g., Claude-4.0-Opus vs. Claude-4.0-Sonnet) generally provide more nuanced statistical guidance but at higher computational and financial cost.
+3. **Model complexity**: Different models have varying capabilities based on their size, training data, and architecture. Bigger models with more training data (e.g., Claude-4.0-Opus vs. Claude-4.0-Sonnet) generally provide more nuanced statistical guidance but at higher computational and financial cost.
 
 4. **System prompt**: Sets the overall context and constraints for the LLM. This "behind-the-scenes" instruction shapes how the model responds to user queries and can significantly impact statistical advice quality.
 
@@ -127,7 +130,7 @@ This separation of responsibilities helps prevent overreliance on LLMs for decis
 
 ### Tips for getting better statistical advice from LLMs
 
-When seeking statistical guidance from LLMs, several prompting strategies can significantly improve response quality.Whereas, we have found that many other prompting strategies commonly spruiked by tech commenators are less effective for elicting good  statistical advice. 
+When seeking statistical guidance from LLMs, several prompting strategies can significantly improve response quality. Whereas, we have found that many other prompting strategies commonly spruiked by tech commenators are less effective for elicting good statistical advice (e.g. chain of thought, encouragement or talking down to the LLM). 
 
 To elicit better statistical advice the most effective approaches are to be clear about your hypotheses, attach domain knowledge, include context about the data and data collection process. Below we provide several illustrative examples. 
 
