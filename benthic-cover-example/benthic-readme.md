@@ -27,6 +27,8 @@ This data and study method is a simplified version of the study
 
 Keep your scripts short and modular to facilitate debugging. Don't complete all of the steps below in one script. Finish scripts where it makes sense and save intermediate datasets. 
 
+When using Rscript in the terminal, put quotes around the script, e.g. `Rscript "1_data_input.R"`
+
 ## Steps
 As you go tick of the steps below. 
 
