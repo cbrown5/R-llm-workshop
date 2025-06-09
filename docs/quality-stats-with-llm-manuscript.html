@@ -11,9 +11,9 @@
 
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
-<meta name="date" content="2025-05-28" />
+<meta name="date" content="2025-06-09" />
 
-<title>Perspective: Quality statistics with large language models</title>
+<title>Perspective: Quality ecological statistics with large language models</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1487,6 +1487,29 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
+</style>
 
 
 
@@ -1584,210 +1607,240 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Perspective: Quality statistics with large
-language models</h1>
+<h1 class="title toc-ignore">Perspective: Quality ecological statistics
+with large language models</h1>
 <h4 class="author">CJ Brown (<a href="mailto:c.j.brown@utas.edu.au" class="email">c.j.brown@utas.edu.au</a>)</h4>
-<h4 class="date">2025-05-28</h4>
+<h4 class="date">2025-06-09</h4>
 
 </div>
 
 
-<div id="perspective-quality-statistics-with-large-language-models" class="section level1">
-<h1>Perspective: Quality statistics with large language models</h1>
-<p>CJ Brown - <a href="mailto:c.j.brown@utas.edu.au" class="email">c.j.brown@utas.edu.au</a></p>
-<p>University of Tasmania</p>
+<p>CJ Brown - <a href="mailto:c.j.brown@utas.edu.au" class="email">c.j.brown@utas.edu.au</a> University of Tasmania</p>
+<p>Scott Spillias CSIRO Environment</p>
 <p>Perspective article</p>
-<p><strong>Citation: Brown (2025). Quality statistics with large
-language models. Unpublished manuscript</strong></p>
+<p><strong>Citation: Brown, Spillias (2025). Quality statistics with
+large language models. Unpublished manuscript</strong></p>
 <p>Pre-print forthcoming soon…</p>
 <p>Aim for 2000-3000 words</p>
+<!--- Check journal word length, reduce by 500 words --->
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
 <p>Large language models (LLMs) are rapidly transforming scientific
-workflows, including statistical analyses in environmental sciences.
-While these AI tools offer impressive capabilities for code generation
-and analytical guidance, evaluations reveal significant limitations in
-their statistical reasoning. This perspective addresses the need for
-effective prompting guidelines to ensure quality statistical analyses
-when using LLMs. Drawing on empirical evaluations and practical
-experience, I provide a framework for environmental scientists to
-leverage these powerful tools while maintaining statistical rigor. Key
-recommendations include: separating workflows into components that align
-with LLM strengths and limitations; providing rich context through
-domain knowledge, data summaries, and research questions; using
-structured prompting techniques like Chain of Thought reasoning; and
-maintaining human oversight of critical statistical decisions. By
-understanding LLM capabilities and employing these prompting strategies,
-researchers can harness these technologies to improve rather than
-compromise statistical quality in environmental research. Future
-research should focus on evaluations of LLMs for statistical
-recommendations, development of specialized prompting strategies, and
-integration of LLMs with traditional statistical approaches.</p>
+workflows, including statistical analyses in ecological sciences. While
+these AI tools offer impressive capabilities for code generation and
+analytical guidance, evaluations reveal significant limitations in their
+reasoning for standard statistical tests. Ecological statistics
+typically require special consideration due to spatial and temporal
+structuring, so LLM performance on these tasks is likely to be worse
+than for other disciplines, such as clinical research. This perspective
+addresses the need for effective prompting guidelines to ensure quality
+statistical analyses when using LLMs. Drawing on empirical evaluations
+and practical experience, we provide a framework for ecological
+scientists to leverage these powerful tools while maintaining
+statistical rigor. Key recommendations include: separating workflows
+into components that align with LLM strengths and limitations; providing
+rich context through domain knowledge, data summaries, and research
+questions; combining rich context with structured prompting techniques
+like Chain of Thought reasoning; and maintaining human oversight of
+statistical decisions. By understanding LLM capabilities and employing
+these prompting strategies, researchers can harness these technologies
+to improve rather than compromise statistical quality in ecological
+research. Future research should focus on evaluations of LLMs for
+ecological statistics, development of specialized prompting strategies,
+and integration of LLMs with traditional statistical approaches.</p>
 </div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>Large language models (LLMs) are rapidly transforming scientific
-workflows across disciplines, including environmental sciences. These AI
-tools offer unprecedented capabilities in generating code, analyzing
-data, and providing statistical guidance. Recent surveys indicate that
-over XXX% of researchers now incorporate LLMs into their workflows, with
-applications ranging from literature reviews to complex statistical
-analyses (reference). While LLMs present opportunities to enhance
-research efficiency and quality, they also introduce new challenges for
-maintaining statistical rigor in scientific work.</p>
-<p>The quality of statistical analyses in environmental sciences has
-long been a concern. Reviews have identified persistent issues including
-inappropriate model selection, inadequate consideration of assumptions,
-and improper interpretation of results (refs e.g. Zuur ; Forstmeier).
-These challenges are particularly acute in environmental sciences, where
-complex ecological data often violate standard statistical assumptions
-and require specialized analytical approaches.</p>
-<p>Recent evaluations of LLM performance in statistical tasks have
-revealed a concerning pattern: while these models excel at many tasks,
-their statistical recommendations often fall short of expert quality.
-Evaluations of several models, including GPT-4, found accuracy at
-suggesting correct statistical tests ranging from just 8% to 90%
-depending on the complexity of the statistical question (-ref). LLMs
-performed well on descriptive statistics (up to 90% accuracy) but
-struggled with inferential tests, particularly for complex designs
-requiring contingency tables (20-43% accuracy).</p>
-<p>This “jagged frontier” of LLM capabilities—where performance varies
-dramatically across tasks—creates a situation where users may
-overestimate LLM reliability for statistical guidance. However, these
-same evaluations revealed that appropriate prompting strategies could
-significantly improve LLM performance, in some cases doubling accuracy
-rates.</p>
-<p>This perspective article addresses the need for effective prompting
-guidelines to ensure quality statistical analyses when using LLMs.
-Drawing on empirical evaluations and practical experience, I provide a
-framework for environmental scientists to leverage these powerful tools
-while maintaining statistical rigor. By understanding LLM capabilities
-and limitations and employing structured prompting strategies,
-researchers can harness these technologies to improve rather than
-compromise statistical quality in environmental research.</p>
+workflows, with profound implications for statistical analysis in
+environmental sciences. Recent surveys indicate that over XXX% of
+researchers now incorporate LLMs into their workflows, with many
+specifically using them for statistical advice and code generation. The
+appeal is clear: LLMs almost instantly generate statistical code and
+analyses that would traditionally require extensive training and time to
+develop. For example, researchers can now produce a complete
+bioinformatics analysis analysis—including code and visualizations <span class="citation">(Jansen et al. 2025)</span> in under 15 minutes. LLMs
+can also interpret statistics and figures to produce written
+results.</p>
+<p>The efficiency of relying on LLMs for statistics comes with
+significant risks. Recent evaluations reveal concerning limitations in
+LLMs’ statistical reasoning abilities. One study found that accuracy at
+suggesting appropriate statistical tests was typically below 40% for
+anything beyond basic descriptive statistics <span class="citation">(Zhu
+et al. 2024)</span>. Crucially, the quality of statistical advice from
+LLMs depends heavily on how questions are framed <span class="citation">(Onan and Alhumyani 2024; Zhu et al. 2024; Jansen et
+al. 2025)</span> — effective prompting strategies can almost double the
+accuracy of recommendations. Present evaluations of LLMs are focused on
+clinical research, generally where samples are independent. It is likely
+that their performance is significantly poorer for the complex depenence
+structures and observation patterns that are common in ecology.</p>
+<p>This perspective article addresses the urgent need for guidelines on
+using LLMs for statistical analysis in ecological research. As LLM
+adoption outpaces formal evaluation, we cannot wait for comprehensive
+peer-reviewed assessments before establishing best practices. Drawing on
+empirical evaluations, practical experience, and broader AI literature,
+we provide a framework for leveraging these powerful tools while
+maintaining statistical rigor. By understanding LLM capabilities and
+limitations and employing structured prompting strategies, researchers
+can harness these technologies to enhance rather than compromise
+statistical quality in environmental research. The guidelines presented
+here aim to help environmental scientists navigate this rapidly evolving
+landscape responsibly and effectively.</p>
 </div>
-<div id="current-status-of-quality-statistics-in-environmental-sciences" class="section level2">
-<h2>Current Status of Quality Statistics in Environmental Sciences</h2>
-<p>Statistical practices in environmental sciences have long faced
-scrutiny. Reviews across ecological and environmental journals have
-consistently identified concerning patterns in statistical
-implementation and reporting. See Brown et al. 2011 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200303" class="uri">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200303</a>
-<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x" class="uri">https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x</a>
-<a href="https://pubmed.ncbi.nlm.nih.gov/27879038/" class="uri">https://pubmed.ncbi.nlm.nih.gov/27879038/</a></p>
-<p>These challenges stem from several factors unique to environmental
-research. Environmental data often exhibit complex spatial and temporal
-dependencies, zero-inflation, overdispersion, and non-linear
-relationships that violate assumptions of standard statistical methods.
-Additionally, environmental scientists frequently come from diverse
-disciplinary backgrounds with varying levels of statistical
-training.</p>
-<p>The rise of increasingly sophisticated statistical methods—from
-generalized linear mixed models to Bayesian approaches—has improved
-analytical capabilities but also widened the gap between statistical
-best practices and typical implementation. This gap creates a situation
-where environmental scientists may turn to LLMs for guidance without
-fully understanding the limitations of these AI systems in statistical
-contexts.</p>
-<p>Recent meta-analyses of statistical practices in environmental
-journals indicate some improvement in basic statistical reporting but
-persistent issues with more complex analyses. ref to consider - <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913" class="uri">https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913</a></p>
-<p>As LLMs become increasingly integrated into research workflows, there
-is both opportunity and risk. Without proper guidance, researchers may
-uncritically implement LLM-suggested analyses that perpetuate or even
-amplify existing problems. However, with appropriate prompting
-strategies, LLMs could potentially help address the statistical quality
-gap by providing more consistent, transparent, and rigorous analytical
-approaches.</p>
+<div id="challenges-for-statistical-analysis-quality-in-environmental-sciences" class="section level2">
+<h2>Challenges for statistical analysis quality in environmental
+sciences</h2>
+<p>Statistical analysis in ecological sciences faces numerous challenges
+that predate the emergence of LLMs but may be exacerbated by their use.
+Modern data analysis requires two interrelated skills: computer
+programming and statistical reasoning. There exists a substantial gap
+between specialists at the forefront of statistical computing and
+experts in specific ecological disciplines who use statistics
+irregularly. Environmental data often violate standard statistical
+assumptions, requiring specialized analytical approaches that may not be
+well-represented in the text that LLMs are trained on. Ecological
+analyses may also require advanced computer programming skills where it
+is easy to make mistakes.</p>
+<p>Lack of statistical training among environmental scientists has long
+undermined research quality and application. Reproducibility is a
+wide-spread issue and ecology is no exception. P-hacking and other forms
+of bias caused by manipulating analyses after viewing results are
+already prevalent in ecology and evolution, often justified by
+researchers as necessary for career survival <span class="citation">(Fraser 2018; Forstmeier, Wagenmakers, and Parker
+2017)</span>.</p>
+<p>Accidental statistical mistakes caused by inappropraite training or
+misguided conventions are also an issue. Common misapplications include
+inappropriate transformations of response variables <span class="citation">(O’Hara and Kotze 2010)</span>, applying methods that
+assume independent samples to time-series analysis <span class="citation">(Brown et al. 2011)</span>, using linear regression for
+zero-inflated data <span class="citation">(Warton et al. 2016)</span>,
+conflating prediction with causality <span class="citation">(Arif and
+MacNeil 2022)</span>, and inappropriate use of multi-model averages
+<span class="citation">(Bolker 2024)</span>.</p>
+<p>Problems can also arise from flawed implementation of ecological
+analysis.</p>
+<!--- Add citation to Bruce Kendall study, cited in shoemaker B. E. Kendall et al., Persistent problems in the construction of matrix population models. Ecol. Model. 406, 33–43 (2019). --->
+<p>These errors are not merely academic concerns—they can lead to
+misinformed policy actions with real consequences for conservation
+outcomes <span class="citation">(Shoemaker and Loope 2025)</span>.</p>
 </div>
-<div id="opportunity-for-llms-to-improve-statistics-if-used-correctly" class="section level2">
-<h2>Opportunity for LLMs to Improve Statistics, If Used Correctly</h2>
-<p>Large language models present significant opportunities to enhance
-statistical practice in environmental sciences when used with
-appropriate guidance and oversight. These AI tools can democratize
-access to statistical expertise, providing researchers who lack ready
-access to statistical collaborators with guidance on appropriate methods
-and implementation strategies. This democratization is particularly
-valuable in resource-constrained settings or for early-career
-researchers still developing their statistical networks. For example,
-researchers in remote field stations or from institutions without
-dedicated statistical support can leverage LLMs to explore analytical
-options that might otherwise be inaccessible.</p>
-<p>The code generation capabilities of LLMs represent another
-substantial benefit for statistical practice. These models excel at
-producing clean, well-documented code that follows contemporary best
-practices in programming and data analysis. When properly prompted, LLMs
-can generate R or Python scripts with comprehensive comments, logical
-structure, and adherence to style guides—potentially improving
-computational reproducibility across environmental sciences. This
-advantage addresses a persistent challenge in the field, where poorly
-documented or inconsistently structured code has hampered
-reproducibility efforts.</p>
+<div id="applications-and-risks-of-llms-in-environmental-statistics" class="section level2">
+<h2>Applications and Risks of LLMs in Environmental Statistics</h2>
+<p>Large language models present both significant opportunities and
+challenges for statistical practice in environmental sciences. When used
+with appropriate guidance and oversight, these AI tools can enhance
+research workflows, but they also introduce risks that require careful
+consideration.</p>
+<div id="opportunities-for-enhanced-statistical-practice" class="section level3">
+<h3>Opportunities for Enhanced Statistical Practice</h3>
+<p>LLMs may help bridge the gap between statistical experts and those
+applying statistics to their field of ecology by simultaneously
+democratizing access to statistical expertise and computer programming.
+LLMs can democratize access to statistical expertise, providing
+researchers who lack ready access to statistical collaborators with
+guidance on appropriate methods and implementation strategies. This
+democratization is particularly valuable in resource-constrained
+settings or for early-career researchers still developing their
+statistical abilities. For example, researchers from institutions
+without dedicated statistical support can leverage LLMs to explore
+analytical options that might otherwise be inaccessible.</p>
+<!--- ADD REFERENCE HERE ON DEMOCRACY OF ANALYSIS??? is this a thing?? --->
+<p>Documentation and transparency are an ongoing challenge for
+statistical ecology. When used correctly, LLMs can produce
+well-documented code with comprehensive comments, logical structure, and
+adherence to style guides—potentially improving computational
+reproducibility across environmental sciences. This advantage addresses
+a persistent challenge in the field, where poorly documented or
+inconsistently structured code has hampered reproducibility efforts.</p>
+<!--- ADD REFERENCE HERE ON REPRODUCIBILITY IN ECOLOGY AND CODING --->
 <p>LLMs also facilitate rapid exploration of alternative analytical
 approaches, enabling researchers to quickly generate and compare
-multiple statistical strategies. This capability encourages more robust
-sensitivity analyses, as researchers can efficiently implement various
-models to assess how analytical choices influence results. For instance,
-an ecologist studying species distributions could use an LLM to
-implement both frequentist and Bayesian approaches to the same question,
-comparing outcomes and assumptions without investing extensive time in
+multiple statistical strategies. This capability could support more
+robust sensitivity analyses, as researchers can efficiently implement
+various models to assess how analytical choices influence results. For
+instance, an ecologist studying species distributions could use an LLM
+to implement both frequentist and machine learning approaches to the
+same question, comparing outcomes without investing extensive time in
 coding each approach from scratch.</p>
-<p>Documentation and transparency—critical elements of rigorous
-science—can be substantially improved through LLM assistance. These
-tools can help generate detailed methodological descriptions, create
-reproducible workflows with appropriate documentation, and ensure
-consistent reporting of statistical procedures. By prompting LLMs to
-document analytical decisions and assumptions explicitly, researchers
-can enhance the transparency of their statistical workflows, making them
-more accessible to reviewers and future researchers seeking to build
-upon their work.</p>
+<!--- EDD REFERENCE HERE ON LACK OF SENSITIVITY ANALYSIS IN ECOLOGY AND CODING --->
 <p>Beyond implementation benefits, LLMs offer valuable opportunities for
 statistical learning and skill development. When used as interactive
 tutors rather than black-box solution providers, these models can
 enhance researchers’ statistical understanding by explaining concepts,
 suggesting relevant literature, and demonstrating proper implementation
-techniques. This educational function is particularly valuable in
-environmental sciences, where researchers often come from diverse
-disciplinary backgrounds with varying levels of statistical training. By
-engaging with LLMs through carefully structured prompts that request
-explanations and justifications, researchers can develop deeper
-statistical intuition alongside practical implementation skills.</p>
-<p>However, realizing these benefits requires understanding the
-fundamental nature of LLMs and their limitations. Unlike traditional
+techniques <span class="citation">(Ellis and Slade 2023)</span>.</p>
+</div>
+<div id="risks-and-limitations" class="section level3">
+<h3>Risks and Limitations</h3>
+<p>Despite these benefits, LLMs present several specific risks for
+statistical practice that require careful mitigation strategies.</p>
+<p>First, LLMs may amplify existing problems with statistical quality.
+By dramatically accelerating the ability to try multiple analytical
+approaches, LLMs could enable unprecedented levels of p-hacking and
+selective reporting. Researchers can now explore tens or hundreds of
+alternatives for solving a statistical issue in minutes, creating far
+more opportunities to cherry-pick favorable results. Strong research
+reporting standards and ethics are ultimately needed to combat this
+issue.</p>
+<p>Second, LLMs exhibit overconfidence in their statistical
+recommendations. For example, they perpetuate common misunderstandings
+of confidence intervals and p-values <span class="citation">(Ellis and
+Slade 2023)</span> (as of Claude 4.0 this was still true). They almost
+always provide an answer, typically with high apparent certainty, even
+when their suggestions are inappropriate or incorrect. This
+characteristic is particularly problematic in environmental sciences,
+where data often have complex structures requiring specialized
+approaches. Current LLMs may not adequately recognize or account for
+these nuances of environmental data.</p>
+<p>Third, LLMs lack true statistical understanding. Unlike traditional
 statistical software that implements specific algorithms, LLMs generate
-responses based on patterns learned from training data. This distinction
-is crucial—LLMs do not “understand” statistics in the way human experts
-do, but rather predict what text would likely follow in a statistical
-context. The implications of this prediction-based approach are
-significant for statistical practice, as these models may confidently
-suggest inappropriate methods, fail to recognize violations of
-statistical assumptions, or generate plausible-sounding but incorrect
-interpretations.</p>
-<p>A further risk of accelerating statistical computation is the
-opportunities it creates for p-hacking. Researchers can write code to
-explore 10s or 100s of alternatives for solving a statistical issue,
-creating further opportunities for selective picking the ‘best’ results.
-Strong research reporting and research ethics is ultimately needed to
-combat this issue.</p>
-<p>The challenge, therefore, is to develop prompting strategies that
-maximize LLMs’ strengths while compensating for their weaknesses.
-Effective prompting requires providing sufficient context about research
-questions, data characteristics, and analytical constraints to guide the
-model toward appropriate statistical recommendations. It also involves
-maintaining critical oversight of model outputs, particularly for
-decisions requiring deeper statistical understanding such as assumption
-checking and result interpretation.</p>
-<p>The opportunity lies in developing a new kind of statistical workflow
-that combines human expertise with LLM capabilities. In this workflow,
-researchers maintain responsibility for critical statistical decisions
-while using LLMs to implement analyses efficiently, explore options, and
+responses based on patterns learned from training data, they do not
+“understand” statistics and cannot reason in the way human experts do.
+They work by predicting statistically likely responses to text -
+therefore the challenge is to use prompts that shift the distribution of
+likely response to better overlap with accurate responses. This
+fundamental limitation means they may confidently suggest inappropriate
+methods, apply internally consistent logic to the wrong question, fail
+to recognize violations of statistical assumptions, or generate
+plausible-sounding but incorrect interpretations.</p>
+<p>Fourth, inexperienced users may be particularly vulnerable to these
+risks <span class="citation">(Ellis and Slade 2023)</span>. Without
+sufficient statistical background to critically evaluate LLM
+suggestions, researchers might implement inappropriate analyses or
+misinterpret results. The apparent authority and confidence of LLM
+responses can create a false sense of security, potentially leading to
+erroneous conclusions that influence scientific understanding and policy
+decisions.</p>
+<p>Finally, there is a risk of statistical deskilling in the research
+community. If researchers increasingly rely on LLMs for statistical
+decisions without developing their own understanding, the collective
+statistical literacy of the field could decline over time. This would
+create a dangerous dependency on tools that lack true statistical
+reasoning capabilities.</p>
+</div>
+<div id="toward-effective-human-ai-statistical-partnerships" class="section level3">
+<h3>Toward Effective Human-AI Statistical Partnerships</h3>
+<p>The challenge is to develop workflows that maximize LLMs’ strengths
+while compensating for their weaknesses. This requires providing
+sufficient context about research questions, data characteristics, and
+analytical constraints to guide the model toward appropriate statistical
+recommendations. It also involves maintaining oversight of model
+outputs, particularly for decisions requiring deeper statistical
+understanding such as model formulation, assumption checking, and result
+interpretation.</p>
+<p>The opportunity lies in developing a statistical workflow that
+combines human expertise with LLM capabilities. In this workflow,
+researchers maintain responsibility for statistical decisions while
+using LLMs to implement analyses efficiently, explore options, and
 enhance documentation. This human-AI partnership represents a middle
 path between complete automation and traditional manual
 implementation—leveraging the efficiency and consistency of LLMs while
 preserving the critical judgment and domain expertise of human
-researchers. The key to this workflow is effective prompting—providing
-LLMs with the context, constraints, and guidance needed to generate
-high-quality statistical advice and code that advances rather than
-compromises statistical rigor in environmental research.</p>
+researchers. The key to this partnership is effective
+prompting—providing LLMs with the context, constraints, and guidance
+needed to generate high-quality statistical advice and code that
+advances rather than compromises statistical rigor in environmental
+research.</p>
+</div>
 </div>
 <div id="llm-overview" class="section level2">
 <h2>LLM Overview</h2>
@@ -1796,59 +1849,92 @@ understand how LLMs function. At their core, LLMs are prediction engines
 that generate text one token at a time based on patterns learned during
 training. A token is roughly equivalent to a word part, a word, or a
 common phrase.</p>
-<p>This token-by-token prediction process has important implications for
-statistical guidance. LLMs don’t reason about statistics from first
-principles; they predict what text would likely follow in a statistical
-context based on their training data. This means their statistical
-advice reflects patterns in existing literature and code—including both
-best practices and common mistakes.</p>
 <p>Several key parameters influence LLM behavior:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Temperature</strong>: Controls randomness in token
 prediction. Lower temperatures (closer to 0) make responses more
-deterministic and conservative, while higher temperatures (closer to 2)
-increase creativity but potentially reduce reliability. For statistical
-applications, lower temperatures typically produce more consistent and
-conventional recommendations.</p></li>
+deterministic and conservative, while higher temperatures (greater than
+1.0) increase creativity but potentially reduce reliability. For
+statistical applications, lower temperatures typically produce more
+consistent and conventional recommendations.</p></li>
 <li><p><strong>Context window</strong>: The amount of text an LLM can
-consider when generating a response. Modern LLMs have context windows
-ranging from 100,000 to 1,000,000 tokens. Larger context windows allow
-for including more detailed information about data, research questions,
-and statistical requirements.</p></li>
+consider when generating a response. Current LLMs have context windows
+typically in the range from 100,000 to 2,000,000 tokens. Larger context
+windows allow for including more detailed information about data,
+research questions, and statistical requirements.</p></li>
 <li><p><strong>Model complexity</strong>: Different models have varying
 capabilities based on their size, training data, and architecture. More
-complex models (e.g., Claude-3.7-Sonnet vs. Claude-3.5-Haiku) generally
+complex models (e.g., Claude-4.0-Opus vs. Claude-4.0-Sonnet) generally
 provide more nuanced statistical guidance but at higher computational
 and financial cost.</p></li>
 <li><p><strong>System prompt</strong>: Sets the overall context and
 constraints for the LLM. This “behind-the-scenes” instruction shapes how
 the model responds to user queries and can significantly impact
 statistical advice quality.</p></li>
+<li><p><strong>AI assistant, AI programmer pair</strong>: Software that
+assists a user to interact with an LLM. Examples include Github Copilot
+and Claude Code. This software manages user interactions, including
+setting the system message (which may be proprietary information) and
+managing the context window.</p></li>
+<li><p><strong>Tools and MCP</strong>: Tools allow LLMs to perform
+tasks. Examples include running R scripts, searching the internet and
+downloading online data. A common standard for tool definition is the
+Model Context Protocol (MCP).</p></li>
+<li><p><strong>Agents</strong>: Agents are software systems that allow
+LLMs to iteratively develop their own task, with or without human
+supervision. For instance, an agent can have a tool allowing it to run
+and read terminal commands. This lets the agent write R scripts, run
+them, check for errors, and correct iteratively. Agents are most
+commonly used within AI assistant software like Github Copilot, thought
+there is some development of agents for bespoke statistical problems
+<span class="citation">(Jansen et al. 2025)</span>.</p></li>
 </ol>
-<p>Understanding these parameters allows researchers to optimize LLM
-interactions for statistical applications. For example, using lower
-temperatures for statistical recommendations increases consistency,
-while larger context windows enable including more detailed information
-about data characteristics and research questions.</p>
-<p>The distinction between different types of LLM interfaces is also
-important. Basic chat interfaces (like ChatGPT) provide limited control
-over these parameters, while API access and specialized coding
-assistants (like GitHub Copilot) offer more customization options. For
-statistical applications, interfaces that allow inclusion of data
-summaries, code context, and specialized system prompts will produce
-better results.</p>
 </div>
 <div id="prompting-guidelines-best-practices" class="section level2">
 <h2>Prompting Guidelines Best Practices</h2>
-<p>Effective prompting can dramatically improve the quality of
-statistical guidance from LLMs. Based on empirical evaluations and
-practical experience, the following guidelines provide a framework for
-environmental scientists seeking to leverage LLMs for statistical
-applications.</p>
-<div id="recognizing-different-steps-in-workflows" class="section level3">
-<h3>Recognizing Different Steps in Workflows</h3>
-<p>A critical first step is separating statistical workflows into
-distinct components that align with LLM strengths and limitations:</p>
+<p>There are now many formal evaluations of LLMs for statistical advice.
+However, many of these studies are not replicable and do not follow
+statistical best practice. For instance, they do not provide the prompts
+they used, do not replicate prompts (LLM responses differ ever time) or
+use statistics that inflate estimates of effect size (ref - mixed
+effects model reference). Here we summarize the handful of evaluations
+that provide sufficient information to assess the scientific credibility
+of their claims.</p>
+<p>The key findings of these studies are that more accurate responses
+are obtained when:</p>
+<ul>
+<li>Role prompting is used,
+e.g. <code>You are an expert in the statistical analysis of ecological data</code>
+<span class="citation">(Jansen et al. 2025)</span></li>
+<li>Examples and reference material are included (also called one-shot
+or few-shot prompting) <span class="citation">(Zhu et al.
+2024)</span></li>
+<li>Context about the data collection process is included <span class="citation">(Zhu et al. 2024)</span></li>
+<li>The data are attached as part of the prompt <span class="citation">(Jansen et al. 2025; Zhu et al. 2024)</span></li>
+</ul>
+<p>Providing examples that pair types of statistical questions with
+appropriate solutions one of the most effective approaches to improve
+the precision of responses <span class="citation">(Sivarajkumar et al.
+2024; Zhu et al. 2024)</span>. This approach should be used whereever
+possible, however, accurate examples may not be readily available to the
+novice statistician. Reference material can also be provided in place of
+examples. For example, a user could attach a blog or package vignette
+that illustrates the application of an analysis to answering a research
+question.</p>
+<p>A further tactic, ‘chain of thought’ reasoning, has mixed success.
+Chain of thought reasoning encourages the model to structure its prompt
+as in a step-by-step way and tends to improve the quality of reasoning
+(ref??). It can be as sample as adding to a prompt
+<code>Use chain of thought reasoning</code>. Its utility has mixed
+performance for statistical analyses <span class="citation">(Jansen et
+al. 2025; Zhu et al. 2024)</span>. Chain of thought prompting is best
+combined with prompts that include the data and measurement context.</p>
+<p>Prompts that say what to do, rather than what not to do, are
+generally also considered be more effective.</p>
+<div id="recognize-different-steps-in-workflows" class="section level3">
+<h3>Recognize different steps in workflows</h3>
+<p>It is helpful to separate statistical workflows into distinct
+components that align with LLM strengths and limitations:</p>
 <ol style="list-style-type: decimal">
 <li><strong>Statistical approach selection</strong>: Determining
 appropriate statistical methods for research questions</li>
@@ -1859,131 +1945,206 @@ implement analyses</li>
 <li><strong>Interpretation guidance</strong>: Understanding and
 reporting results</li>
 </ol>
+<p>We deal with steps 1-3 here. The credibility of statistical
+interpretation urgently needs further empirical evaluation, so we leave
+that for future studies.</p>
 <p>LLMs perform differently across these components. They excel at code
 generation and implementation planning but are less reliable for
 selecting appropriate statistical approaches or interpreting complex
-results. This uneven performance profile suggests a workflow where:</p>
-<ul>
-<li>Researchers maintain primary responsibility for statistical approach
-selection, potentially using LLMs to explore options but validating
-choices against literature and expert knowledge</li>
-<li>LLMs take a more central role in implementation planning and code
-generation, with researchers providing clear constraints on the
-workflow</li>
-<li>Interpretation remains a collaborative process where LLMs can
-suggest standard interpretations but researchers critically evaluate
-these suggestions</li>
-</ul>
-<p>This separation of responsibilities helps prevent overreliance on
-LLMs for decisions that require deeper statistical understanding while
-leveraging their strengths in code generation and documentation.</p>
+results.</p>
+<p>LLMs can be used across all of these steps, but we recommend that
+each step is treated separately. This encourages informed decision
+making and avoids making decisions on the fly. For instance, it is
+better to design the statistical analysis prior to setting an agent up
+to automate the implementation of that analysis.</p>
+<p>The separation of workflow steps also helps prevent overreliance on
+LLMs for statistical decisions.</p>
+<p>An example would be to first prompt the LLM to ask for statistical
+analyses that can address a particular issue. Once the analysis is
+resolved, then the user can prompt for R packages to perform the
+analysis, then prompt to generate the code.</p>
 </div>
-<div id="statistical-advice" class="section level3">
-<h3>Statistical Advice</h3>
-<p>When seeking statistical guidance from LLMs, several prompting
-strategies can significantly improve response quality:</p>
-<ol style="list-style-type: decimal">
-<li><strong>Include domain knowledge</strong>: Attach relevant
-literature, guidelines, or textbook excerpts to prompts. For
-example:</li>
-</ol>
-<pre><code>How can I statistically test the relationship between pres.topa and CB_cover? 
-pres.topa is count data representing fish abundance. Use @websearch to find 
-robust recommendations for ecologists to analyze count data before proceeding 
-with your recommendations.</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>Provide data context</strong>: Always include information
-about data types, distributions, and structure:</li>
-</ol>
-<pre><code>I need to analyze the relationship between fish abundance (integer counts, 
-zero-inflated) and coral cover (continuous percentage). Sites are spatially 
+<div id="be-clear-about-your-hypotheses-and-provide-domain-knowledge" class="section level3">
+<h3>Be clear about your hypotheses and provide domain knowledge</h3>
+<p>This example is written from the point of view of a researcher who
+knows their hypothesis and data, but is unclear about what methods they
+should use.</p>
+<pre><code>How can I statistically test the dependence of fish abundance on coral cover? 
+Abundances are count data representing, and the cover variable is proportional data. Abundances were measured at 50 different locations. Search the web to find robust recommendations for ecologists to analyze count data before proceeding with your recommendations.</code></pre>
+<p>In this prompt we made use of several strategies. First we were clear
+about the hypothesis. We gave context about the data and sampling
+methodology, by telling the LLM we had count data measured across
+different locations. Doing so ensures that the response is more likely
+to include count appropriate methods (e.g. Poisson GLM). Finally, we
+asked the LLM to use a web search to find domain knowledge in our field
+(this assumes you are using an AI assitant that has a web search tool
+available).</p>
+</div>
+<div id="provide-context-on-experimentalobservational-design" class="section level3">
+<h3>Provide context on experimental/observational design</h3>
+<p>Extending the previous example we could also provide context about
+survey design:</p>
+<pre><code>I need to analyze the dependence of fish abundance (integer counts, 
+zero-inflated) on coral cover (continuous percentage). Sites are spatially 
 clustered within regions. What statistical approaches would be appropriate?</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li><strong>Attach actual data</strong>: Include data summaries, head()
-output, or small datasets directly in prompts:</li>
-</ol>
-<pre><code>How can I statistically test the relationship between pres.topa and CB_cover? 
+<p>In this prompt by including the context that sites are spatial
+replicates the LLM is more likely to recommend methods that account for
+spatial structure in the data.</p>
+</div>
+<div id="attach-data" class="section level3">
+<h3>Attach data</h3>
+<p>A consistent finding of formal evaluations of LLMs for statistical
+advice is to attach the data</p>
+<pre><code>How can I statistically test the depdence of `pres.topa` on `CB_cover`? 
 Here are the first 6 rows of data:
 [data table]</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li><strong>Use Chain of Thought reasoning</strong>: Explicitly request
-step-by-step reasoning:</li>
-</ol>
+<p>Here we have specifically named the variables as they appear in the
+dataset (e.g. <code>pres.topa</code>). This ensures precision reference
+to the target data. We have also dragged and dropped the first 6 rows of
+the data into the prompt (this is possible with many assistants,
+e.g. github copilot). Often (but not always) the LLM will appropriately
+recognize the response as a count variable if the data is attached.</p>
+<p>Similarly, data summaries can also be included in the prompt to
+further improve the context.</p>
+</div>
+<div id="use-chain-of-thought-reasoning-with-reputable-source-attached" class="section level3">
+<h3>Use Chain of Thought reasoning with reputable source attached</h3>
 <pre><code>Using Chain of Thought reasoning, what statistical approach would be most 
 appropriate for analyzing the relationship between fish abundance (count data) 
-and coral cover (continuous)?</code></pre>
-<p>However, CoT is not effective at improving statistical advice on its
-own. It needsd to be combined with other approaches, particuarly domain
-knowledge and attaching data.</p>
-<ol start="5" style="list-style-type: decimal">
-<li><strong>Request self-evaluation</strong>: Ask the LLM to evaluate
-its own recommendations:</li>
-</ol>
-<pre><code>Great. Evaluate the robustness of each suggestion on a 1-10 scale and explain 
+and coral cover (continuous)? We have attached a guideline for analysis of count data in ecology: [attach reference]</code></pre>
+<p>Chain of Thought reasoning is a common and easy prompting strategy
+that can dramatically improve responses in many domains, particularly
+reasoning. This works because many forms of LLMs ‘think’ by writing (a
+trait they share with good researchers).</p>
+<p>Chain of thought does not improve statistical advice on its own <span class="citation">(Zhu et al. 2024)</span>. If used on its own, CoT will
+cause the LLM to elaborate on the same incorrect suggestions. In this
+prompt we dragged and dropped a reference (e.g. a blog from a reputable
+source, or a vignette from a popular ecological modelling R package).
+Therefore, the LLM could reason accurately with its improved domain
+knowledge. More recently, ‘reasoning’ models incorporate this approach
+natively and will respond to user queries with a stream of content that
+reflects the LLM’s ‘thoughts’ before providing a response.</p>
+<p>For implementation of analysis, chain of thought can be effective,
+because it helps break up the workflow into a series of smaller
+steps.</p>
+</div>
+<div id="request-self-evaluation-and-multiple-options" class="section level3">
+<h3>Request self-evaluation and multiple options**</h3>
+<pre><code>Evaluate the robustness of each suggestion on a 1-10 scale and explain 
 the strengths and limitations of each approach.</code></pre>
-<ol start="6" style="list-style-type: decimal">
-<li><strong>Compare multiple approaches</strong>: Request alternative
-methods and comparisons:</li>
-</ol>
+<p>or</p>
 <pre><code>What are three different statistical approaches I could use for this analysis? 
 For each, explain the assumptions, advantages, and limitations.</code></pre>
-<p>These strategies have been shown to significantly improve the quality
-of statistical guidance. For example, including data context and domain
-knowledge increased accuracy in statistical test selection from 43% to
-78% in one evaluation (ref).</p>
-<ol start="7" style="list-style-type: decimal">
-<li><strong>Honest reporting</strong></li>
-</ol>
-<p>But discuss issue of opportunities for p-hacking</p>
+<p>These suggestions are related to CoT, and promote further thinking.
+Once again, best used in a chain of prompts when you have attached a
+reputable reference. Note that most LLM assistants have the imperitive
+to provide options baked in by the providers, so it is usually not
+neccessary to explictly ask for options.</p>
 </div>
-<div id="code-implementation-advice" class="section level3">
-<h3>Code Implementation Advice</h3>
-<p>For implementing statistical analyses in R, different prompting
-strategies apply:</p>
-<ol style="list-style-type: decimal">
-<li><strong>Create a detailed project README</strong>: Document the
-project context, research questions, data structure, and analytical
-approach in a README.md file that can be attached to prompts:</li>
-</ol>
-<pre><code>Help me plan R code to implement this analysis based on the project context 
-in the README.</code></pre>
-<p>See the example in Supplemental file 1.</p>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>Use a two-step approach</strong>: First plan the analysis
-structure, then implement specific components:</li>
-</ol>
-<pre><code>First, outline the overall workflow for analyzing the relationship between 
-fish abundance and coral cover using a negative binomial GLM. Then, we&#39;ll 
-implement each step.</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li><strong>Provide implementation constraints</strong>: Specify
-packages, coding style, and other requirements:</li>
-</ol>
-<pre><code>Implement this analysis using the tidyverse ecosystem and INLA for Bayesian 
-modeling. Follow tidyverse style guidelines and prioritize code readability.</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li><strong>Request modular code</strong>: Ask for code organized into
-logical functions and scripts:</li>
-</ol>
-<pre><code>Create modular scripts for this analysis with separate files for data 
+<div id="prompt-bootstrapping" class="section level3">
+<h3>Prompt bootstrapping</h3>
+<p>The above prompts provide simple outlines. In practice, it is
+generally better to give as much context about the data and research
+question as possible. Users can bootstrap prompts. The user would start
+with a simpler prompts, such as those above, and then get the LLM to
+draft a more complete prompt, which the user can then edit.</p>
+<pre><code>I&#39;m trying to improve a prompt asking an assistant for statistical advice. Here is the prompt [prompt]. What other information can I provide to improve the accuracy of the asssitant&#39;s response? </code></pre>
+</div>
+<div id="organized-and-modular-project-set-up" class="section level3">
+<h3>Organized and modular project set-up</h3>
+<p>LLMs are most effectively if used via an AI assistant like github
+copilot. These assistants have access to context from your project files
+and can edit directly into documents and scripts.</p>
+<p>We recommend users carefully organize their their code and analysis.
+For example, a typical project directory may look like this:</p>
+<pre><code>my-project/
+├── README.md 
+├── .gitignore
+├── Scripts/ # R code
+│   ├── 01_data-prep.R
+│   ├── 02_data-analysis.R
+│   └── 03_plots.R
+├── Shared/       
+│   ├── Outputs/
+│   │   ├── Figures/
+│   │   ├── data-prep/
+│   │   └── model-objects/
+│   ├── Data/
+│   └── Manuscripts/   </code></pre>
+<p>Scripts should be kept short and modula. We find that ecologists
+typically write long scripts that span data wrangling to plotting and
+may not even evaluate in a top to bottom order!</p>
+<p>Keeping your project modular organized allows for agents to easily
+navigate your project. It also lets you point precisely to files that
+may need attention. Time can be saved on the menial task of setting up
+and maintaining documentation by prompting an agent to do it for
+you.</p>
+<p>If using an agent to implement the analysis, be sure to include a
+request like:</p>
+<pre><code>Create modular scripts for this analysis with separate files for data
 preparation, model fitting, diagnostics, and visualization.</code></pre>
-<ol start="5" style="list-style-type: decimal">
-<li><strong>Include verification steps</strong>: Request code that
-validates assumptions and checks model fit:</li>
-</ol>
+<p>Modular code organization significantly enhances reproducibility and
+maintainability of statistical analyses, particularly for complex
+environmental data.</p>
+<p>For environmental analyses that often involve multiple stages—data
+cleaning, transformation, model fitting, diagnostics, and
+visualization—this modular structure is particularly valuable. LLMs
+excel at generating this type of organized code when explicitly
+prompted, but may default to monolithic scripts if not specifically
+directed. Request separate functions or files for each major analytical
+step, with clear documentation of inputs, outputs, and dependencies
+between components. This structure not only improves immediate code
+quality but also enhances long-term project sustainability and knowledge
+transfer.</p>
+</div>
+<div id="provide-implementation-constraints" class="section level3">
+<h3>Provide implementation constraints</h3>
+<p>Specify packages, coding style, and other requirements:</p>
+<pre><code>Implement this analysis using the tidyverse ecosystem and INLA for Bayesian 
+mod
+eling. Follow tidyverse style guidelines and prioritize code readability.</code></pre>
+</div>
+<div id="include-statistical-verification-steps" class="section level3">
+<h3>Include statistical verification steps</h3>
+<p>Request code that validates assumptions and checks model fit:</p>
 <pre><code>Include diagnostic checks for overdispersion, zero-inflation, and spatial 
 autocorrelation in the model implementation.</code></pre>
-<ol start="6" style="list-style-type: decimal">
-<li><strong>Iteratively refine</strong>: Start with a basic
-implementation and progressively add complexity:</li>
-</ol>
+</div>
+<div id="iteratively-refine-your-analysis-and-implementation" class="section level3">
+<h3>Iteratively refine your analysis and implementation</h3>
+<p>Start with a basic implementation and progressively add
+complexity:</p>
 <pre><code>Let&#39;s start with a simple negative binomial GLM for fish abundance. Once 
 that&#39;s working, we&#39;ll extend it to account for spatial clustering.</code></pre>
-<p>These strategies help ensure that LLM-generated code is not only
-syntactically correct but also statistically appropriate and
-well-structured. By providing clear constraints and expectations,
-researchers can guide LLMs toward implementations that follow best
-practices in both programming and statistical analysis.</p>
+<p>Agents can also self correct implementation errors. Allowing the
+agent to iterate through running and debugging a script &gt;3 times can
+improve the accuracy of code syntax many times <span class="citation">(Jansen et al. 2025)</span>.</p>
+</div>
+<div id="llm-reviewer" class="section level3">
+<h3>LLM reviewer</h3>
+<p>Use an LLM to simulate peer-review of your statistical approach:</p>
+<pre><code>Review my choice of analysis from the perspective of a peer-reviewer in an ecological journal</code></pre>
+</div>
+<div id="write-longer-prompts-that-are-rich-in-context" class="section level3">
+<h3>Write longer prompts that are rich in context</h3>
+<p>All of the above advice suggests using longer and more detailed
+prompts than we typically see our colleagues using. One approach is to
+include all of this information in a detailed project readme file (we
+prefer markdown format for this file, see supplemental material). The
+readme file can be developed iteratively with an LLM’s help. In our
+readme file we include:</p>
+<ul>
+<li>Research context</li>
+<li>Research aims</li>
+<li>Analysis methodology</li>
+<li>Tech context including R package preferences</li>
+<li>Analysis steps</li>
+<li>Directory structure</li>
+<li>Data file locations and meta-data</li>
+</ul>
+<p>The readme can be attached to every prompt to provide project
+context, as well as give the LLM a memory across different chat
+sessions.</p>
 </div>
 </div>
 <div id="discussion-and-conclusion" class="section level2">
@@ -2011,15 +2172,9 @@ statistical principles.</p></li>
 statistical guidance improves dramatically when provided with detailed
 information about research questions, data characteristics, and
 analytical constraints.</p></li>
-<li><p><strong>Leverage strengths, compensate for weaknesses</strong>:
-Use LLMs primarily for tasks where they excel (code generation,
-implementation planning) while maintaining human oversight of tasks
-requiring deeper statistical understanding (method selection, assumption
-checking, interpretation).</p></li>
 <li><p><strong>Document LLM use</strong>: Transparency about LLM use in
 research workflows is essential for reproducibility and evaluation.
-Publications should clearly describe how LLMs were used and what
-prompting strategies were employed.</p></li>
+Publications should clearly describe that LLMs were used.</p></li>
 <li><p><strong>Develop LLM literacy</strong>: As these tools become
 increasingly integrated into research workflows, developing “LLM
 literacy”—understanding how these models work, their limitations, and
@@ -2035,27 +2190,20 @@ prediction engines rather than reasoning systems means that human
 oversight will remain essential for ensuring statistical quality.</p>
 <div id="research-needs" class="section level3">
 <h3>Research Needs</h3>
-<p>Several critical research needs emerge from this analysis:</p>
-<ol style="list-style-type: decimal">
-<li><p><strong>Evaluations of LLM statistical performance</strong>:
-Systematic assessments across diverse environmental data types and
-analytical challenges would help identify specific strengths and
-weaknesses.</p></li>
-<li><p><strong>Development of specialized prompting strategies</strong>:
-Domain-specific prompting templates and guidelines could improve
-consistency and quality of statistical implementations.</p></li>
-<li><p><strong>Integration of LLMs with traditional statistical
-software</strong>: Hybrid systems that combine LLM flexibility with the
-algorithmic reliability of traditional statistical packages could
-leverage the strengths of both approaches.</p></li>
-<li><p><strong>Educational approaches for LLM-assisted
-statistics</strong>: New pedagogical strategies are needed to develop
-statistical understanding in an era where code implementation is
-increasingly automated.</p></li>
-<li><p><strong>Ethical frameworks for LLM use in research</strong>:
-Guidelines for appropriate attribution, transparency, and responsibility
-when using LLM-assisted analyses in published research.</p></li>
-</ol>
+<p>Research is needed to inform the appropriate use of LLMs in
+ecological statistics. We identify several priorities. First, we need
+formal evaluations of LLM statistical performance for ecological
+datasets and problems. Ecological data presents unique problems for
+statistical analysis and it is not yet clear how reliable LLMs advice on
+these problems is.</p>
+<p>Second, we need to develop prompting templates that novice analysts
+and statistical coders can use to reliably develop their analyses. These
+could include the recommendations above, as well as reference material
+that is attuned to specific types of ecological data.</p>
+<p>Finally, LLMs have certain biases (refs), but it is not yet clear if
+there are important implications for ecological analyses. Further
+research is needed to understand how LLM use may bias analyses in
+harmful ways.</p>
 <p>By addressing these research needs and adopting thoughtful prompting
 strategies, environmental scientists can harness the power of large
 language models to enhance rather than compromise statistical quality.
@@ -2066,23 +2214,95 @@ effective partnerships that leverage the unique strengths of each.</p>
 </div>
 <div id="acknowledgements" class="section level2">
 <h2>Acknowledgements</h2>
+<p>CJB was supported by a Future Fellowship (FT210100792) from the
+Australian Research Council.</p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
 </div>
 <div id="figures" class="section level2">
 <h2>Figures</h2>
-<div class="grViz html-widget html-fill-item" id="htmlwidget-15afb09e40dbd96d63ce" style="width:1500px;height:900px;"></div>
-<script type="application/json" data-for="htmlwidget-15afb09e40dbd96d63ce">{"x":{"diagram":"\ndigraph risk_framework {\n  # Graph settings\n  graph [rankdir = TD, fontname = \"Arial\", nodesep = 0.8, ranksep = 0.5]\n  node [shape = rectangle, fontname = \"Arial\", fontsize = 12, style = \"filled\", \n        fillcolor = \"white\", width = 3, height = 0.8, margin = 0.2]\n  edge [fontname = \"Arial\", fontsize = 10]\n\n  # Decision nodes\n  task_complexity [label = \"Assess Task Complexity\", fillcolor = \"#e6f3ff\", shape = diamond]\n  error_consequence_low [label = \"Assess Consequence of Errors\n(Low Complexity)\", fillcolor = \"#e6f3ff\", shape = diamond]\n  error_consequence_high [label = \"Assess Consequence of Errors\n(High Complexity)\", fillcolor = \"#e6f3ff\", shape = diamond]\n  \n  # Risk levels and mitigation strategies\n  low_risk [label = \"Low Risk\n- Use standard prompts\n- Basic verification\", fillcolor = \"#ccffcc\"]\n  medium_risk1 [label = \"Medium Risk\n- Provide rich context\n- Use Chain of Thought\n- Compare multiple approaches\", fillcolor = \"#ffffcc\"]\n  medium_risk2 [label = \"Medium Risk\n- Expert review required\n- Include domain knowledge\n- Request self-evaluation\", fillcolor = \"#ffffcc\"]\n  high_risk [label = \"High Risk\n- Use LLM for code only\n- Human decision-making\n- Peer review essential\n- Extensive validation\", fillcolor = \"#ffcccc\"]\n  \n  # Connections\n  task_complexity -> error_consequence_low [label = \"Low\n(Descriptive stats,\nbasic plotting,\nsimple tests)\"]\n  task_complexity -> error_consequence_high [label = \"High\n(Complex models,\nmultivariate analysis,\nspecialized methods)\"]\n  \n  error_consequence_low -> low_risk [label = \"Low\n(Exploratory,\nnon-critical)\"]\n  error_consequence_low -> medium_risk1 [label = \"High\n(Publication,\ndecision-making)\"]\n  \n  error_consequence_high -> medium_risk2 [label = \"Low\n(Exploratory,\nnon-critical)\"]\n  error_consequence_high -> high_risk [label = \"High\n(Publication,\ndecision-making)\"]\n  \n  # Additional guidance nodes\n  subgraph cluster_guidance {\n    label = \"General Risk Mitigation Guidelines\"\n    style = filled\n    fillcolor = \"#f0f0f0\"\n    node [shape = box, margin = 0.1, fontsize = 10, width = 2.5]\n    \n    guidance1 [label = \"Always document LLM use\nand prompting strategies\"]\n    guidance2 [label = \"Validate against established\nstatistical literature\"]\n    guidance3 [label = \"Consider reproducibility\nand transparency\"]\n    \n    guidance1 -> guidance2 -> guidance3 [style = invis]\n  }\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<p><strong>Figure XXX</strong> Decision tree showing how to identify and
-mitigate risks in LLM statistical advice based on task complexity and
-consequence of errors.</p>
-<div class="grViz html-widget html-fill-item" id="htmlwidget-f26b4b02a810485b2022" style="width:1500px;height:900px;"></div>
-<script type="application/json" data-for="htmlwidget-f26b4b02a810485b2022">{"x":{"diagram":"\ndigraph workflow {\n  # Graph settings\n  graph [rankdir = TD, fontname = \"Arial\", nodesep = 0.8, ranksep = 0.8]\n  node [shape = rectangle, fontname = \"Arial\", fontsize = 12, style = \"filled\", \n        fillcolor = \"white\", margin = 0.2]\n  edge [fontname = \"Arial\", fontsize = 10]\n\n  # Main workflow steps\n  step1 [label = \"Step 1: Statistical Approach Selection\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  step2 [label = \"Step 2: Implementation Planning\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  step3 [label = \"Step 3: Code Generation\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  step4 [label = \"Step 4: Interpretation Guidance\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  \n  # Recommendations for each step\n  rec1 [label = \"Recommendations:\\n• Explore multiple analytical approaches\\n• Provide domain knowledge and relevant literature\\n• Request step-by-step reasoning with Chain of Thought\\n• Compare statistical approaches with alternatives\\n• Prompt for cross-disciplinary perspectives\\n• Verify against statistical textbooks and guidelines\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n        \n  rec2 [label = \"Recommendations:\\n• Create a detailed README with analysis context\\n• Define clear research questions and hypotheses\\n• Specify data characteristics and structure\\n• Outline analytical constraints and assumptions\\n• Plan workflow before implementation\\n• Establish validation criteria in advance\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n        \n  rec3 [label = \"Recommendations:\\n• Use a two-step approach: plan then implement\\n• Provide implementation constraints (packages, style)\\n• Request modular, well-documented code\\n• Include verification and diagnostic steps\\n• Iteratively refine from simple to complex models\\n• Add comments explaining statistical decisions\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n        \n  rec4 [label = \"Recommendations:\\n• Never blindly trust LLM interpretations\\n• Request multiple visualization options\\n• Ask for limitations and assumptions of results\\n• Prompt for alternative interpretations\\n• Request guidance on reporting standards\\n• Maintain human oversight of conclusions\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n\n  # Connections between steps\n  step1 -> step2 -> step3 -> step4 [weight = 5]\n  \n  # Connect steps to their recommendations\n  step1 -> rec1 [dir = none, style = dashed]\n  step2 -> rec2 [dir = none, style = dashed]  \n  step3 -> rec3 [dir = none, style = dashed]\n  step4 -> rec4 [dir = none, style = dashed]\n  \n  # Human oversight element\n  {rank = same; human [label = \"Human Oversight\\nand Critical Evaluation\", \n                      shape = \"oval\", fillcolor = \"#ffffcc\", \n                      style = \"filled,dashed\", width = 3]}\n                      \n  human -> step1 [dir = both, style = dashed, constraint = false]\n  human -> step2 [dir = both, style = dashed, constraint = false]\n  human -> step3 [dir = both, style = dashed, constraint = false]\n  human -> step4 [dir = both, style = dashed, constraint = false]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<!-- UPTDATE FIGURE -->
+<div class="grViz html-widget html-fill-item" id="htmlwidget-81985bcb63bb87d17f9c" style="width:1500px;height:900px;"></div>
+<script type="application/json" data-for="htmlwidget-81985bcb63bb87d17f9c">{"x":{"diagram":"\ndigraph workflow {\n  # Graph settings\n  graph [rankdir = TD, fontname = \"Arial\", nodesep = 0.8, ranksep = 0.8]\n  node [shape = rectangle, fontname = \"Arial\", fontsize = 12, style = \"filled\", \n        fillcolor = \"white\", margin = 0.2]\n  edge [fontname = \"Arial\", fontsize = 10]\n\n  # Main workflow steps\n  step1 [label = \"Step 1: Statistical Approach Selection\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  step2 [label = \"Step 2: Planning Implementation\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  step3 [label = \"Step 3: Code Generation\", fillcolor = \"#e6f3ff\", width = 3, height = 0.8]\n  \n  # Recommendations for each step\n  rec1 [label = \"Recommendations:\\n• Explore multiple analytical approaches\\n• Provide domain knowledge and relevant literature\\n• Combine domain knowledge with step-by-step reasoning (Chain of Thought)\\n• Compare statistical approaches with alternatives\\n• Verify against statistical textbooks and guidelines\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n        \n  rec2 [label = \"Recommendations:\\n• Create a detailed README with analysis context\\n• Define clear research questions and hypotheses\\n• Create an organized and modular project directory\\n• Specify data characteristics and structure\\n• Outline analytical constraints and assumptions\\n• Plan workflow before implementation\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n        \n  rec3 [label = \"Recommendations:\\n• Use a two-step approach: plan then implement\\n• Provide implementation constraints (packages, style)\\n• Request modular, well-documented code\\n• Include verification and diagnostic steps\\n• Iteratively refine from simple to complex models\\n• Add comments explaining statistical and implementation \n• Define clear research questions and hypotheses\", \n        shape = \"box\", fillcolor = \"#f0f8ff\", width = 6]\n\n  # Connections between steps\n  step1 -> step2 -> step3 [weight = 5]\n  \n  # Connect steps to their recommendations\n  step1 -> rec1 [dir = none, style = dashed]\n  step2 -> rec2 [dir = none, style = dashed]  \n  step3 -> rec3 [dir = none, style = dashed]\n  \n  # Human oversight element\n  {rank = same; human [label = \"Human Oversight\\nand Evaluation\", \n                      shape = \"oval\", fillcolor = \"#ffffcc\", \n                      style = \"filled,dashed\", width = 3]}\n                      \n  human -> step1 [dir = both, style = dashed, constraint = false]\n  human -> step2 [dir = both, style = dashed, constraint = false]\n  human -> step3 [dir = both, style = dashed, constraint = false]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p><strong>Figure 2</strong> Recommended workflow for using LLMs in
 statistical analysis, showing the four key steps alongside specific
 recommendations for effectively leveraging LLMs at each stage while
 maintaining scientific rigor.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-arif2022" class="csl-entry">
+Arif, Suchinta, and M. Aaron MacNeil. 2022. <span>“Predictive Models
+Aren’t for Causal Inference.”</span> <em>Ecology Letters</em> 25 (8):
+1741–45. https://doi.org/<a href="https://doi.org/10.1111/ele.14033">https://doi.org/10.1111/ele.14033</a>.
+</div>
+<div id="ref-bolker2024" class="csl-entry">
+Bolker, Benjamin M. 2024. <span>“Multimodel Approaches Are Not the Best
+Way to Understand Multifactorial Systems.”</span> <em>Entropy</em> 26
+(6). <a href="https://doi.org/10.3390/e26060506">https://doi.org/10.3390/e26060506</a>.
+</div>
+<div id="ref-brown2011" class="csl-entry">
+Brown, Christopher J., David S. Schoeman, William J. Sydeman, Keith
+Brander, Lauren B. Buckley, Michael Burrows, Carlos M. Duarte, et al.
+2011. <span>“Quantitative Approaches in Climate Change Ecology.”</span>
+<em>Global Change Biology</em> 17 (12): 3697–3713. https://doi.org/<a href="https://doi.org/10.1111/j.1365-2486.2011.02531.x">https://doi.org/10.1111/j.1365-2486.2011.02531.x</a>.
+</div>
+<div id="ref-ellis2023new" class="csl-entry">
+Ellis, Amanda R, and Emily Slade. 2023. <span>“A New Era of Learning:
+Considerations for ChatGPT as a Tool to Enhance Statistics and Data
+Science Education.”</span> <em>Journal of Statistics and Data Science
+Education</em> 31 (2): 128–33.
+</div>
+<div id="ref-forstmeier2017" class="csl-entry">
+Forstmeier, Wolfgang, Eric-Jan Wagenmakers, and Timothy H. Parker. 2017.
+<span>“Detecting and Avoiding Likely False-Positive Findings – a
+Practical Guide.”</span> <em>Biological Reviews</em> 92 (4): 1941–68.
+https://doi.org/<a href="https://doi.org/10.1111/brv.12315">https://doi.org/10.1111/brv.12315</a>.
+</div>
+<div id="ref-fraser2018" class="csl-entry">
+Fraser, Tim AND Nakagawa, Hannah AND Parker. 2018. <span>“Questionable
+Research Practices in Ecology and Evolution.”</span> <em>PLOS ONE</em>
+13 (7): 1–16. <a href="https://doi.org/10.1371/journal.pone.0200303">https://doi.org/10.1371/journal.pone.0200303</a>.
+</div>
+<div id="ref-jansen2025leveraging" class="csl-entry">
+Jansen, Jacqueline A, Artür Manukyan, Nour Al Khoury, and Altuna Akalin.
+2025. <span>“Leveraging Large Language Models for Data Analysis
+Automation.”</span> <em>PloS One</em> 20 (2): e0317084.
+</div>
+<div id="ref-ohara2010" class="csl-entry">
+O’Hara, Robert B., and D. Johan Kotze. 2010. <span>“Do Not Log-Transform
+Count Data.”</span> <em>Methods in Ecology and Evolution</em> 1 (2):
+118–22. https://doi.org/<a href="https://doi.org/10.1111/j.2041-210X.2010.00021.x">https://doi.org/10.1111/j.2041-210X.2010.00021.x</a>.
+</div>
+<div id="ref-onan2024assessing" class="csl-entry">
+Onan, Aytuǧ, and Hesham Alhumyani. 2024. <span>“Assessing the Impact of
+Prompt Strategies on Text Summarization with Large Language
+Models.”</span> In <em>International Conference on Computer Applications
+in Industry and Engineering</em>, 41–55. Springer.
+</div>
+<div id="ref-shoemaker2025" class="csl-entry">
+Shoemaker, Kevin T., and Kevin J. Loope. 2025. <span>“We Need Better
+Ways to Re-Evaluate Conservation Policies When They’re Founded on Flawed
+Research.”</span> <em>Proceedings of the National Academy of
+Sciences</em> 122 (19): e2426166122. <a href="https://doi.org/10.1073/pnas.2426166122">https://doi.org/10.1073/pnas.2426166122</a>.
+</div>
+<div id="ref-sivarajkumar2024empirical" class="csl-entry">
+Sivarajkumar, Sonish, Mark Kelley, Alyssa Samolyk-Mazzanti, Shyam
+Visweswaran, and Yanshan Wang. 2024. <span>“An Empirical Evaluation of
+Prompting Strategies for Large Language Models in Zero-Shot Clinical
+Natural Language Processing: Algorithm Development and Validation
+Study.”</span> <em>JMIR Medical Informatics</em> 12: e55318.
+</div>
+<div id="ref-warton2016" class="csl-entry">
+Warton, David I., Mitchell Lyons, Jakub Stoklosa, and Anthony R. Ives.
+2016. <span>“Three Points to Consider When Choosing a LM or GLM Test for
+Count Data.”</span> <em>Methods in Ecology and Evolution</em> 7 (8):
+882–90. https://doi.org/<a href="https://doi.org/10.1111/2041-210X.12552">https://doi.org/10.1111/2041-210X.12552</a>.
+</div>
+<div id="ref-zhu2024large" class="csl-entry">
+Zhu, Yizhang, Shiyin Du, Boyan Li, Yuyu Luo, and Nan Tang. 2024.
+<span>“Are Large Language Models Good Statisticians?”</span> <em>arXiv
+Preprint arXiv:2406.07815</em>.
+</div>
 </div>
 </div>
 
