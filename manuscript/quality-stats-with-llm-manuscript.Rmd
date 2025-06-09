@@ -421,3 +421,7 @@ digraph workflow {
 Recommended workflow for using LLMs in statistical analysis, showing the four key steps alongside specific recommendations for effectively leveraging LLMs at each stage while maintaining scientific rigor.
 
 
+
+TODO:
+Integrate Scotts comments
+Read new references
