@@ -44,45 +44,45 @@ P-hacking and other forms of bias caused by manipulating analyses after viewing 
 
 Modern data analysis requires two interrelated skills: computer programming and statistical reasoning. There exists a substantial gap between specialists at the forefront of statistical computing and domain experts who use statistics irregularly. LLMs appear to bridge this gap by democratizing access to statistical expertise, but this accessibility comes with significant risks if users lack the background to evaluate the appropriateness of LLM-generated analyses.
 
-## Applications of LLMs to scientific computing and statistics
+## Applications and Risks of LLMs in Environmental Statistics
 
-Large language models present significant opportunities to enhance statistical practice in environmental sciences when used with appropriate guidance and oversight. These AI tools can democratize access to statistical expertise, providing researchers who lack ready access to statistical collaborators with guidance on appropriate methods and implementation strategies. This democratization is particularly valuable in resource-constrained settings or for early-career researchers still developing their statistical networks. For example, researchers in remote field stations or from institutions without dedicated statistical support can leverage LLMs to explore analytical options that might otherwise be inaccessible.
+Large language models present both significant opportunities and challenges for statistical practice in environmental sciences. When used with appropriate guidance and oversight, these AI tools can enhance research workflows, but they also introduce risks that require careful consideration.
 
-The code generation capabilities of LLMs represent another substantial benefit for statistical practice. These models excel at producing clean, well-documented code that follows contemporary best practices in programming and data analysis. When properly prompted, LLMs can generate R or Python scripts with comprehensive comments, logical structure, and adherence to style guides—potentially improving computational reproducibility across environmental sciences. This advantage addresses a persistent challenge in the field, where poorly documented or inconsistently structured code has hampered reproducibility efforts.
+### Opportunities for Enhanced Statistical Practice
 
-LLMs also facilitate rapid exploration of alternative analytical approaches, enabling researchers to quickly generate and compare multiple statistical strategies. This capability encourages more robust sensitivity analyses, as researchers can efficiently implement various models to assess how analytical choices influence results. For instance, an ecologist studying species distributions could use an LLM to implement both frequentist and Bayesian approaches to the same question, comparing outcomes and assumptions without investing extensive time in coding each approach from scratch.
+LLMs can democratize access to statistical expertise, providing researchers who lack ready access to statistical collaborators with guidance on appropriate methods and implementation strategies. This democratization is particularly valuable in resource-constrained settings or for early-career researchers still developing their statistical networks. For example, researchers in remote field stations or from institutions without dedicated statistical support can leverage LLMs to explore analytical options that might otherwise be inaccessible.
 
-Documentation and transparency—critical elements of rigorous science—can be substantially improved through LLM assistance. These tools can help generate detailed methodological descriptions, create reproducible workflows with appropriate documentation, and ensure consistent reporting of statistical procedures. By prompting LLMs to document analytical decisions and assumptions explicitly, researchers can enhance the transparency of their statistical workflows, making them more accessible to reviewers and future researchers seeking to build upon their work.
+The code generation capabilities of LLMs represent another substantial benefit. These models excel at producing well-documented code with comprehensive comments, logical structure, and adherence to style guides—potentially improving computational reproducibility across environmental sciences. This advantage addresses a persistent challenge in the field, where poorly documented or inconsistently structured code has hampered reproducibility efforts.
 
-Beyond implementation benefits, LLMs offer valuable opportunities for statistical learning and skill development. When used as interactive tutors rather than black-box solution providers, these models can enhance researchers' statistical understanding by explaining concepts, suggesting relevant literature, and demonstrating proper implementation techniques. This educational function is particularly valuable in environmental sciences, where researchers often come from diverse disciplinary backgrounds with varying levels of statistical training. By engaging with LLMs through carefully structured prompts that request explanations and justifications, researchers can develop deeper statistical intuition alongside practical implementation skills.
+LLMs also facilitate rapid exploration of alternative analytical approaches, enabling researchers to quickly generate and compare multiple statistical strategies. This capability could support more robust sensitivity analyses, as researchers can efficiently implement various models to assess how analytical choices influence results. For instance, an ecologist studying species distributions could use an LLM to implement both frequentist and machine learning approaches to the same question, comparing outcomes without investing extensive time in coding each approach from scratch.
 
-However, realizing these benefits requires understanding the fundamental nature of LLMs and their limitations. Unlike traditional statistical software that implements specific algorithms, LLMs generate responses based on patterns learned from training data. This distinction is crucial—LLMs do not "understand" statistics in the way human experts do, but rather predict what text would likely follow in a statistical context. The implications of this prediction-based approach are significant for statistical practice, as these models may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations. 
+Documentation and transparency—critical elements of rigorous science—can be substantially improved through LLM assistance. These tools can help generate detailed methodological descriptions, create reproducible workflows, and ensure consistent reporting of statistical procedures. By prompting LLMs to document analytical decisions and assumptions explicitly, researchers can enhance the transparency of their statistical workflows.
 
-The challenge, therefore, is to develop prompting strategies that maximize LLMs' strengths while compensating for their weaknesses. Effective prompting requires providing sufficient context about research questions, data characteristics, and analytical constraints to guide the model toward appropriate statistical recommendations. It also involves maintaining critical oversight of model outputs, particularly for decisions requiring deeper statistical understanding such as assumption checking and result interpretation.
+Beyond implementation benefits, LLMs offer valuable opportunities for statistical learning and skill development. When used as interactive tutors rather than black-box solution providers, these models can enhance researchers' statistical understanding by explaining concepts, suggesting relevant literature, and demonstrating proper implementation techniques.
 
-The opportunity lies in developing a new kind of statistical workflow that combines human expertise with LLM capabilities. In this workflow, researchers maintain responsibility for critical statistical decisions while using LLMs to implement analyses efficiently, explore options, and enhance documentation. This human-AI partnership represents a middle path between complete automation and traditional manual implementation—leveraging the efficiency and consistency of LLMs while preserving the critical judgment and domain expertise of human researchers. The key to this workflow is effective prompting—providing LLMs with the context, constraints, and guidance needed to generate high-quality statistical advice and code that advances rather than compromises statistical rigor in environmental research.
+### Risks and Limitations
 
-## Risks of LLM use for environmental statistics
+Despite these benefits, LLMs present several specific risks for statistical practice that require careful mitigation strategies.
 
-LLMs present several specific risks for statistical practice in environmental sciences that require careful consideration and mitigation strategies.
-
-First, LLMs may amplify existing problems with statistical quality. By dramatically accelerating the ability to try multiple analytical approaches, LLMs could enable unprecedented levels of p-hacking and selective reporting. Researchers can now write code to explore tens or hundreds of alternatives for solving a statistical issue in minutes, creating far more opportunities to cherry-pick favorable results. While this capability could support robust sensitivity analyses, it also creates a significant risk of selective reporting that undermines scientific integrity. Strong research reporting standards and ethics are ultimately needed to combat this issue.
+First, LLMs may amplify existing problems with statistical quality. By dramatically accelerating the ability to try multiple analytical approaches, LLMs could enable unprecedented levels of p-hacking and selective reporting. Researchers can now explore tens or hundreds of alternatives for solving a statistical issue in minutes, creating far more opportunities to cherry-pick favorable results. Strong research reporting standards and ethics are ultimately needed to combat this issue.
 
 Second, LLMs exhibit overconfidence in their statistical recommendations. They almost always provide an answer, typically with high apparent certainty, even when their suggestions are inappropriate or incorrect. This characteristic is particularly problematic in environmental sciences, where data often have complex structures requiring specialized approaches. Current LLMs may not adequately recognize or account for these nuances of environmental data.
 
-Third, LLMs lack true statistical understanding. Unlike human experts who reason from first principles, LLMs generate responses based on patterns in their training data. This fundamental limitation means they may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations.
+Third, LLMs lack true statistical understanding. Unlike traditional statistical software that implements specific algorithms, LLMs generate responses based on patterns learned from training data. They do not "understand" statistics in the way human experts do, but rather predict what text would likely follow in a statistical context. This fundamental limitation means they may confidently suggest inappropriate methods, fail to recognize violations of statistical assumptions, or generate plausible-sounding but incorrect interpretations.
 
 Fourth, inexperienced users may be particularly vulnerable to these risks. Without sufficient statistical background to critically evaluate LLM suggestions, researchers might implement inappropriate analyses or misinterpret results. The apparent authority and confidence of LLM responses can create a false sense of security, potentially leading to erroneous conclusions that influence scientific understanding and policy decisions.
 
-Finally, there is a risk of statistical deskilling in the research community. If researchers increasingly rely on LLMs for statistical decisions without developing their own understanding, the collective statistical literacy of the field could decline over time. This would create a dangerous dependency on tools that, while powerful, lack true statistical reasoning capabilities.
+Finally, there is a risk of statistical deskilling in the research community. If researchers increasingly rely on LLMs for statistical decisions without developing their own understanding, the collective statistical literacy of the field could decline over time. This would create a dangerous dependency on tools that lack true statistical reasoning capabilities.
 
-These risks highlight the need for thoughtful guidelines on LLM use in statistical workflows—guidelines that leverage LLM strengths while implementing appropriate safeguards against their limitations.
+### Toward Effective Human-AI Statistical Partnerships
+
+The challenge is to develop workflows that maximize LLMs' strengths while compensating for their weaknesses. This requires providing sufficient context about research questions, data characteristics, and analytical constraints to guide the model toward appropriate statistical recommendations. It also involves maintaining oversight of model outputs, particularly for decisions requiring deeper statistical understanding such as model formulation, assumption checking, and result interpretation.
+
+The opportunity lies in developing a statistical workflow that combines human expertise with LLM capabilities. In this workflow, researchers maintain responsibility for statistical decisions while using LLMs to implement analyses efficiently, explore options, and enhance documentation. This human-AI partnership represents a middle path between complete automation and traditional manual implementation—leveraging the efficiency and consistency of LLMs while preserving the critical judgment and domain expertise of human researchers. The key to this partnership is effective prompting—providing LLMs with the context, constraints, and guidance needed to generate high-quality statistical advice and code that advances rather than compromises statistical rigor in environmental research.
 
 ## LLM Overview
 
 To develop effective prompting strategies, it's essential to understand how LLMs function. At their core, LLMs are prediction engines that generate text one token at a time based on patterns learned during training. A token is roughly equivalent to a word part, a word, or a common phrase.
-
-This token-by-token prediction process has important implications for statistical guidance. LLMs don't reason about statistics from first principles; they predict what text would likely follow in a statistical context based on their training data. This means their statistical advice reflects patterns in existing literature and code—including both best practices and common mistakes.
 
 Several key parameters influence LLM behavior:
 
@@ -94,7 +94,7 @@ Several key parameters influence LLM behavior:
 
 4. **System prompt**: Sets the overall context and constraints for the LLM. This "behind-the-scenes" instruction shapes how the model responds to user queries and can significantly impact statistical advice quality.
 
-5. **AI assistant, AI programmer pair** 
+5. **AI assistant, AI programmer pair**: Software that assists a user to interact with an LLM. Examples include Github Copilot and Claude Code. This software manages user interactions, including setting the system message (which may be proprietary information) and managing the context window. 
 
 6. **Tools and MCP** 
 
@@ -106,11 +106,11 @@ The distinction between different types of LLM interfaces is also important. Bas
 
 ## Prompting Guidelines Best Practices
 
-Effective prompting can dramatically improve the quality of statistical guidance from LLMs. Based on empirical evaluations and practical experience, the following guidelines provide a framework for environmental scientists seeking to leverage LLMs for statistical applications.
+Effective prompting can dramatically improve the quality of statistical guidance from LLMs. Based on empirical evaluations and practical experience, we provide the following guidelines statistical applications of LLMs.
 
 ### Recognizing Different Steps in Workflows
 
-A critical first step is separating statistical workflows into distinct components that align with LLM strengths and limitations:
+It is helpful to separate statistical workflows into distinct components that align with LLM strengths and limitations:
 
 1. **Statistical approach selection**: Determining appropriate statistical methods for research questions
 2. **Implementation planning**: Designing the analytical workflow and code structure
@@ -125,7 +125,7 @@ LLMs perform differently across these components. They excel at code generation 
 
 This separation of responsibilities helps prevent overreliance on LLMs for decisions that require deeper statistical understanding while leveraging their strengths in code generation and documentation.
 
-### Statistical Advice
+### Tips for getting better statistical advice from LLMs
 
 When seeking statistical guidance from LLMs, several prompting strategies can significantly improve response quality.Whereas, we have found that many other prompting strategies commonly spruiked by tech commenators are less effective for elicting good  statistical advice. 
 
@@ -193,9 +193,7 @@ For each, explain the assumptions, advantages, and limitations.
 These suggestions is related to CoT, it just promotes further thinking. Once again, best used in a chain of prompts when you have attached a reputable reference. Note that most LLM assistants have the imperitive to provide options baked in by the providers, so it is usually not neccessary to explictly ask for options, just ask to think about them. 
 
 
-### Code Implementation Advice
-
-UP TO HERE
+### Tips for using an LLM to help write code 
 
 For implementing statistical analyses in R, different prompting strategies apply:
 
@@ -247,6 +245,13 @@ that's working, we'll extend it to account for spatial clustering.
 ```
 
 These strategies help ensure that LLM-generated code is not only syntactically correct but also statistically appropriate and well-structured. By providing clear constraints and expectations, researchers can guide LLMs toward implementations that follow best practices in both programming and statistical analysis.
+
+### Write longer prompts that are rich in context
+
+Given above, write a long prompt (or use an LLM to develop it) that includes statistical and data context as well as implementation guidance. 
+
+TODO give example of a readme file 
+
 
 ## Discussion and Conclusion
 
