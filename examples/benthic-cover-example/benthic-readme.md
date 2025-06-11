@@ -19,6 +19,11 @@ This data and study method is a simplified version of the study
 [Brown, Hamilton. 2018. Estimating the footprint of pollution on coral reefs with models of species turnover. Conservation Biology. DOI: 10.1111/cobi.13079](http://onlinelibrary.wiley.com/doi/10.1111/cobi.13079/abstract), which should be cited. 
 
 
+## Analysis methodology 
+
+We'll use non-metric multidimensional scaling (nMDS) to represent patterns in community structure across sites. Site dispersion will be visualized with a 2D ordination. Be sure to show the 'stress' statistic on the figure, this is critical for interpretation. The nMDS will be created twice using two distance measures: Euclidean distance and Bray-Curtis distance. 
+We'll test for relationships among community structure and distance to logging using the `envfit()` algorithm from the `vegan` package. 
+
 ## Tech context
 - We will use the R program
 - tidyverse packages for data manipulation
@@ -26,6 +31,8 @@ This data and study method is a simplified version of the study
 - ggplot2 for data visualization
 
 Keep your scripts short and modular to facilitate debugging. Don't complete all of the steps below in one script. Finish scripts where it makes sense and save intermediate datasets. 
+
+When using Rscript to run R scripts in terminal put quotes around the file, e.g. `Rscript "1_data-input.R"`
 
 ## Steps
 As you go tick of the steps below. 
@@ -36,42 +43,51 @@ As you go tick of the steps below.
 [ ] Perform MDS analysis to visualize site dispersion in ordination space
 [ ] Identify ecological patterns and potential groupings of sites
 [ ] Assess the stress value to determine the reliability of the MDS representation
-[ ] Explore how ecological communities relate to distance to logging
+[ ] Explore how ecological communities relate to distance to logging 
 [ ] Write an Rmd report summarizing the findings
 
 As you go, document the methodology. Be sure to output both figures (as png files) and numbers that can be used in the final report.
 
-## Data 
-The datasets are available from the web at the URLs below
 
+## Meta data 
 
-### BenthicCoverSurveys
+The datasets are available at the URLs below
 
-![Benthic cover survey data in long format](https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/BenthicCoverSurveys.csv")
+### benthic_cover.csv
+
+[Benthic cover survey data in long format](https://raw.githubusercontent.com/cbrown5/example-ecological-data/refs/heads/main/data/benthic-reefs-and-fish/benthic_cover.csv)
+
 
 Variables
 - site: Unique site IDs
 - trans: transect numbers, there are multiple transects per site
 - code: benthic organism code
-- cover: Number of 
-- n.pts: number of points sampled 
+- cover: Number of points belonging to this habitat type
+- n.pts: Total number of points sampled on the transect, used to normalize `Cover` to get per cent cover. 
 
-## Benthic_Variables
+## benthic_variables.csv
 
-![Database linking benthic codes to full names](https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/Benthic_Variables.csv)
-
-Variables
-- CODE: benthic organism code, matches `code` in BenthicCoverSurveys
-- CATEGORY: Long format name of benthic organism
-
-## JuvUVCSites_with_ReefTypes_16Jun2016
-
-![Site level covariates](https://raw.githubusercontent.com/cbrown5/BenthicLatent/refs/heads/master/data-raw/JuvUVCSites_with_ReefTypes_16Jun2016.csv)
+[Database linking benthic codes to full names](https://raw.githubusercontent.com/cbrown5/example-ecological-data/refs/heads/main/data/benthic-reefs-and-fish/benthic_variables.csv)
 
 Variables
-- site: Unique site IDs
-- reeftype: Type of reef (e.g. intra-lagoon or lagoon)
-- secchi: Secchi depth (m) a measure of water turbidity
+- code: benthic organism code, matches `Code` in benthic_cover
+- category: Long format name of benthic organism
+
+## fish-coral-cover-sites.csv
+
+![Site level covariates](https://raw.githubusercontent.com/cbrown5/example-ecological-data/refs/heads/main/data/benthic-reefs-and-fish/fish-coral-cover-sites.csv)
+
+Variables
+- site: Unique site IDs, use to join to benthic_cover.csv
+- reef.ID: Unique reef ID
+- pres.topa: number of Topa counted (local name for Bolbometopon)
+- pres.habili: number of Habili counted (local name for Cheilinus) 
+- secchi: Horizontal secchi depth (m), higher values mean the water is less turbid
 - flow: Factor indicating if tidal flow was "Strong" or "Mild" at the site
-- mindist: Distance to the nearest logging operation (m)
-
+- logged: Factor indicating if the site was in a region with logging "Logged" or without logging "Not logged"
+- coordx: X coordinate in UTM zone 57S
+- coordy: Y coordinate in UTM zone 57S
+- cb_cover: Number of PIT points for branching coral cover
+- soft_cover: Number of PIT points for soft coral cover
+- n_pts: Number of PIT points at this site (for normalizing cover to get per cent cover)
+- dist_to_logging_km: Linear distance to nearest log pond (site where logging occurs) in kilometres. 

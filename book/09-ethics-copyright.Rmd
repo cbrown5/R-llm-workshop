@@ -22,7 +22,7 @@ From [Forbes](https://www.forbes.com/sites/cindygordon/2024/03/12/chatgpt-and-ge
 
 To put it in context I did some calculations on my personal usage. I estimate the prompting I do through copilot each year will cost about **2.32 kg of C02** and about **1000 litres of water**. (this is lower bound, as I also using LLMs for other tasks). 
 
-To put that in context, flying the 1.5 hours from Halifax to Montreal is about 172kg of emissions. So I'm using approximately 10 less than a short flight. 1000L is equivalent to taking about 22 5-minute showers. 
+To put that in context, flying the 1.5 hours from Halifax to Montreal is about 172kg of emissions, driving 15 minutes is about 3 kg. So I'm using approximately 10 less than a short flight, or the same as driving to work once. 1000L is equivalent to taking about 22 5-minute showers. 
 
 Of course, the carbon cost is global, whereas the water cost is localised (Probably to US data centres, so by using this resource I'm really just making the water problem worse for Americans. )
 

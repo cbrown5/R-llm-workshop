@@ -57,6 +57,8 @@ Here's an example of some of the information you might want to include in your r
 
 ## Data methodology
 
+## Analysis methodology
+
 ## Tech context
 - We will use the R program
 - tidyverse packages for data manipulation

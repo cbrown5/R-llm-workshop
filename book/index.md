@@ -41,7 +41,7 @@ I'm an Associate Professor of Fisheries Science at University of Tasmania and an
 
 If following the prompting advice please consider citing my accompanying article:
 
-[**Citation: Brown (2025). Quality statistics with large language models. Unpublished manuscript**](https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html)
+[**Citation: Brown & Spillias (2025). Quality ecological statistics with large language models. Unpublished manuscript**](https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html)
 
 To be submitted soon (and updated here)
 
