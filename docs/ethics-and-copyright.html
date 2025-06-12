@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-28" />
+<meta name="date" content="2025-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,9 +213,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.3</b> The jagged frontier of LLM progress</a></li>
 <li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.4</b> How to prompt for better statistical advice</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.1</b> Guidelines for prompting for statistical advice</a></li>
-<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.2</b> Improving our initial prompt by attaching data</a></li>
-<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching domain knowledge</a></li>
+<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#what-llms-dont-do-that-real-statisticians-do"><i class="fa fa-check"></i><b>7.4.1</b> What LLMs don’t do that real statisticians do…</a></li>
+<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.2</b> Guidelines for prompting for statistical advice</a></li>
+<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching data</a></li>
+<li class="chapter" data-level="7.4.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.4</b> Improving our initial prompt by attaching domain knowledge</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.5</b> Planning implementation</a></li>
 </ul></li>
@@ -310,7 +311,7 @@ Asking a finished LLM questions uses much less energy, but cumulatively across t
 <li>AI prompts use 10x more energy than a traditional google search</li>
 </ul>
 <p>To put it in context I did some calculations on my personal usage. I estimate the prompting I do through copilot each year will cost about <strong>2.32 kg of C02</strong> and about <strong>1000 litres of water</strong>. (this is lower bound, as I also using LLMs for other tasks).</p>
-<p>To put that in context, flying the 1.5 hours from Halifax to Montreal is about 172kg of emissions. So I’m using approximately 10 less than a short flight. 1000L is equivalent to taking about 22 5-minute showers.</p>
+<p>To put that in context, flying the 1.5 hours from Halifax to Montreal is about 172kg of emissions, driving 15 minutes is about 3 kg. So I’m using approximately 10 less than a short flight, or the same as driving to work once. 1000L is equivalent to taking about 22 5-minute showers.</p>
 <p>Of course, the carbon cost is global, whereas the water cost is localised (Probably to US data centres, so by using this resource I’m really just making the water problem worse for Americans. )</p>
 <p>So its not a huge increase in my personal energy use. But cumulatively across the globe it is a lot.</p>
 <p>More generally, <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1508353112">humanities energy use is growing exponential</a>. Despite renewables and so on, ultimately our planet won’t be able to sustain this energy drawdown. LLMs are part of that trend of growing energy use. At some point we need to start using less energy, or the biosphere will become depleted and return to a <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1508353112">‘moon like rock’ in one study’s words</a>.</p>

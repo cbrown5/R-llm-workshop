@@ -93,7 +93,7 @@ Save some time for set-up, there is a bit to it. You may also need ITs help if y
 **R** of course, (4.2.2 or later)
 
 **VScode** 
-It takes a bit of time and IT knowledge and setting up to connect VScode to R. So don't leave that to the last minute [See my installation instructions](https://www.seascapemodels.org/rstats/2025/02/07/setting-up-vscode-r-cline.html)
+It takes a bit of time and IT knowledge and setting up to connect VScode to R. So don't leave that to the last minute [See my installation instructions](https://www.seascapemodels.org/rstats/2025/06/12/setting-up-vscode-r-genAI.html)
 
 Once you have VScode, make sure you get these extensions (which can be found by clicking the four squares in the left hand menu bar): 
 
@@ -108,7 +108,7 @@ If you are using Rstudio, make sure you get a Github Copilot account and connect
 
 #### Optional VScode extensions
 
-**Web Search for Copilot** (once installed, follow the instructions to set up your API key, I use Tavily because it has a free tier). 
+**Web Search for Copilot** (once installed, follow the instructions to set up your API key for Tavily, I use Tavily because it has a free tier). 
 
 **Roo code** extension for VScode. 
 
@@ -124,10 +124,12 @@ If you are using Rstudio, make sure you get a Github Copilot account and connect
 
 You will need API (application programming interface) access to an LLM to do all the examples in this workshop. This will allow us to interact with LLMs directly via R code. API access is on a pay per token basis. You will need to create an account with one of the below providers and then buy some credits (USD10 should be sufficient). 
 
+Make sure you save it somewhere safe! You can usually only view them once on creation. You'll need it for the workshop. 
+
 Here are some popular choices:
 
-- [OpenRouter](https://openrouter.ai/sign-up) (recommended as gives you flexible access to lots of models)
-- [Anthropic](https://console.anthropic.com/login?returnTo=%2F%3F)
+- [OpenRouter](https://openrouter.ai/sign-up) (recommended as gives you flexible access to lots of models, but some capabilites won't work, e.g. Claude models are on OpenRouter, but their vision capabilities are only available directly from Anthropic)
+- [Anthropic](https://console.anthropic.com/login?returnTo=%2F%3F) use this instead of OpenRouter if you want vision, web browser and computer use abilities. 
 - [OpenAI](https://platform.openai.com/api-keys)
 
 Once you have your API key, keep it secret. It's a password. Be careful not to push it to aa github repo accidently. 

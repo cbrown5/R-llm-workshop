@@ -65,6 +65,14 @@ The limited number of evaluations of LLMs for statistics have found the biggest 
 
 In addition, larger and more up-to-date models tend to be better. e.g. try Claude 4.0 over GPT-mini.  
 
+### What LLMs don't do that real statisticians do... 
+
+If you consult a human statistician they'll usually ask you lots of questions. LLMs, in contrast, will tend to just give you an answer, whether or not they have enough context. 
+
+Say you asked me the same question you had in your LLM prompt like "how do see if fish are related to coral". There's no way I'd jump in with an answer with so little information. But the LLM will. 
+
+So be aware of this shortcoming and come to prompting pre-prepared with the context it will need to give you a better answer. 
+
 ### Guidelines for prompting for statistical advice
 
 **Attach domain knowledge** Try to find quality written advice from recognized researchers to include in your prompts. 

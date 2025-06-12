@@ -47,6 +47,7 @@ stages-of-analysis
 ask-mode
 the-jagged-frontier-of-llm-progress
 how-to-prompt-for-better-statistical-advice
+what-llms-dont-do-that-real-statisticians-do
 guidelines-for-prompting-for-statistical-advice
 improving-our-initial-prompt-by-attaching-data
 improving-our-initial-prompt-by-attaching-domain-knowledge

@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-28" />
+<meta name="date" content="2025-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,9 +213,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.3</b> The jagged frontier of LLM progress</a></li>
 <li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.4</b> How to prompt for better statistical advice</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.1</b> Guidelines for prompting for statistical advice</a></li>
-<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.2</b> Improving our initial prompt by attaching data</a></li>
-<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching domain knowledge</a></li>
+<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#what-llms-dont-do-that-real-statisticians-do"><i class="fa fa-check"></i><b>7.4.1</b> What LLMs don’t do that real statisticians do…</a></li>
+<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.2</b> Guidelines for prompting for statistical advice</a></li>
+<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching data</a></li>
+<li class="chapter" data-level="7.4.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.4</b> Improving our initial prompt by attaching domain knowledge</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.5</b> Planning implementation</a></li>
 </ul></li>
@@ -335,8 +336,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Combine domain knowledge with CoT (but CoT on its own doesn’t help)</li>
 </ul>
 <p>In addition, larger and more up-to-date models tend to be better. e.g. try Claude 4.0 over GPT-mini.</p>
-<div id="guidelines-for-prompting-for-statistical-advice" class="section level3 hasAnchor" number="7.4.1">
-<h3><span class="header-section-number">7.4.1</span> Guidelines for prompting for statistical advice<a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="what-llms-dont-do-that-real-statisticians-do" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> What LLMs don’t do that real statisticians do…<a href="planning-your-analysis-with-ask-mode.html#what-llms-dont-do-that-real-statisticians-do" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you consult a human statistician they’ll usually ask you lots of questions. LLMs, in contrast, will tend to just give you an answer, whether or not they have enough context.</p>
+<p>Say you asked me the same question you had in your LLM prompt like “how do see if fish are related to coral”. There’s no way I’d jump in with an answer with so little information. But the LLM will.</p>
+<p>So be aware of this shortcoming and come to prompting pre-prepared with the context it will need to give you a better answer.</p>
+</div>
+<div id="guidelines-for-prompting-for-statistical-advice" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Guidelines for prompting for statistical advice<a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Attach domain knowledge</strong> Try to find quality written advice from recognized researchers to include in your prompts.</p>
 <p><strong>Always provide context on the data</strong> For instance, the model will give better advice for the prompt above if we tell it that <code>pres.topa</code> is integer counts (it will probably then recommend poisson GLM straight away). Likewise, if your replicates are different sites, tell that to the model so it has the opportunity to recommend approaches that are appropriate for spatial analysis.</p>
 <p><strong>Attach data to your prompts</strong> You can attach the whole dataset if its in plain text (e.g. csv). Or write a <code>summary()</code> and/or <code>head()</code> to file and attach that.</p>
@@ -346,8 +353,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Tip:</strong> Make a library of reference material for your prompting. If you see vignettes, blogs, or supplemental sections of papers that explain an analysis well, save them as text files to use in prompts.</p>
 </div>
 </div>
-<div id="improving-our-initial-prompt-by-attaching-data" class="section level3 hasAnchor" number="7.4.2">
-<h3><span class="header-section-number">7.4.2</span> Improving our initial prompt by attaching data<a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="improving-our-initial-prompt-by-attaching-data" class="section level3 hasAnchor" number="7.4.3">
+<h3><span class="header-section-number">7.4.3</span> Improving our initial prompt by attaching data<a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Recall our initial prompt was:</p>
 <pre><code>How can I statistically test the relationship between pres.topa and CB_cover?</code></pre>
 <p>Try some of the strategies above (make a new prompt by clicking the + button) and compare the quality of advice.</p>
@@ -356,8 +363,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Then drag and drop it into the ask window and add something like:</p>
 <pre><code>How can I statistically test the relationship between pres.topa and CB_cover? Here are the first 6 rows of data</code></pre>
 </div>
-<div id="improving-our-initial-prompt-by-attaching-domain-knowledge" class="section level3 hasAnchor" number="7.4.3">
-<h3><span class="header-section-number">7.4.3</span> Improving our initial prompt by attaching domain knowledge<a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="improving-our-initial-prompt-by-attaching-domain-knowledge" class="section level3 hasAnchor" number="7.4.4">
+<h3><span class="header-section-number">7.4.4</span> Improving our initial prompt by attaching domain knowledge<a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can further improve the response by attaching a trusted resource. e.g. <a href="https://environmentalcomputing.net/statistics/glms/glm-2/">save this webpage on count models for ecology</a> to your computer. Then you can attach the html file. That turned out to be a bit slow to compute (file too large?). Would be better if we had in plain text (e.g. copy and paste the text to a file, or use an extraction tool to extract text from the html).</p>
 <p>If you installed the websearch tool (which will likely become default in future) then you could add a prompt like this:</p>
 <pre><code>How can I statistically test the relationship between pres.topa and CB_cover? Here are the first 6 rows of data. pres.topa is my response and it is count data. Use @websearch to find robust recommendations for ecologists to analyse count data before proceeding with your recomemndations. </code></pre>

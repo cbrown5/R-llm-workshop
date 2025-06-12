@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-28" />
+<meta name="date" content="2025-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,9 +213,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.3</b> The jagged frontier of LLM progress</a></li>
 <li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.4</b> How to prompt for better statistical advice</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.1</b> Guidelines for prompting for statistical advice</a></li>
-<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.2</b> Improving our initial prompt by attaching data</a></li>
-<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching domain knowledge</a></li>
+<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#what-llms-dont-do-that-real-statisticians-do"><i class="fa fa-check"></i><b>7.4.1</b> What LLMs don’t do that real statisticians do…</a></li>
+<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.2</b> Guidelines for prompting for statistical advice</a></li>
+<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching data</a></li>
+<li class="chapter" data-level="7.4.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.4</b> Improving our initial prompt by attaching domain knowledge</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.5</b> Planning implementation</a></li>
 </ul></li>
@@ -292,7 +293,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Quality R analysis with large language models</h1>
 <p class="author"><em>CJ Brown (<a href="mailto:c.j.brown@utas.edu.au" class="email">c.j.brown@utas.edu.au</a>)</em></p>
-<p class="date"><em>2025-05-28</em></p>
+<p class="date"><em>2025-06-12</em></p>
 </div>
 <div id="quality-r-analysis-with-large-language-models" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Quality R analysis with large language models<a href="index.html#quality-r-analysis-with-large-language-models" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -322,7 +323,7 @@ experienced professionals. The workshop is not suitable for those that need an i
 <div id="citation-for-course" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> Citation for course<a href="index.html#citation-for-course" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If following the prompting advice please consider citing my accompanying article:</p>
-<p><a href="https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html"><strong>Citation: Brown (2025). Quality statistics with large language models. Unpublished manuscript</strong></a></p>
+<p><a href="https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html"><strong>Citation: Brown &amp; Spillias (2025). Quality ecological statistics with large language models. Unpublished manuscript</strong></a></p>
 <p>To be submitted soon (and updated here)</p>
 </div>
 <div id="course-outline" class="section level2 hasAnchor" number="1.4">
@@ -353,7 +354,7 @@ In this presentation I’ll cover how LLMs work, best practices prompt engineeri
 <p>Save some time for set-up, there is a bit to it. You may also need ITs help if your computer is locked down.</p>
 <p><strong>R</strong> of course, (4.2.2 or later)</p>
 <p><strong>VScode</strong>
-It takes a bit of time and IT knowledge and setting up to connect VScode to R. So don’t leave that to the last minute <a href="https://www.seascapemodels.org/rstats/2025/02/07/setting-up-vscode-r-cline.html">See my installation instructions</a></p>
+It takes a bit of time and IT knowledge and setting up to connect VScode to R. So don’t leave that to the last minute <a href="https://www.seascapemodels.org/rstats/2025/06/12/setting-up-vscode-r-genAI.html">See my installation instructions</a></p>
 <p>Once you have VScode, make sure you get these extensions (which can be found by clicking the four squares in the left hand menu bar):</p>
 <p><strong>GitHub Copilot, GitHub Copilot Chat</strong></p>
 <p>If you can’t get VScode to work with R you are still welcome to join. Most of the morning session can be done in Rstudio. In the afternoon you’ll need VScode if you want to try what I am teaching.</p>
@@ -363,7 +364,7 @@ It takes a bit of time and IT knowledge and setting up to connect VScode to R. S
 If you are using Rstudio, make sure you get a Github Copilot account and connect it to Rstudio.</p>
 <div id="optional-vscode-extensions" class="section level4 hasAnchor" number="1.5.1.1">
 <h4><span class="header-section-number">1.5.1.1</span> Optional VScode extensions<a href="index.html#optional-vscode-extensions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><strong>Web Search for Copilot</strong> (once installed, follow the instructions to set up your API key, I use Tavily because it has a free tier).</p>
+<p><strong>Web Search for Copilot</strong> (once installed, follow the instructions to set up your API key for Tavily, I use Tavily because it has a free tier).</p>
 <p><strong>Roo code</strong> extension for VScode.</p>
 <p><strong>Markdown preview enhanced</strong> Let’s you view markdown files in a pane with cmd(cntrl)-shift-V</p>
 <p><strong>Radian terminal</strong> I also recommend installing <a href="https://github.com/randy3k/radian">radian terminal</a>. This makes your terminal for R much cleaner, has autocomplete and seems to help with some common issues.</p>
@@ -375,10 +376,11 @@ If you are using Rstudio, make sure you get a Github Copilot account and connect
 <p><strong>Github copilot</strong> Go to their page to <a href="https://github.com/features/copilot">sign-up</a>. The free tier is fine. You can also get free Pro access as a student or professor (requires application).</p>
 <p><strong>API key and account with LLM provider</strong></p>
 <p>You will need API (application programming interface) access to an LLM to do all the examples in this workshop. This will allow us to interact with LLMs directly via R code. API access is on a pay per token basis. You will need to create an account with one of the below providers and then buy some credits (USD10 should be sufficient).</p>
+<p>Make sure you save it somewhere safe! You can usually only view them once on creation. You’ll need it for the workshop.</p>
 <p>Here are some popular choices:</p>
 <ul>
-<li><a href="https://openrouter.ai/sign-up">OpenRouter</a> (recommended as gives you flexible access to lots of models)</li>
-<li><a href="https://console.anthropic.com/login?returnTo=%2F%3F">Anthropic</a></li>
+<li><a href="https://openrouter.ai/sign-up">OpenRouter</a> (recommended as gives you flexible access to lots of models, but some capabilites won’t work, e.g. Claude models are on OpenRouter, but their vision capabilities are only available directly from Anthropic)</li>
+<li><a href="https://console.anthropic.com/login?returnTo=%2F%3F">Anthropic</a> use this instead of OpenRouter if you want vision, web browser and computer use abilities.</li>
 <li><a href="https://platform.openai.com/api-keys">OpenAI</a></li>
 </ul>
 <p>Once you have your API key, keep it secret. It’s a password. Be careful not to push it to aa github repo accidently.</p>

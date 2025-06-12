@@ -23,7 +23,7 @@
 <meta name="author" content="CJ Brown (c.j.brown@utas.edu.au)" />
 
 
-<meta name="date" content="2025-05-28" />
+<meta name="date" content="2025-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,9 +213,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#the-jagged-frontier-of-llm-progress"><i class="fa fa-check"></i><b>7.3</b> The jagged frontier of LLM progress</a></li>
 <li class="chapter" data-level="7.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#how-to-prompt-for-better-statistical-advice"><i class="fa fa-check"></i><b>7.4</b> How to prompt for better statistical advice</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.1</b> Guidelines for prompting for statistical advice</a></li>
-<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.2</b> Improving our initial prompt by attaching data</a></li>
-<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching domain knowledge</a></li>
+<li class="chapter" data-level="7.4.1" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#what-llms-dont-do-that-real-statisticians-do"><i class="fa fa-check"></i><b>7.4.1</b> What LLMs don’t do that real statisticians do…</a></li>
+<li class="chapter" data-level="7.4.2" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#guidelines-for-prompting-for-statistical-advice"><i class="fa fa-check"></i><b>7.4.2</b> Guidelines for prompting for statistical advice</a></li>
+<li class="chapter" data-level="7.4.3" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-data"><i class="fa fa-check"></i><b>7.4.3</b> Improving our initial prompt by attaching data</a></li>
+<li class="chapter" data-level="7.4.4" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#improving-our-initial-prompt-by-attaching-domain-knowledge"><i class="fa fa-check"></i><b>7.4.4</b> Improving our initial prompt by attaching domain knowledge</a></li>
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="planning-your-analysis-with-ask-mode.html"><a href="planning-your-analysis-with-ask-mode.html#planning-implementation"><i class="fa fa-check"></i><b>7.5</b> Planning implementation</a></li>
 </ul></li>
@@ -298,6 +299,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Agent mode has access to the terminal, so it will be using the terminal application to run scripts it creates. We’ll demonstrate in class so you can understand what its doing.</p>
 <p><strong>Image:</strong> Agent mode from <a href="https://code.visualstudio.com" class="uri">https://code.visualstudio.com</a></p>
 <p>You can also just accept every suggestion without reading it, also called ‘vibe coding’. However, I don’t recommend doing that, especially when you are starting out. You need to get a feel of how much direction it needs and problems it might create. Without human intervention the algorithms have a tendency to go off task:</p>
+<pre><code>## Warning: Using `size` aesthetic for lines was deprecated in
+## ggplot2 3.4.0.
+## ℹ Please use `linewidth` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see
+## where this warning was generated.</code></pre>
 <p><img src="_main_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>Have a readme with clear steps that you attach as a prompt is also helpful for Agent mode. It helps it stay on topic.</p>
 <p>Agent mode also allows installation of additional tools, which we’ll explore later.</p>
@@ -327,8 +334,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">9.1.2</span> Set-up your project<a href="automated-workflows-with-agent-mode.html#set-up-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Set-up a new project, including creating a readme following the structure we used before.</p>
 <p>Here’s the link to the data:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="automated-workflows-with-agent-mode.html#cb31-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb31-2"><a href="automated-workflows-with-agent-mode.html#cb31-2" tabindex="-1"></a>dat <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/ATRC-RLS-jasus-edwardsii-maria-island.csv&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="automated-workflows-with-agent-mode.html#cb32-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb32-2"><a href="automated-workflows-with-agent-mode.html#cb32-2" tabindex="-1"></a>dat <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">url</span>(<span class="st">&quot;https://raw.githubusercontent.com/cbrown5/R-llm-workshop/refs/heads/main/resources/ATRC-RLS-jasus-edwardsii-maria-island.csv&quot;</span>))</span></code></pre></div>
 <p><a href="https://github.com/cbrown5/R-llm-workshop/tree/main/resources/forecasting-with-inla">You can see the readme.md I used to get started here</a>. I encourage you to write your own to get a feel for how it works and develop your own style.</p>
 </div>
 <div id="prompts-i-used" class="section level3 hasAnchor" number="9.1.3">
