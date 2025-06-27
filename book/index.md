@@ -39,11 +39,9 @@ I'm an Associate Professor of Fisheries Science at University of Tasmania and an
 
 ## Citation for course
 
-If following the prompting advice please consider citing my accompanying article:
+If following the prompting advice please consider citing my accompanying article, currently in pre-print form:
 
-[**Citation: Brown & Spillias (2025). Quality ecological statistics with large language models. Unpublished manuscript**](https://www.seascapemodels.org/R-llm-workshop/quality-stats-with-llm-manuscript.html)
-
-To be submitted soon (and updated here)
+**Citation: Brown & Spillias (2025). Prompting large language models for quality ecological statistics. Pre-print. https://doi.org/10.32942/X2CS80**
 
 ## Course outline
 
